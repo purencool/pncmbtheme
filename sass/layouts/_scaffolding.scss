@@ -2,19 +2,32 @@
 // Body reset
 body {
   margin: 0;
-  font-family: $baseFontFamily;
-  font-size: $baseFontSize;
-  line-height: $baseLineHeight;
-  color: $textColor;
-  background: $bodyBackground;
 }
 
 
-
-//-- Links
-a {
-   color: $linkColor;
-   text-decoration: none;
-   &:hover {color: $linkColorHover;}
-   &:active {color: $linkColorHover;}
+h1 {
+ a{}
 }
+h2 {
+  a{}
+}
+h3 {
+  a{}
+}
+h4 {
+  a{}
+}
+h5 {
+  a{}
+}
+h6 {
+  a{}
+}
+ul {
+  li {a{}}
+}
+
+lo {
+  li {a{}}
+}
+p{}
