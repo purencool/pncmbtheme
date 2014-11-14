@@ -1,9 +1,43 @@
+/**
+ *  12 columns
+ */
+/**
+ *  14 columns
+ */
+/**
+ *  Break Points Varibles
+ */
+/** Smart phone width **/
+/** Large smart phone width **/
+/** Tablet width **/
+/** Small Desktop width **/
+/** Desktop width **/
+/** Desktop width **/
+/* line 3, ../sass/layouts/_scaffolding.scss */
+body {
+  margin: 0;
+  font-family: "arial";
+  font-size: "14px";
+  line-height: "16";
+  color: "grey";
+  background: "white"; }
+
+/* line 15, ../sass/layouts/_scaffolding.scss */
+a {
+  color: "orange";
+  text-decoration: none; }
+
+/* line 19, ../sass/layouts/_scaffolding.scss */
+a:hover {
+  color: "orange";
+  text-decoration: underline; }
+
 /* No files to import found in abstractions/**\/* */
 /* line 1, ../sass/base/_media.scss */
 img, media {
   max-width: 100%; }
 
-/* line 24, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
 body {
   background-color: red; }
 
