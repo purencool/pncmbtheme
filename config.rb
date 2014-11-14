@@ -20,6 +20,7 @@ sass_dir = "sass"
 images_dir = "images"
 generated_images_dir = images_dir + "/generated"
 javascripts_dir = "js"
+fonts_dir = "fonts"
 
 # Require any additional compass plugins installed on your system.
 require 'compass-normalize'
