@@ -46,3 +46,6 @@ relative_assets = true
 
 # Output source maps in development mode.
 sass_options = (environment == :production) ? {} : {:sourcemap => true}
+
+# Remove comments
+line_comments=0

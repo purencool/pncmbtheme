@@ -110,8 +110,9 @@ a {
 
 /* line 14, ../sass/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: orange; }
-  /* line 16, ../sass/base/_typography.scss */
+  color: orange;
+  font-size: 25px; }
+  /* line 17, ../sass/base/_typography.scss */
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: orange; }
     /* line 18, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
@@ -163,8 +164,35 @@ h6 {
   a {  @include link-colors($h6Normal,$h6Hover,$h6Active,$h6Visited,$h6Focus);}
 }
 //*/
-/* line 25, ../sass/styles.scss */
+/* line 136, ../sass/abstractions/_font-awesome.scss */
+#search-block-form input[type="text"]:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 5px;
+  text-decoration: none;
+  /* sprites.less reset */
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat; }
+
+/*
 body {
-  background-color: red; }
+   background-color:red;
+}
+//*/
 
 /*# sourceMappingURL=styles.css.map */
