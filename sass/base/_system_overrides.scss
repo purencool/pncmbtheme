@@ -14,10 +14,19 @@ ul.primary li a {
   padding:0;
 }
 
+ul.primary li a:hover {
+  background-color:$bodyBackground;
+  border-color:$bodyBackground;
+  border-bottom-color:$bodyBackground;
+}
+
+
 ul.primary li.active a {
   background-color: $bodyBackground;
-  border: 1px solid $bodyBackground;
+  border: 0px solid $bodyBackground;
 }
+
+
 
 //-- system form overrides
 .marker, .form-required {

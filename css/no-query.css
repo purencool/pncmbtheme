@@ -84,13 +84,13 @@ body {
 img, media {
   max-width: 100%; }
 
-/* line 2, ../sass/base/_overrides.scss */
+/* line 2, ../sass/base/_system_overrides.scss */
 ul.primary {
   border-bottom: 0px solid white;
   margin: 0;
   padding: 0; }
 
-/* line 9, ../sass/base/_overrides.scss */
+/* line 9, ../sass/base/_system_overrides.scss */
 ul.primary li a {
   background-color: white;
   border: 0px solid white;
@@ -98,20 +98,26 @@ ul.primary li a {
   margin-right: 0;
   padding: 0; }
 
-/* line 17, ../sass/base/_overrides.scss */
+/* line 17, ../sass/base/_system_overrides.scss */
+ul.primary li a:hover {
+  background-color: white;
+  border-color: white;
+  border-bottom-color: white; }
+
+/* line 24, ../sass/base/_system_overrides.scss */
 ul.primary li.active a {
   background-color: white;
-  border: 1px solid white; }
+  border: 0px solid white; }
 
-/* line 23, ../sass/base/_overrides.scss */
+/* line 32, ../sass/base/_system_overrides.scss */
 .marker, .form-required {
   color: gray; }
 
 /* line 2, ../sass/base/_typography.scss */
 body {
-  font-family: "arial";
-  font-size: "14px";
-  line-height: "16px";
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   color: gray;
   background: white; }
 
@@ -199,7 +205,15 @@ h6 {
   position: absolute;
   height: 100%;
   width: 100%; }
-/* line 11, ../sass/components/_login.scss */
+  /* line 10, ../sass/components/_login.scss */
+  .page-user .page > div > h1 {
+    width: 230px;
+    height: 65px;
+    padding: 0;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url("../images/mobile/mobile-logo.jpg") repeat-x; }
+/* line 21, ../sass/components/_login.scss */
 .page-user #main-content {
   width: 100%;
   height: 50%;
@@ -209,6 +223,42 @@ h6 {
   left: 0;
   bottom: 0;
   right: 0; }
+/* line 28, ../sass/components/_login.scss */
+.page-user label, .page-user small {
+  display: none; }
+/* line 29, ../sass/components/_login.scss */
+.page-user ul.primary {
+  padding-top: 5px; }
+/* line 33, ../sass/components/_login.scss */
+.page-user ul.primary li {
+  display: inherit;
+  width: 100%;
+  padding-bottom: 3px; }
+  /* line 37, ../sass/components/_login.scss */
+  .page-user ul.primary li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: white;
+    background-color: #c4c4c4;
+    font-size: 18px;
+    text-align: center; }
+    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:visited {
+      color: white; }
+    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:focus {
+      color: white; }
+    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:hover {
+      color: white; }
+    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:active {
+      color: #18316a; }
+/* line 47, ../sass/components/_login.scss */
+.page-user ul.primary li a.active {
+  font-weight: normal;
+  color: #18316a; }
 
 /* line 136, ../sass/abstractions/_font-awesome.scss */
 #search-block-form input[type="text"]:before {
@@ -237,7 +287,7 @@ h6 {
 
 /* line 2, ../sass/components/_tab_primary.scss */
 .tabs li {
-  padding: 0 10px 0 0; }
+  padding: 0; }
 
 /*
 body {

@@ -1,17 +1,35 @@
-//-- Body
-$baseFontFamily:'arial';
-$baseFontSize:'14px';
-$baseLineHeight:'16px';
+//-- Body colors
 $textColor:gray;
 $bodyBackground:white;
 
+//-- Background Color
+$backgroundColorOne:white;
+$backgroundColorTwo:white;
+$backgroundColorThree:white;
+$backgroundColorFour:white;
 
-//-- A Links
+
+//-- Background Color Links
+$backgroundColorLinkOne:#c4c4c4;
+$backgroundColorLinkTwo:white;
+$backgroundColorLinkThree:white;
+$backgroundColorLinkFour:white;
+
+//-- A Desktop Links
 $aNormal:orange;
 $aHover:orange;
 $aActive:orange;
 $aVisited:orange;
 $aFocus:orange;
+
+
+//-- A Mobile Links
+$aMNormal:white;
+$aMHover:white;
+$aMActive:#18316a;
+$aMVisited:white;
+$aMFocus:white;
+
 
 //-- H1, H1 A
 $h1Normal:orange;
