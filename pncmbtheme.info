@@ -27,6 +27,7 @@ regions[page_bottom] = Page Bottom
 
 ;-- Core Regions
 regions[header] = Header
+regions[navigation] = Navigation
 regions[footer] = Footer
 regions[sidebar_first] = Sidebar First
 regions[sidebar_second] = Sidebar Second

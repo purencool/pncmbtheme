@@ -39,7 +39,11 @@
   <?php endif; ?>
 
 </header>
-
+<?php if ($page['navigation']): ?>
+<nav class="navigation">
+  <?php print render($page['navigation']); ?>
+</nav>
+<?php endif; ?>
 <div class="page">
 
   <div role="main" id="main-content">
@@ -91,4 +95,3 @@
 <footer role="contentinfo">
   <?php print render($page['footer']); ?>
 </footer>
-
