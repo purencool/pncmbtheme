@@ -1,0 +1,25 @@
+//-- system tabs overrides
+ul.primary {
+  border-bottom: 0px solid $bodyBackground;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul.primary li a {
+  background-color: $bodyBackground;
+  border:0px solid $bodyBackground;
+  height: auto;
+  margin-right:0;
+  padding:0;
+}
+
+ul.primary li.active a {
+  background-color: $bodyBackground;
+  border: 1px solid $bodyBackground;
+}
+
+//-- system form overrides
+.marker, .form-required {
+  color: $textColor;
+}

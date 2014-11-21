@@ -84,6 +84,29 @@ body {
 img, media {
   max-width: 100%; }
 
+/* line 2, ../sass/base/_overrides.scss */
+ul.primary {
+  border-bottom: 0px solid white;
+  margin: 0;
+  padding: 0; }
+
+/* line 9, ../sass/base/_overrides.scss */
+ul.primary li a {
+  background-color: white;
+  border: 0px solid white;
+  height: auto;
+  margin-right: 0;
+  padding: 0; }
+
+/* line 17, ../sass/base/_overrides.scss */
+ul.primary li.active a {
+  background-color: white;
+  border: 1px solid white; }
+
+/* line 23, ../sass/base/_overrides.scss */
+.marker, .form-required {
+  color: gray; }
+
 /* line 2, ../sass/base/_typography.scss */
 body {
   font-family: "arial";
@@ -95,16 +118,16 @@ body {
 /* line 10, ../sass/base/_typography.scss */
 a {
   color: orange; }
-  /* line 18, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: orange; }
-  /* line 21, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
     color: orange; }
-  /* line 24, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: orange; }
-  /* line 27, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: orange; }
 
@@ -115,16 +138,16 @@ h1, h2, h3, h4, h5, h6 {
   /* line 17, ../sass/base/_typography.scss */
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: orange; }
-    /* line 18, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
       color: orange; }
-    /* line 21, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {
       color: orange; }
-    /* line 24, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
       color: orange; }
-    /* line 27, ../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
       color: orange; }
 
@@ -164,6 +187,29 @@ h6 {
   a {  @include link-colors($h6Normal,$h6Hover,$h6Active,$h6Visited,$h6Focus);}
 }
 //*/
+/* line 3, ../sass/components/_breadcrumb.scss */
+.page-user .breadcrumb {
+  display: none; }
+
+/* line 3, ../sass/components/_login.scss */
+.page-user .siteinfo {
+  display: none; }
+/* line 6, ../sass/components/_login.scss */
+.page-user .page {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+/* line 11, ../sass/components/_login.scss */
+.page-user #main-content {
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 /* line 136, ../sass/abstractions/_font-awesome.scss */
 #search-block-form input[type="text"]:before {
   content: "\f002";
@@ -188,6 +234,10 @@ h6 {
   background-image: none;
   background-position: 0% 0%;
   background-repeat: repeat; }
+
+/* line 2, ../sass/components/_tab_primary.scss */
+.tabs li {
+  padding: 0 10px 0 0; }
 
 /*
 body {
