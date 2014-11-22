@@ -84,6 +84,14 @@ body {
 img, media {
   max-width: 100%; }
 
+/* line 1, ../sass/base/_mothership_overrides.scss */
+header[role="banner"] {
+  border-bottom: 0px solid white; }
+
+/* line 5, ../sass/base/_mothership_overrides.scss */
+nav[role="navigation"] {
+  border-bottom: 1px solid #eee; }
+
 /* line 2, ../sass/base/_system_overrides.scss */
 ul.primary {
   border-bottom: 0px solid white;
@@ -259,6 +267,37 @@ h6 {
 .page-user ul.primary li a.active {
   font-weight: normal;
   color: #18316a; }
+/* line 52, ../sass/components/_login.scss */
+.page-user .form-required {
+  padding: 24px 0 0 0; }
+/* line 56, ../sass/components/_login.scss */
+.page-user .form-actions {
+  padding-top: 24px; }
+/* line 59, ../sass/components/_login.scss */
+.page-user input[type="submit"] {
+  display: block;
+  width: 230px;
+  margin: auto;
+  border: 0px;
+  padding: 8px 0 4px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #18316a;
+  font-size: 18px; }
+/* line 72, ../sass/components/_login.scss */
+.page-user input[type="text"],
+.page-user input[type="password"] {
+  display: block;
+  width: 265px;
+  margin: 0 auto;
+  padding: 19px 0 19px 35px;
+  border: 1px solid #c4c4c4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 18px; }
 
 /* line 136, ../sass/abstractions/_font-awesome.scss */
 #search-block-form input[type="text"]:before {

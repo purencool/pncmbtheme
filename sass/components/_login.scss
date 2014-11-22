@@ -48,4 +48,36 @@
     font-weight:normal;
     color:$aMActive;
   }
+
+  .form-required {
+    padding:24px 0 0 0;
+
+  }
+  .form-actions {
+    padding-top:24px;
+  }
+  input[type="submit"] {
+    display:block;
+    width:230px;
+    margin: auto;
+    border:0px;
+    padding:8px 0 4px 0;
+    @include border-radius(5px);
+    color:$colorMInput;
+    background-color:$backgroundMInput;
+    font-size:18px;
+
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    display:block;
+    width:265px;
+    margin:0 auto;
+    padding:19px 0 19px 35px;
+    border:1px solid $borderOne;
+    @include border-radius(5px);
+    font-size:18px;
+
+  }
 }

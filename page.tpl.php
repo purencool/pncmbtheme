@@ -40,9 +40,7 @@
 
 </header>
 <?php if ($page['navigation']): ?>
-<nav class="navigation">
   <?php print render($page['navigation']); ?>
-</nav>
 <?php endif; ?>
 <div class="page">
 
