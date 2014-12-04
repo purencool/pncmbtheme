@@ -27,8 +27,12 @@ ul.primary li.active a {
 }
 
 
-
 //-- system form overrides
 .marker, .form-required {
   color: $textColor;
+}
+.form-item,
+.form-actions {
+  margin-top: 0;
+  margin-bottom: 0;
 }

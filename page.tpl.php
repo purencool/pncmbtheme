@@ -40,7 +40,9 @@
 
 </header>
 <?php if ($page['navigation']): ?>
-  <?php print render($page['navigation']); ?>
+  <div class="navigation-region">
+    <?php print render($page['navigation']); ?>
+  </div>
 <?php endif; ?>
 <div class="page">
 

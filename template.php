@@ -21,6 +21,8 @@ function pncmbtheme_preprocess_page(&$vars,$hook) {
    drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:400,700','external');
 
 }
+
+
 //*/
 /*
 function NEWTHEME_preprocess_region(&$vars,$hook) {

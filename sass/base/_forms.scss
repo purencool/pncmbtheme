@@ -1,8 +1,21 @@
-input[type="submit"] {
+input[type="submit"],
+input[type="text"],
+input[type="password"] {
+  display:block;
+  @include border-radius(5px);
+  font-size:18px;
+}
 
+input[type="submit"] {
+  border:0px;
+  padding:4px;
+  color:$colorMInput;
+  border:0px;
+  background-color:$backgroundMInput;
 }
 
 input[type="text"],
 input[type="password"] {
-
+  padding:4px;
+  border:1px solid $borderOne;
 }
