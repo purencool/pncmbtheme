@@ -12,6 +12,7 @@ $gutters: 1/4;
  *  Break Points Varibles
  */
 /** Small Smart phone width **/
+/** Medium smart phone width **/
 /** Smart phone width **/
 /** Large smart phone width **/
 /** Tablet width **/
@@ -114,10 +115,6 @@ img, media {
 header[role="banner"] {
   border-bottom: 0px solid white; }
 
-/* line 5, ../sass/base/_mothership_overrides.scss */
-nav[role="navigation"] {
-  border-bottom: 1px solid #eee; }
-
 /* line 2, ../sass/base/_system_overrides.scss */
 ul.primary {
   border-bottom: 0px solid white;
@@ -163,25 +160,29 @@ body {
 
 /* line 10, ../sass/base/_typography.scss */
 a {
-  color: orange; }
+  color: #18316a; }
   /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
-    color: orange; }
+    color: #18316a; }
   /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
-    color: orange; }
+    color: #18316a; }
   /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
-    color: orange; }
+    color: #18316a; }
   /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
-    color: orange; }
+    color: #18316a; }
 
-/* line 14, ../sass/base/_typography.scss */
+/* line 11, ../sass/base/_typography.scss */
+.active, .active-trail {
+  font-weight: normal; }
+
+/* line 18, ../sass/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   color: orange;
   font-size: 25px; }
-  /* line 17, ../sass/base/_typography.scss */
+  /* line 21, ../sass/base/_typography.scss */
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: orange; }
     /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
@@ -238,8 +239,12 @@ h6 {
   display: none; }
 
 /* line 1, ../sass/components/_header.scss */
-header[role="banner"] {
-  padding-top: 25px; }
+hgroup {
+  display: none; }
+
+/* line 5, ../sass/components/_header.scss */
+.siteinfo {
+  padding: 15px 0 0 30px; }
 
 /* line 2, ../sass/components/_login.scss */
 .page-user .siteinfo {
@@ -290,7 +295,7 @@ header[role="banner"] {
     display: block;
     width: 100%;
     padding: 10px 0 10px 0;
-    color: white;
+    color: #b0b0b0;
     background-color: #c4c4c4;
     font-size: 18px;
     text-align: center; }
@@ -333,21 +338,34 @@ header[role="banner"] {
     border: 1px solid #c4c4c4; }
 
 /* line 2, ../sass/components/_navigation.scss */
-nav[role="navigation"] {
+.navigation-region nav[role="navigation"] {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: black;
+  top: 40px;
+  left: 9px;
+  width: 25px;
   height: 25px; }
 
-/* line 11, ../sass/components/_navigation.scss */
-#mobile-menu-inner {
-  top: 24px !important; }
+/* line 10, ../sass/components/_navigation.scss */
+#collapsed-menu-button {
+  background-color: white;
+  border: 0px solid white;
+  border-radius: 0px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0; }
 
-/* line 14, ../sass/components/_navigation.scss */
+/* line 19, ../sass/components/_navigation.scss */
+body #mobile-menu-wrapper #mobile-menu-inner {
+  top: 85px !important; }
+
+/* line 22, ../sass/components/_navigation.scss */
 .mobile-menu-button {
-  background-color: red; }
+  display: block;
+  font-size: 25px;
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+  color: #b0b0b0; }
   /* line 1904, ../sass/abstractions/_font-awesome.scss */
   .mobile-menu-button:before {
     content: "\f0c9";
@@ -372,6 +390,25 @@ nav[role="navigation"] {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
+
+/* line 32, ../sass/components/_navigation.scss */
+#mobile-menu li, .mobile-menu li {
+  border: 0px solid #18316a; }
+
+/* line 36, ../sass/components/_navigation.scss */
+.mobile-menu-slide li a,
+.mobile-menu-slide li a:focus,
+.mobile-menu-slide li a:visited {
+  display: block;
+  padding: 12px 5% 12px 5% !important;
+  color: #b0b0b0;
+  background-color: #18316a;
+  font-size: 20px; }
+
+/* line 46, ../sass/components/_navigation.scss */
+.mobile-menu-slide li a.active-trail,
+.mobile-menu-slide li a:hover {
+  color: white; }
 
 /* line 4, ../sass/components/_search.scss */
 #search-block-form input[type="text"] {

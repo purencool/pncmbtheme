@@ -1,24 +1,93 @@
 
-nav[role="navigation"] {
+.navigation-region nav[role="navigation"] {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: $backgroundMNav;
+  top: 40px;
+  left: 9px;
+  width: 25px;
   height:25px;
 }
 
-#mobile-menu-inner {
-  top: 24px !important;
+#collapsed-menu-button {
+   background-color: $aMHover;
+   border: 0px solid $aMHover;
+   border-radius:0px;
+   cursor: pointer;
+   margin:0;
+   padding:0;
+}
+
+body #mobile-menu-wrapper #mobile-menu-inner {
+  top: 85px !important;
 }
 .mobile-menu-button {
- @include icon-mobile-menu;
- background-color:red;
+  display:block;
+  @include icon-mobile-menu;
+  font-size:25px;
+  height:25px;
+  width:25px;
+  overflow:hidden;
+  color:$aMNormal;
+}
+
+#mobile-menu li, .mobile-menu li {
+  border: 0px solid $aMBackGround;
+}
+
+.mobile-menu-slide li a,
+.mobile-menu-slide li a:focus,
+.mobile-menu-slide li a:visited {
+  display:block;
+  padding:12px 5% 12px 5% !important;
+  color:$a2MNormal;
+  background-color:$aMBackGround;
+  font-size:20px;
+}
+
+.mobile-menu-slide li a.active-trail,
+.mobile-menu-slide li a:hover {
+  color:$a2MHover;
+}
+
+
+@include breakpoint($largeSmartPhone) {
+  .navigation-region nav[role="navigation"] {
+    position:inherit;
+    background: $backgroundNav;
+  }
 }
 
 @include breakpoint($largeSmartPhone) {
-  nav[role="navigation"] {
-    position:inherit;
-    background: $backgroundNav;
+  .navigation-region nav[role="navigation"] {
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height:40px;
+  }
+
+  .navigation-region  ul{
+    float:left;
+    height:40px;
+    margin:0;
+    padding:30px 0 30px 13px;
+  }
+  .navigation-region  ul li {
+    float:left;
+    padding-left:30px;
+  }
+  .navigation-region  ul li a{
+    display:block;
+    width:140px;
+    padding:10px 0px 10px 0;
+    font-size:20px;
+    background-color:$aMBackGround;
+    color:$aMNormal;
+    text-align:center;
+    @include border-radius(5px);
+  }
+
+  .navigation-region  ul li a.active-trail,
+  .navigation-region  ul li a:hover {
+    color:$a2MHover;
   }
 }

@@ -8,6 +8,10 @@ body {
 }
 
 a {  @include link-colors($aNormal,$aHover,$aActive,$aVisited,$aFocus);}
+.active, .active-trail {
+  font-weight: normal;
+}
+
 
 //-- Default comment out if not going to use it
 //*
