@@ -1,4 +1,27 @@
-#search-block-form { input[type="text"] { @include icon-search; }}
+
+
 #search-block-form {
-  
+  input[type="text"] {
+    width:70%;
+    padding:4px;
+  }
+  input[type="submit"] {
+    padding:4px;
+  }
+}
+
+
+.page-user {
+  #user-login {
+
+  }
+}
+
+@include breakpoint($smartPhone) {
+  input[type="text"] {
+    width:inherit;
+  }
+  input[type="submit"] {
+    width:inherit;
+  }
 }

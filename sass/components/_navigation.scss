@@ -11,7 +11,10 @@ nav[role="navigation"] {
 #mobile-menu-inner {
   top: 24px !important;
 }
-
+.mobile-menu-button {
+ @include icon-mobile-menu;
+ background-color:red;
+}
 
 @include breakpoint($largeSmartPhone) {
   nav[role="navigation"] {

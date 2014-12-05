@@ -9,7 +9,9 @@ function NEWTHEME_preprocess_html(&$vars) {
 }
 */
 //*
-function pncmbtheme_preprocess_page(&$vars,$hook) {
+
+
+function pncmbtheme_preprocess_html(&$vars,$hook) {
   //typekit
   //drupal_add_js('http://use.typekit.com/XXX.js', 'external');
   //drupal_add_js('try{Typekit.load();}catch(e){}', array('type' => 'inline'));
@@ -18,8 +20,7 @@ function pncmbtheme_preprocess_page(&$vars,$hook) {
   //drupal_add_css('http://cloud.webtype.com/css/CXXXX.css','external');
 
   //googlefont
-   drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:400,700','external');
-
+  drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:400,700','external');
 }
 
 

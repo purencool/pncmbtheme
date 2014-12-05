@@ -11,6 +11,7 @@ $gutters: 1/4;
 /**
  *  Break Points Varibles
  */
+/** Small Smart phone width **/
 /** Smart phone width **/
 /** Large smart phone width **/
 /** Tablet width **/
@@ -45,8 +46,8 @@ body {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../fonts/fontawesome-webfont.eot?v=3.0.1");
-  src: url("../../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype"), url("../../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=3.0.1");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*  Font Awesome styles
@@ -102,7 +103,8 @@ input[type="submit"] {
 input[type="text"],
 input[type="password"] {
   padding: 4px;
-  border: 1px solid #c4c4c4; }
+  border: 1px solid #c4c4c4;
+  width: 70%; }
 
 /* line 1, ../sass/base/_media.scss */
 img, media {
@@ -313,32 +315,34 @@ header[role="banner"] {
   font-weight: normal;
   color: #18316a; }
 
-/* line 3, ../sass/components/_loginform.scss */
-.page-user #user-login .form-required {
-  padding: 24px 0 0 0; }
-/* line 7, ../sass/components/_loginform.scss */
-.page-user #user-login .form-actions {
-  padding-top: 24px; }
-/* line 11, ../sass/components/_loginform.scss */
-.page-user #user-login input[type="submit"] {
-  width: 230px;
-  margin: auto;
-  padding: 8px 0 4px 0; }
-/* line 17, ../sass/components/_loginform.scss */
-.page-user #user-login input[type="text"],
-.page-user #user-login input[type="password"] {
-  width: 265px;
-  margin: 0 auto;
-  padding: 19px 0 19px 35px;
-  border: 1px solid #c4c4c4; }
-/* line 26, ../sass/components/_loginform.scss */
-.page-user #search-block-form input[type="text"] {
-  width: inherit;
-  padding: 4px; }
-/* line 30, ../sass/components/_loginform.scss */
-.page-user #search-block-form input[type="submit"] {
-  width: inherit;
-  padding: 4px; }
+/* line 2, ../sass/components/_loginform.scss */
+.page-user #user-login {
+  /* Break Point */ }
+  /* line 3, ../sass/components/_loginform.scss */
+  .page-user #user-login .form-required {
+    padding: 24px 0 0 0; }
+  /* line 7, ../sass/components/_loginform.scss */
+  .page-user #user-login .form-actions {
+    padding-top: 24px; }
+  /* line 11, ../sass/components/_loginform.scss */
+  .page-user #user-login input[type="submit"] {
+    margin: auto;
+    width: 130px;
+    padding: 8px 0 4px 0; }
+  /* line 17, ../sass/components/_loginform.scss */
+  .page-user #user-login input[type="text"],
+  .page-user #user-login input[type="password"] {
+    margin: 0 auto;
+    padding: 19px 0 19px 35px;
+    border: 1px solid #c4c4c4; }
+  @media (min-width: 480px) {
+    /* line 27, ../sass/components/_loginform.scss */
+    .page-user #user-login input[type="submit"] {
+      width: 230px; }
+    /* line 31, ../sass/components/_loginform.scss */
+    .page-user #user-login input[type="text"],
+    .page-user #user-login input[type="password"] {
+      width: 265px; } }
 
 /* line 2, ../sass/components/_navigation.scss */
 nav[role="navigation"] {
@@ -353,36 +357,55 @@ nav[role="navigation"] {
 #mobile-menu-inner {
   top: 24px !important; }
 
+/* line 14, ../sass/components/_navigation.scss */
+.mobile-menu-button {
+  background-color: red; }
+  /* line 1904, ../sass/abstractions/_font-awesome.scss */
+  .mobile-menu-button:before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    padding-right: 5px;
+    text-decoration: none;
+    /* sprites.less reset */
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat; }
+
 @media (min-width: 710px) {
-  /* line 17, ../sass/components/_navigation.scss */
+  /* line 20, ../sass/components/_navigation.scss */
   nav[role="navigation"] {
     position: inherit;
     background: white; } }
-/* line 136, ../sass/abstractions/_font-awesome.scss */
-#search-block-form input[type="text"]:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  padding-right: 5px;
-  text-decoration: none;
-  /* sprites.less reset */
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  width: auto;
-  height: auto;
-  margin-top: 0;
-  line-height: normal;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat; }
+/* line 4, ../sass/components/_search.scss */
+#search-block-form input[type="text"] {
+  width: 70%;
+  padding: 4px; }
+/* line 8, ../sass/components/_search.scss */
+#search-block-form input[type="submit"] {
+  padding: 4px; }
 
+@media (min-width: 480px) {
+  /* line 21, ../sass/components/_search.scss */
+  input[type="text"] {
+    width: inherit; }
+
+  /* line 24, ../sass/components/_search.scss */
+  input[type="submit"] {
+    width: inherit; } }
 /* line 2, ../sass/components/_tab_primary.scss */
 .tabs li {
   padding: 0; }

@@ -9,27 +9,29 @@
     }
 
     input[type="submit"] {
-      width:230px;
       margin: auto;
+      width:130px;
       padding:8px 0 4px 0;
     }
 
     input[type="text"],
     input[type="password"] {
-      width:265px;
       margin:0 auto;
       padding:19px 0 19px 35px;
       border:1px solid $borderOne;
     }
-  }
-  #search-block-form {
-    input[type="text"] {
-      width:inherit;
-      padding:4px;
-    }
-    input[type="submit"] {
-      width:inherit;
-      padding:4px;
+
+
+    /* Break Point */
+   @include breakpoint($smartPhone) {
+      input[type="submit"] {
+        width:230px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width:265px;
+      }
     }
   }
 }
