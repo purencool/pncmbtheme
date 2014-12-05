@@ -1,6 +1,21 @@
 .page-user {
-  .siteinfo {
+  .header-region,
+  .navigation-region {
     display:none;
+  }
+  .siteinfo {
+    figure {
+      a {
+        display:block;
+        width:100px;
+        height:20px;
+        img {display:none;}
+      }
+      a:before {
+        content:  "Home";
+        font-size:14px;
+      }
+    }
   }
   .page {
     position: absolute;
