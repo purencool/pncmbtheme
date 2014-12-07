@@ -19,6 +19,10 @@ $gutters: 1/4;
 /** Small Desktop width **/
 /** Desktop width **/
 /** Desktop width **/
+/* line 1, ../sass/layouts/_page.scss */
+.page {
+  clear: both; }
+
 /* line 3, ../sass/layouts/_scaffolding.scss */
 body {
   margin: 0; }
@@ -442,31 +446,25 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 @media (min-width: 710px) {
   /* line 53, ../sass/components/_navigation.scss */
   .navigation-region nav[role="navigation"] {
-    position: inherit;
-    background: white; } }
-@media (min-width: 710px) {
-  /* line 60, ../sass/components/_navigation.scss */
-  .navigation-region nav[role="navigation"] {
-    position: inherit;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: 40px; }
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: inherit; }
 
-  /* line 68, ../sass/components/_navigation.scss */
-  .navigation-region ul {
+  /* line 61, ../sass/components/_navigation.scss */
+  .navigation-region ul.menu {
     float: left;
-    height: 40px;
-    margin: 0;
-    padding: 30px 0 30px 13px; }
+    padding: 30px 0 30px 0;
+    margin: 0; }
 
-  /* line 74, ../sass/components/_navigation.scss */
-  .navigation-region ul li {
+  /* line 67, ../sass/components/_navigation.scss */
+  .navigation-region ul.menu li {
     float: left;
     padding-left: 30px; }
 
-  /* line 78, ../sass/components/_navigation.scss */
-  .navigation-region ul li a {
+  /* line 71, ../sass/components/_navigation.scss */
+  .navigation-region ul.menu li a {
     display: block;
     width: 140px;
     padding: 10px 0px 10px 0;
@@ -478,9 +476,9 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     -webkit-border-radius: 5px;
     border-radius: 5px; }
 
-  /* line 89, ../sass/components/_navigation.scss */
-  .navigation-region ul li a.active-trail,
-  .navigation-region ul li a:hover {
+  /* line 82, ../sass/components/_navigation.scss */
+  .navigation-region ul.menu li a.active-trail,
+  .navigation-region ul.menu li a:hover {
     color: white; } }
 /* line 4, ../sass/components/_search.scss */
 #search-block-form input[type="text"] {

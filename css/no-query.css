@@ -19,6 +19,10 @@ $gutters: 1/4;
 /** Small Desktop width **/
 /** Desktop width **/
 /** Desktop width **/
+/* line 1, ../sass/layouts/_page.scss */
+.page {
+  clear: both; }
+
 /* line 3, ../sass/layouts/_scaffolding.scss */
 body {
   margin: 0; }
