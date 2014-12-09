@@ -1,6 +1,9 @@
 .page-user {
+  #user-pass,
+  #user-register-form,
   #user-login {
     .form-required {
+      clear:both;
       padding:24px 0 0 0;
     }
 
@@ -24,13 +27,29 @@
 
     /* Break Point */
    @include breakpoint($smartPhone) {
+      input[type="text"],
+      input[type="password"] {
+        width:265px;
+      }
       input[type="submit"] {
         width:230px;
+      }
+    }
+
+    @include breakpoint($largeSmartPhone) {
+      #user-login {
+        clear:both;
       }
 
       input[type="text"],
       input[type="password"] {
-        width:265px;
+        width:425px;
+      }
+
+      input[type="submit"] {
+        width:120px;
+        float: right;
+        margin-right: 100px;
       }
     }
   }

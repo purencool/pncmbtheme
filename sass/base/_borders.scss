@@ -1,0 +1,8 @@
+@mixin borderDefault() {
+  @include borderDefaultAbstraction(1px, solid, $borderOne, 10px);
+}
+
+
+@mixin largestBorder() {
+  @include largestBorderAbstraction(1px, solid, $borderOne, 100px);
+}

@@ -6,14 +6,16 @@ hgroup {
   padding:15px 0 0 30px;
 }
 
-@include breakpoint($largeSmartPhone) {
-  .siteinfo {
-    padding-top:8px;
-  }
-}
-
 @include breakpoint($mediumSmartPhone) {
   .siteinfo {
     padding-top:0px;
+  }
+}
+
+
+
+@include breakpoint($largeSmartPhone) {
+  .siteinfo {
+    padding-top:8px;
   }
 }

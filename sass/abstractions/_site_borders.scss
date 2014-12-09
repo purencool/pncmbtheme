@@ -1,0 +1,41 @@
+@mixin borderDefaultAbstraction($width, $type, $color, $rounded:"") {
+  border: $width $type $color;
+  @if  $rounded != "" {
+     @include border-radius($rounded);
+  }
+}
+
+@mixin largestBorderAbstraction($width, $type, $color, $rounded:"") {
+  border: $width $type $color;
+  @if  $rounded != "" {
+    @include border-radius($rounded);
+  }
+}
+
+
+/*
+@mixin borderOne($width, $type, $color, $rounded:"") {
+  border: $width $type $color;
+  border: $width $type $color;
+  @if  $rounded != "" {
+    @include border-radius($rounded);
+  }
+}
+
+
+@mixin borderTwo($width, $type, $color, $rounded:"") {
+  border: $width $type $color;
+  border: $width $type $color;
+  @if  $rounded != "" {
+    @include border-radius($rounded);
+  }
+}
+
+@mixin borderThree($width, $type, $color, $rounded:"") {
+  border: $width $type $color;
+  border: $width $type $color;
+  @if  $rounded != "" {
+    @include border-radius($rounded);
+  }
+}
+//*/

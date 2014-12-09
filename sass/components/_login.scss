@@ -38,7 +38,6 @@
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    //height:
   }
 
   .page-user #main-content:after {
@@ -72,5 +71,43 @@
   ul.primary li a.active {
     font-weight:normal;
     color:$aMActive;
+  }
+
+
+  @include breakpoint($largeSmartPhone) {
+    #main-content {
+      width: 680px;
+      height: 610px;
+      @include largestBorder;
+      padding-top:65px;
+
+      .tabs ul:after {
+        float: left;
+        content: "Sign in";
+        width: 100%;
+        font-size: 29px;
+        color: $aNormal;
+      }
+
+    }
+
+    ul.primary {
+      width:460px;
+      margin:0 auto;
+    }
+
+    ul.primary li {
+      float:left;
+      width:auto;
+      padding-bottom:83px;
+      padding-right: 22px;
+      a {
+        background-color:$bodyBackground;
+        @include link-colors($aNormal,$aHover,$aActive,$aVisited,$aFocus);
+      }
+    }
+    ul.primary li:last-child {
+      padding-right: 0px;
+    }
   }
 }
