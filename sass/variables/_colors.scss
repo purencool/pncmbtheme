@@ -22,15 +22,16 @@ $colorMInput:white;
 $backgroundMInput:#18316a;
 $colorMNav:white;
 $backgroundMNav:black;
-
-
+$colorMButtons:white;
+$backgroundMButtons:black;
 
 //-- Input desktop colors
 $colorInput:white;
 $backgroundInput:#18316a;
 $colorNav:white;
 $backgroundNav:white;
-
+$colorButtons:#18316a;
+$backgroundButtons:#c4c4c4;
 
 
 
@@ -63,6 +64,24 @@ $a2MHover:white;
 $a2MActive:white;
 $a2MVisited:#b0b0b0;
 $a2MFocus:#b0b0b0;
+
+
+//-- Login users primary tabs mobile
+$tabsMPrimaryNormal:#b0b0b0;
+$tabsMPrimaryHover:white;
+$tabsMPrimaryActive:#18316a;
+$tabsMPrimaryVisited:#b0b0b0;
+$tabsMPrimaryFocus:white;
+$tabsMPrimaryBackGround:#c4c4c4;
+
+
+//-- Login users primary tabs desktop
+$tabsPrimaryNormal:black;
+$tabsPrimaryHover:black;
+$tabsPrimaryActive:#18316a;
+$tabsPrimaryVisited:black;
+$tabsPrimaryFocus:black;
+$tabsPrimaryBackGround:white;
 
 
 //-- H1, H1 A

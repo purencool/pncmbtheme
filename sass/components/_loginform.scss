@@ -14,7 +14,7 @@
     input[type="submit"] {
       margin: auto;
       width:130px;
-      padding:8px 0 4px 0;
+      padding:8px 0 8px 0;
     }
 
     input[type="text"],
@@ -47,9 +47,12 @@
       }
 
       input[type="submit"] {
-        width:120px;
+        width:auto;
+        color:$colorButtons;
+        background-color:$backgroundButtons;
+        padding:17px 14px 17px 14px;
         float: right;
-        margin-right: 100px;
+        margin-right: 96px;
       }
     }
   }

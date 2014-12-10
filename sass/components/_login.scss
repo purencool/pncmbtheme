@@ -62,8 +62,14 @@
       display:block;
       width:100%;
       padding:10px 0 10px 0;
-      @include link-colors($aMNormal,$aMHover,$aMActive,$aMVisited,$aMFocus);
-      background-color:$backgroundColorLinkOne;
+      @include link-colors(
+        $tabsMPrimaryNormal,
+        $tabsMPrimaryHover,
+        $tabsMPrimaryActive,
+        $tabsMPrimaryVisited ,
+        $tabsMPrimaryFocus
+      );
+      background-color:$tabsMPrimaryBackGround;
       font-size:$mobileSLinkHeight;
       text-align:center;
     }
@@ -100,10 +106,21 @@
       float:left;
       width:auto;
       padding-bottom:83px;
-      padding-right: 22px;
+      padding-right: 19px;
       a {
         background-color:$bodyBackground;
-        @include link-colors($aNormal,$aHover,$aActive,$aVisited,$aFocus);
+        @include link-colors(
+          $tabsPrimaryNormal,
+          $tabsPrimaryHover,
+          $tabsPrimaryActive,
+          $tabsPrimaryVisited,
+          $tabsPrimaryFocus
+        );
+
+      }
+      a.active {
+        color:$tabsPrimaryActive;
+        font-weight:600;
       }
     }
     ul.primary li:last-child {

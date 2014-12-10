@@ -380,7 +380,7 @@ hgroup {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .page-user ul.primary li a:active {
       color: #18316a; }
-/* line 71, ../sass/components/_login.scss */
+/* line 77, ../sass/components/_login.scss */
 .page-user ul.primary li a.active {
   font-weight: normal;
   color: #18316a; }
@@ -407,7 +407,7 @@ hgroup {
   .page-user #user-login input[type="submit"] {
     margin: auto;
     width: 130px;
-    padding: 8px 0 4px 0; }
+    padding: 8px 0 8px 0; }
   /* line 20, ../sass/components/_loginform.scss */
   .page-user #user-pass input[type="text"],
   .page-user #user-pass input[type="password"],
