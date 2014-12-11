@@ -81,18 +81,40 @@
 
 
   @include breakpoint($largeSmartPhone) {
+    .page  > div >  h1 {
+        width: 314px;
+        height: 89px;
+        background: url("../images/mobile/mobile-logo.jpg") no-repeat;
+        background-size: cover;
+    }
+
     #main-content {
       width: 680px;
       height: 610px;
       @include largestBorder;
       padding-top:65px;
 
-      .tabs ul:after {
-        float: left;
-        content: "Sign in";
-        width: 100%;
+
+     form div:first-child:before {
+        float:left;
+        padding-left:100px;
+        padding-bottom:25px;
+        width:460px;
         font-size: 29px;
         color: $aNormal;
+      }
+
+
+      #user-login div:first-child:before {
+        content: "Sign in";
+      }
+
+      #user-register-form #edit-account div:first-child:before {
+        content: "Create account";
+      }
+
+      #user-pass div:first-child:before {
+        content: "New password";
       }
 
     }
@@ -106,7 +128,7 @@
       float:left;
       width:auto;
       padding-bottom:83px;
-      padding-right: 19px;
+      padding-right: 18px;
       a {
         background-color:$bodyBackground;
         @include link-colors(
