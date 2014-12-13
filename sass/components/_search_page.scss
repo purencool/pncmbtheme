@@ -1,0 +1,15 @@
+.page-search {
+  .breadcrumb {
+    display:none;
+  }
+  #search-form {
+    label { display:none;}
+    input[type="text"] {
+      float:left;
+      margin-right:10px;
+    }
+    input[type="submit"] {
+      padding:5px;
+    }
+  }
+}

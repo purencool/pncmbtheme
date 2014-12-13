@@ -1,27 +1,23 @@
 
-
 #search-block-form {
+  padding-top:20px;
+  width: 225px;
+  margin: 0 auto;
   input[type="text"] {
-    width:70%;
-    padding:4px;
+    width:180px;
   }
   input[type="submit"] {
-    padding:4px;
+    padding:6px;
+    border: 0;
+    font-size: 1.4em;
+    vertical-align: top;
+    font-family: 'FontAwesome';
   }
-}
 
-
-.page-user {
-  #user-login {
-
+  @include breakpoint($smartPhone) {
+    clear:left;
   }
-}
-
-@include breakpoint($smartPhone) {
-  input[type="text"] {
-    width:inherit;
-  }
-  input[type="submit"] {
-    width:inherit;
+  @include breakpoint($largeSmartPhone) {
+    float:right;
   }
 }

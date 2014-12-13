@@ -19,23 +19,25 @@ $gutters: 1/4;
  *  Break Points Varibles
  */
  /** Small Smart phone width **/
-$smallPhone :235px;
-
+$smallPhone :300px;
 
 /** Medium smart phone width **/
-$mediumSmartPhone :370px;
+$mediumSmartPhone :480px;
 
 /** Smart phone width **/
-$smartPhone :480px;
+$smartPhone :600px;
 
 /** Large smart phone width **/
-$largeSmartPhone:710px;
+$largeSmartPhone:768px;
 
 /** Tablet width **/
-$tablet:1010px;
+$tablet:960px;
+
+/** Small destop screen width **/
+$smallDesktop:1020px;
 
 /** Small Desktop width **/
-$smallDesktop:1190px;
+$mediumDesktop:1190px;
 
 /** Desktop width **/
 $desktop:1360px;

@@ -2,20 +2,22 @@ hgroup {
   display:none;
 }
 
-.siteinfo {
-  padding:15px 0 0 30px;
-}
 
-@include breakpoint($mediumSmartPhone) {
-  .siteinfo {
-    padding-top:0px;
+.siteinfo {
+  padding:0 0 0 34px;
+  figure {
+    padding:0px;
+    margin:0px;
+  }
+
+  @include breakpoint($largeSmartPhone) {
+    padding:0;
   }
 }
 
 
-
-@include breakpoint($largeSmartPhone) {
-  .siteinfo {
-    padding-top:8px;
+.header-region {
+  @include breakpoint($tablet) {
+    float: right;
   }
 }
