@@ -36,10 +36,11 @@
 
   #main-content {
     width: 100%;
-    height: 50%;
+    height: 75%;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+    padding-bottom:20px;
   }
 
   .page-user #main-content:after {

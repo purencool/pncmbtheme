@@ -12,6 +12,17 @@ function NEWTHEME_preprocess_html(&$vars) {
 
 
 function pncmbtheme_preprocess_html(&$vars,$hook) {
+  //-- Add js to a certain page
+  /*
+  $path = drupal_get_path_alias();
+  $site_path = base_path();
+  $pattern = "path-alias-eg-basic/*";
+  if (drupal_match_path($path, $pattern)) {
+    drupal_add_js('sites/all/libraries/path/to/js/file', 'file');
+    drupal_add_js(drupal_get_path('theme', 'pncmbtheme_com')'js/the-js-file.js', 'file');
+  }
+  //*/
+
   //typekit
   //drupal_add_js('http://use.typekit.com/XXX.js', 'external');
   //drupal_add_js('try{Typekit.load();}catch(e){}', array('type' => 'inline'));
@@ -22,6 +33,10 @@ function pncmbtheme_preprocess_html(&$vars,$hook) {
   //googlefont
   drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:400,700','external');
 }
+
+
+
+
 
 
 function pncmbtheme_form_alter(&$form, &$form_state, $form_id) {

@@ -102,7 +102,7 @@ settings[mothership_classes_form_description] = 1
 settings[mothership_form_required] = 1
 settings[mothership_form_labelwrap] = 0
 
-settings[mothership_classes_menu_wrapper] = 1
+settings[mothership_classes_menu_wrapper] = 0
 settings[mothership_classes_menu_items] = 0
 settings[mothership_classes_menu_items_firstlast] = 1
 settings[mothership_classes_menu_collapsed] = 0

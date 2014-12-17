@@ -389,32 +389,33 @@ hgroup {
 /* line 37, ../sass/components/_login.scss */
 .page-user #main-content {
   width: 100%;
-  height: 50%;
+  height: 75%;
   margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0; }
-/* line 45, ../sass/components/_login.scss */
+  right: 0;
+  padding-bottom: 20px; }
+/* line 46, ../sass/components/_login.scss */
 .page-user .page-user #main-content:after {
   content: ".";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both; }
-/* line 54, ../sass/components/_login.scss */
+/* line 55, ../sass/components/_login.scss */
 .page-user label, .page-user small {
   display: none; }
-/* line 55, ../sass/components/_login.scss */
+/* line 56, ../sass/components/_login.scss */
 .page-user ul.primary {
   padding-top: 5px; }
-/* line 59, ../sass/components/_login.scss */
+/* line 60, ../sass/components/_login.scss */
 .page-user ul.primary li {
   display: inherit;
   width: 100%;
   padding-bottom: 3px; }
-  /* line 63, ../sass/components/_login.scss */
+  /* line 64, ../sass/components/_login.scss */
   .page-user ul.primary li a {
     display: block;
     width: 100%;
@@ -435,7 +436,7 @@ hgroup {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .page-user ul.primary li a:active {
       color: #18316a; }
-/* line 79, ../sass/components/_login.scss */
+/* line 80, ../sass/components/_login.scss */
 .page-user ul.primary li a.active {
   font-weight: normal;
   color: #18316a; }
@@ -471,6 +472,7 @@ hgroup {
   .page-user #user-login input[type="text"],
   .page-user #user-login input[type="password"] {
     margin: 0 auto;
+    width: 200px;
     padding: 19px 0 19px 35px;
     border: 1px solid #c4c4c4; }
 
