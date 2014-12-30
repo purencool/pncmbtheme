@@ -23,6 +23,17 @@ function pncmbtheme_preprocess_html(&$vars,$hook) {
   }
   //*/
 
+  //*
+  $path = drupal_get_path_alias();
+  $site_path = base_path();
+  $pattern = "our-gallery";
+  if (drupal_match_path($path, $pattern)) {
+   drupal_add_js('sites/all/libraries/colorbox/jquery.colorbox-min.js', 'file');
+  }
+ //*/
+
+
+
   //typekit
   //drupal_add_js('http://use.typekit.com/XXX.js', 'external');
   //drupal_add_js('try{Typekit.load();}catch(e){}', array('type' => 'inline'));

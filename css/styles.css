@@ -304,6 +304,280 @@ h6 {
   a {  @include link-colors($h6Normal,$h6Hover,$h6Active,$h6Visited,$h6Focus);}
 }
 //*/
+/* line 2, ../sass/components/_basic_gallery.scss */
+.pnc-bg {
+  margin: 0px;
+  padding: 0px; }
+  /* line 6, ../sass/components/_basic_gallery.scss */
+  .pnc-bg div:first-child a:last-child {
+    display: block; }
+    /* line 8, ../sass/components/_basic_gallery.scss */
+    .pnc-bg div:first-child a:last-child span {
+      display: block;
+      width: 100%; }
+  /* line 15, ../sass/components/_basic_gallery.scss */
+  .pnc-bg div:last-child .bg-group {
+    display: none; }
+
+/**
+* Colorbox Core Style:
+* The following CSS is consistent between example themes and should not be altered.
+*/
+/**
+* Colorbox Core Style:
+* The following CSS is consistent between example themes and should not be altered.
+*/
+/* line 33, ../sass/components/_basic_gallery.scss */
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden; }
+
+/* line 40, ../sass/components/_basic_gallery.scss */
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+/* line 45, ../sass/components/_basic_gallery.scss */
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+/* line 48, ../sass/components/_basic_gallery.scss */
+#cboxContent {
+  position: relative; }
+
+/* line 51, ../sass/components/_basic_gallery.scss */
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+/* line 55, ../sass/components/_basic_gallery.scss */
+#cboxTitle {
+  margin: 0; }
+
+/* line 58, ../sass/components/_basic_gallery.scss */
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/**
+* These elements are buttons, and may need to have additional
+* styles reset to avoid unwanted base styles.
+*/
+/* line 69, ../sass/components/_basic_gallery.scss */
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  width: auto;
+  background: none;
+  cursor: pointer; }
+
+/**
+* Avoid outlines on :active (mouseclick),
+* but preserve outlines on :focus (tabbed navigating)
+*/
+/* line 82, ../sass/components/_basic_gallery.scss */
+#cboxPrevious:active, #cboxNext:active, #cboxClose:active, #cboxSlideshow:active {
+  outline: 0; }
+
+/* line 85, ../sass/components/_basic_gallery.scss */
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none; }
+
+/* line 92, ../sass/components/_basic_gallery.scss */
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0; }
+
+/* Reset box sizing to content-box if theme is using border-box. */
+/* line 99, ../sass/components/_basic_gallery.scss */
+#colorbox, #cboxContent, #cboxLoadedContent {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/**
+* Colorbox module default style:
+* The styles are ordered & tabbed in a way that represents
+* the nesting of the generated HTML.
+*/
+/* line 110, ../sass/components/_basic_gallery.scss */
+#cboxOverlay {
+  background: #000; }
+
+/* line 113, ../sass/components/_basic_gallery.scss */
+#colorbox {
+  outline: 0; }
+
+/* line 116, ../sass/components/_basic_gallery.scss */
+#cboxWrapper {
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 122, ../sass/components/_basic_gallery.scss */
+#cboxTopLeft {
+  width: 15px;
+  height: 15px; }
+
+/* line 126, ../sass/components/_basic_gallery.scss */
+#cboxTopCenter {
+  height: 15px; }
+
+/* line 129, ../sass/components/_basic_gallery.scss */
+#cboxTopRight {
+  width: 15px;
+  height: 15px; }
+
+/* line 133, ../sass/components/_basic_gallery.scss */
+#cboxBottomLeft {
+  width: 15px;
+  height: 10px; }
+
+/* line 137, ../sass/components/_basic_gallery.scss */
+#cboxBottomCenter {
+  height: 10px; }
+
+/* line 140, ../sass/components/_basic_gallery.scss */
+#cboxBottomRight {
+  width: 15px;
+  height: 10px; }
+
+/* line 144, ../sass/components/_basic_gallery.scss */
+#cboxMiddleLeft {
+  width: 15px; }
+
+/* line 147, ../sass/components/_basic_gallery.scss */
+#cboxMiddleRight {
+  width: 15px; }
+
+/* line 150, ../sass/components/_basic_gallery.scss */
+#cboxContent {
+  background: #fff;
+  overflow: hidden; }
+
+/* line 154, ../sass/components/_basic_gallery.scss */
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc; }
+
+/* line 158, ../sass/components/_basic_gallery.scss */
+#cboxLoadedContent {
+  margin-bottom: 28px; }
+
+/* line 161, ../sass/components/_basic_gallery.scss */
+#cboxTitle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 28px;
+  left: 0;
+  color: #535353;
+  width: 100%;
+  padding: 4px 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 173, ../sass/components/_basic_gallery.scss */
+#cboxCurrent {
+  position: absolute;
+  bottom: 4px;
+  left: 60px;
+  color: #949494; }
+
+/* line 179, ../sass/components/_basic_gallery.scss */
+.cboxSlideshow_on #cboxSlideshow {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  background: url(images/controls.png) no-repeat -75px -50px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 188, ../sass/components/_basic_gallery.scss */
+.cboxSlideshow_on #cboxSlideshow:hover {
+  background-position: -101px -50px; }
+
+/* line 191, ../sass/components/_basic_gallery.scss */
+.cboxSlideshow_off #cboxSlideshow {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  background: url(images/controls.png) no-repeat -25px -50px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 200, ../sass/components/_basic_gallery.scss */
+.cboxSlideshow_off #cboxSlideshow:hover {
+  background-position: -49px -50px; }
+
+/* line 203, ../sass/components/_basic_gallery.scss */
+#cboxPrevious {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(images/controls.png) no-repeat -75px 0px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 212, ../sass/components/_basic_gallery.scss */
+#cboxPrevious:hover {
+  background-position: -75px -25px; }
+
+/* line 215, ../sass/components/_basic_gallery.scss */
+#cboxNext {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  background: url(images/controls.png) no-repeat -50px 0px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 224, ../sass/components/_basic_gallery.scss */
+#cboxNext:hover {
+  background-position: -50px -25px; }
+
+/* line 227, ../sass/components/_basic_gallery.scss */
+#cboxLoadingOverlay {
+  background: #fff; }
+
+/* line 230, ../sass/components/_basic_gallery.scss */
+#cboxLoadingGraphic {
+  background: url(images/loading_animation.gif) no-repeat center center; }
+
+/* line 233, ../sass/components/_basic_gallery.scss */
+#cboxClose {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(images/controls.png) no-repeat -25px 0px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 242, ../sass/components/_basic_gallery.scss */
+#cboxClose:hover {
+  background-position: -25px -25px; }
+
 /* line 3, ../sass/components/_breadcrumb.scss */
 .page-user .breadcrumb {
   display: none; }
