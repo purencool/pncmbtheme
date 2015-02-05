@@ -1,4 +1,9 @@
 .page,
 header[role="banner"]  {
-  border: 0px solid $backgroundColorOne;
+  border: 0px solid $bodyBackground;
+}
+
+body.two-sidebars div[role="main"] {
+border-left: 0px solid $bodyBackground;
+border-right: 0px solid $bodyBackground;
 }

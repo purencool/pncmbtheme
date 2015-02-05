@@ -1,60 +1,69 @@
 .page-user {
-  #user-pass,
-  #user-register-form,
-  #user-login {
-    .form-required {
-      clear:both;
-      padding:24px 0 0 0;
-    }
+	.page {
+		padding:0px;
+	}
+	#user-pass,
+	#user-register-form,
+	#user-login {
+		clear: both;
+		width: 235px;
+		min-height: 225px;
+		margin: 0 auto;
+		.form-required {
+			clear:both;
+			padding:24px 0 0 0;
+		}
 
-    .form-actions {
-      padding-top:24px;
-    }
+		.form-actions {
+			padding-top:24px;
+		}
 
-    input[type="submit"] {
-      margin: auto;
-      width:130px;
-      padding:8px 0 8px 0;
-    }
+		input[type="submit"] {
+			margin: auto;
+			width:130px;
+			padding:8px 0 8px 0;
+			float: right;
+			margin:10px -1px  6px 0;
+		}
 
-    input[type="text"],
-    input[type="password"] {
-      margin:0 auto;
-      width: 200px;
-      padding:19px 0 19px 35px;
-      border:1px solid $borderOne;
-    }
+		input[type="text"],
+		input[type="password"] {
+			margin:0 auto;
+			width: 200px;
+			padding:19px 0 19px 35px;
+			border:1px solid $borderOne;
+		}
 
 
-    /* Break Point */
-   @include breakpoint($smartPhone) {
-      input[type="text"],
-      input[type="password"] {
-        width:265px;
-      }
-      input[type="submit"] {
-        width:230px;
-      }
-    }
+		/* Break Point */
+		@include breakpoint($smartPhone) {
+			input[type="text"],
+			input[type="password"] {
+				width:265px;
+			}
+			input[type="submit"] {
+				width:230px;
+			}
+		}
 
-    @include breakpoint($largeSmartPhone) {
-      #user-login {
-        clear:both;
-      }
+		@include breakpoint($largeSmartPhone) {
+			width: 465px;
+			margin: 0 auto;
+			min-height: 245px;
 
-      input[type="text"],
-      input[type="password"] {
-        width:425px;
-      }
+			input[type="text"],
+			input[type="password"] {
+				width:425px;
+			}
 
-      input[type="submit"] {
-        width:auto;
-        color:$colorButtons;
-        background-color:$backgroundButtons;
-        padding:17px 14px 17px 14px;
-        float: right;
-        margin-right: 106px;
-      }
-    }
-  }
+			input[type="submit"] {
+				width:auto;
+				color:$colorButtons;
+				background-color:$backgroundButtons;
+				padding:17px 14px 17px 14px;
+				float: right;
+				margin:10px 0  6px 0;
+			}
+		}
+	}
 }

@@ -1,23 +1,22 @@
-
 #search-block-form {
-  padding-top:20px;
-  width: 225px;
-  margin: 0 auto;
-  input[type="text"] {
-    width:180px;
-  }
-  input[type="submit"] {
-    padding:6px;
-    border: 0;
-    font-size: 1.4em;
-    vertical-align: top;
-    font-family: 'FontAwesome';
-  }
+	padding:20px 0 20px 0;
+	width: 225px;
+	margin: 0 auto;
+	input[type="text"] {
+		width:180px;
+	}
+	input[type="submit"] {
+		padding:5px;
+		border: 0;
+		font-size: 1.5em;
+		vertical-align: top;
+		font-family: 'FontAwesome';
+	}
+	clear:left;
+	@include breakpoint($smartPhone) {
+		clear:none;
+		float:right;
+		padding-top:32px;
+	}
 
-  @include breakpoint($smartPhone) {
-    clear:left;
-  }
-  @include breakpoint($largeSmartPhone) {
-    float:right;
-  }
 }

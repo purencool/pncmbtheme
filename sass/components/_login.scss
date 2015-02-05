@@ -1,6 +1,8 @@
 .page-user {
   .header-region,
-  .navigation-region {
+  .sidebar-first,
+  .sidebar-second,
+  .navigation {
     display:none;
   }
   .siteinfo {
@@ -100,7 +102,6 @@
 
      form div:first-child:before {
         float:left;
-        padding-left:106px;
         padding-bottom:25px;
         width:460px;
         font-size: 29px;

@@ -1,0 +1,8 @@
+.page-user div[role="main"] {
+	@include breakpoint($largeSmartPhone) {
+	  padding:10px;
+	}
+	
+}
+
+

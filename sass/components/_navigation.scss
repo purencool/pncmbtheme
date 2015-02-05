@@ -1,5 +1,5 @@
 
-.navigation-region nav[role="navigation"] {
+.navigation nav[role="navigation"] {
   position: absolute;
   top: 35px;
   left: 9px;
@@ -12,7 +12,7 @@
   }
 
   @include breakpoint($mediumSmartPhone) {
-    top: 50px;
+    top: 48px;
   }
 }
 
@@ -34,8 +34,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   display:block;
   @include icon-mobile-menu;
   font-size:25px;
-  height:25px;
-  width:25px;
+  height:24px;
+  width:24px;
   overflow:hidden;
   color:$aMNormal;
 }
@@ -61,7 +61,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 
 
 @include breakpoint($largeSmartPhone) {
-  .navigation-region nav[role="navigation"] {
+  .navigation nav[role="navigation"] {
     position:relative;
     top:auto;
     left:auto;
@@ -69,19 +69,19 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     height:inherit;
   }
 
-  .navigation-region  ul.menu{
+  .navigation  ul.menu{
     float:left;
     padding: 30px 0 30px 0;
     margin:0;
   }
 
-  .navigation-region  ul.menu li {
+  .navigation  ul.menu li {
       float: left;
       padding-right: 30px;
       margin: 0;
   }
 
-  .navigation-region  ul.menu li a{
+  .navigation  ul.menu li a{
     display:block;
     width:140px;
     padding:10px 0px 10px 0;
@@ -92,8 +92,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     @include border-radius(5px);
   }
 
-  .navigation-region  ul.menu li a.active-trail,
-  .navigation-region  ul.menu li a:hover {
+  .navigation  ul.menu li a.active-trail,
+  .navigation  ul.menu li a:hover {
     color:$a2MHover;
   }
 }
