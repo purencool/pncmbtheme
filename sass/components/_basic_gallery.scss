@@ -1,84 +1,92 @@
 //*
 .pnc-bg {
-  margin:0px;
-  padding:0px;
-  div:first-child {
-    float:left;
-    a:last-child{
-      display:block;
-      position:relative;
-      @include link-colors(white,white,white,white,white);
+	margin:0px;
+	padding:0px;
+	div:first-child {
+		float:left;
+		a:last-child{
+			display:block;
+			position:relative;
+			@include link-colors(white,white,white,white,white);
+			text-align:center;
+			font-weight: 700;
+			font-size: 3em;
+			-webkit-touch-callout: none !important;
 
-      text-align:center;
-      font-weight: 700;
-      font-size: 3em;
-      line-height: 55px;
-      -webkit-touch-callout: none !important;
+			@include breakpoint($mediumSmartPhone) {
+				overflow: hidden;
+				//-- image scaling
+				-moz-transition: all .5s;
+				-webkit-transition: all .5s;
+				transition: all .5s;
+				-moz-transform: scale(1,1);
+				-webkit-transform: scale(1,1);
+				transform: scale(1,1);
+			}
 
-      @include breakpoint($mediumSmartPhone) {
-        height:420px;
-        width: 420px;
-        overflow: hidden;
-        //-- image scaling
-        -moz-transition: all .5s;
-        -webkit-transition: all .5s;
-        transition: all .5s;
-        -moz-transform: scale(1,1);
-        -webkit-transform: scale(1,1);
-        transform: scale(1,1);
-      }
+			span {
+				display:none;
+				position:absolute;
+			}
+			.overlay {
+				top:0;
+				left:0;
+				height: 100%;
+				width: 100%;
+				opacity: 0.7;
+				filter: alpha(opacity=70);
+				background-color:$h1Normal;
+			}
+			.title {
+				top: 24%;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 2%;
+				font-size: .8em;
+				line-height: 98%;
 
-      span {
-       display:none;
-       position:absolute;
-      }
-      .overlay {
-        top:0;
-        left:0;
-        height: 100%;
-        width: 100%;
-        opacity: 0.7;
-        filter: alpha(opacity=70);
-        background-color:$h1Normal;
-      }
-
-      .title {
-        width: 240px;
-        height: 120px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-48%, -25%);
-      }
-
-      @include breakpoint($mediumSmartPhone) {
-        .title {
-          width: 300px;
-          height: 135px;
-          transform: translate(-48%, -46%);
-        }
-      }
-    }
-    @include breakpoint($mediumSmartPhone) {
-      a:hover {
-        img {
-          -ms-transform: scale(1.9,1.9);
-          -webkit-transform: scale(1.9,1.9);
-          transform: scale(1.9,1.9);
-          -webkit-user-select: none;
-          -webkit-touch-callout: none;
-        }
-      }
-    }
-  }
+			}
 
 
+			@include breakpoint($mediumSmartPhone) {
+				.title {
+					top: 35%;
 
+				}
+			}
+		}
 
-   div:last-child {
-    .bg-group {
-      display:none;
-    }
-  }
+		@include breakpoint($mediumSmartPhone) {
+			a:hover {
+				img {
+					-ms-transform: scale(1.9,1.9);
+					-webkit-transform: scale(1.9,1.9);
+					transform: scale(1.9,1.9);
+					-webkit-user-select: none;
+					-webkit-touch-callout: none;
+				}
+			}
+		}
+	}
+
+	@include breakpoint($mediumSmartPhone ) {
+
+		li
+		{
+			float:left;
+			width:33.33333%;
+		}	
+		div, a {
+			max-width:100%;
+		}
+	}
+
+	div:last-child {
+		.bg-group {
+			display:none;
+		}
+	}
 }
 
 //*/
@@ -94,75 +102,75 @@
 * The following CSS is consistent between example themes and should not be altered.
 */
 #colorbox, #cboxOverlay, #cboxWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
 }
 #cboxOverlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
 }
 #cboxMiddleLeft, #cboxBottomLeft {
-  clear: left;
+	clear: left;
 }
 #cboxContent {
-  position: relative;
+	position: relative;
 }
 #cboxLoadedContent {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 #cboxTitle {
-  margin: 0;
+	margin: 0;
 }
 #cboxLoadingOverlay, #cboxLoadingGraphic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 /**
 * These elements are buttons, and may need to have additional
 * styles reset to avoid unwanted base styles.
 */
 #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  overflow: visible;
-  width: auto;
-  background: none;
-  cursor: pointer;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	width: auto;
+	background: none;
+	cursor: pointer;
 }
 /**
 * Avoid outlines on :active (mouseclick),
 * but preserve outlines on :focus (tabbed navigating)
 */
 #cboxPrevious:active, #cboxNext:active, #cboxClose:active, #cboxSlideshow:active {
-  outline: 0;
+	outline: 0;
 }
 .cboxPhoto {
-  float: left;
-  margin: auto;
-  border: 0;
-  display: block;
-  max-width: none;
+	float: left;
+	margin: auto;
+	border: 0;
+	display: block;
+	max-width: none;
 }
 .cboxIframe {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: 0;
 }
 /* Reset box sizing to content-box if theme is using border-box. */
 #colorbox, #cboxContent, #cboxLoadedContent {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 /**
@@ -171,147 +179,147 @@
 * the nesting of the generated HTML.
 */
 #cboxOverlay {
-  background: #000;
+	background: #000;
 }
 #colorbox {
-  outline: 0;
+	outline: 0;
 }
 #cboxWrapper {
-  background: #fff;
+	background: #fff;
 }
 #cboxTopLeft {
-  //width: 15px;
-  //height: 15px;
+	//width: 15px;
+	//height: 15px;
 }
 #cboxTopCenter {
-  //height: 15px;
+	//height: 15px;
 }
 #cboxTopRight {
-  //width: 15px;
-  //height: 15px;
+	//width: 15px;
+	//height: 15px;
 }
 #cboxBottomLeft {
-  width: 15px;
-  height: 10px;
+	width: 15px;
+	height: 10px;
 }
 #cboxBottomCenter {
-  //height: 15px;
+	//height: 15px;
 }
 #cboxBottomRight {
-  width: 15px;
-  height: 10px;
+	width: 15px;
+	height: 10px;
 }
 #cboxMiddleLeft {
-  width: 15px;
+	width: 15px;
 }
 #cboxMiddleRight {
-  width: 15px;
+	width: 15px;
 }
 #cboxContent {
-  background: #fff;
-  overflow: hidden;
+	background: #fff;
+	overflow: hidden;
 }
 #cboxError {
-  padding: 50px;
-  border: 1px solid #ccc;
+	padding: 50px;
+	border: 1px solid #ccc;
 }
 #cboxLoadedContent {
-  margin-bottom: 28px;
-  margin-top: 28px;
+	margin-bottom: 28px;
+	margin-top: 28px;
 }
 #cboxTitle {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.7);
-  bottom: 28px;
-  left: 0;
-  color: #535353;
-  width: 100%;
-  padding: 4px 6px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.7);
+	bottom: 28px;
+	left: 0;
+	color: #535353;
+	width: 100%;
+	padding: 4px 6px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 #cboxCurrent {
-  position: absolute;
-  bottom: 4px;
-  left: 60px;
-  color: #949494;
+	position: absolute;
+	bottom: 4px;
+	left: 60px;
+	color: #949494;
 }
 .cboxSlideshow_on #cboxSlideshow {
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-  background: url(../images/gallery/controls.png) no-repeat -75px -50px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px;
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+	background: url(../images/gallery/controls.png) no-repeat -75px -50px;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
 }
 .cboxSlideshow_on #cboxSlideshow:hover {
-  background-position: -101px -50px;
+	background-position: -101px -50px;
 }
 .cboxSlideshow_off #cboxSlideshow {
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-  background: url(../images/gallery/controls.png) no-repeat -25px -50px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px;
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+	background: url(../images/gallery/controls.png) no-repeat -25px -50px;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
 }
 .cboxSlideshow_off #cboxSlideshow:hover {
-  background-position: -49px -50px;
+	background-position: -49px -50px;
 }
 #cboxPrevious {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url(../images/gallery/controls.png) no-repeat -75px 0px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: url(../images/gallery/controls.png) no-repeat -75px 0px;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
 }
 #cboxPrevious:hover {
-  background-position: -75px -25px;
+	background-position: -75px -25px;
 }
 #cboxNext {
-  position: absolute;
-  bottom: 0;
-  left: 27px;
-  background: url(../images/gallery/controls.png) no-repeat -50px 0px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px;
+	position: absolute;
+	bottom: 0;
+	left: 27px;
+	background: url(../images/gallery/controls.png) no-repeat -50px 0px;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
 }
 #cboxNext:hover {
-  background-position: -50px -25px;
+	background-position: -50px -25px;
 }
 #cboxLoadingOverlay {
-  background: #fff;
+	background: #fff;
 }
 #cboxLoadingGraphic {
-  background: url(../images/gallery/loading_animation.gif) no-repeat center center;
+	background: url(../images/gallery/loading_animation.gif) no-repeat center center;
 }
 #cboxClose {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(../images/gallery/controls.png) no-repeat -24px 2px;
-  width: 30px;
-  height: 30px;
-  -ms-transform: scale(1.09,1.09);
-  -webkit-transform: scale(1.09,1.09);
-  transform: scale(1.09,1.09);
-  margin-top: 30px;
-  text-indent: -9999px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/gallery/controls.png) no-repeat -24px 2px;
+	width: 30px;
+	height: 30px;
+	-ms-transform: scale(1.09,1.09);
+	-webkit-transform: scale(1.09,1.09);
+	transform: scale(1.09,1.09);
+	margin-top: 30px;
+	text-indent: -9999px;
 }
 #cboxClose:hover {
-  background-position: -25px -25px;
+	background-position: -25px -25px;
 }
 
 @include breakpoint($largeSmartPhone) {
-  #cboxLoadedContent .bg-group {
-    width: 700px;
-    margin: 0 auto;
-  }
+	#cboxLoadedContent .bg-group {
+		width: 700px;
+		margin: 0 auto;
+	}
 }
 //*/

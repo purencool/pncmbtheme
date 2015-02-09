@@ -1,87 +1,89 @@
-//*
-div[role="main"] {
-	//background-color: plum;
-	//@include grid-span(12, 1, $output-style: 'isolation');
-       article {padding:5px 0px 5px 0;}
-	
-	@include breakpoint($largeSmartPhone) {
-		@include grid-span(6, 4);
-		article {
-			padding:5px;
+
+@mixin contentThreeColumnDefault($elements:'') {
+	#{$elements} div[role="main"] {
+		article {padding:5px 0px 5px 0;}
+
+		@include breakpoint($largeSmartPhone) {
+			@include grid-span(6, 4);
+			article {
+				padding:5px;
+			}
+		}
+		@include breakpoint($tablet) {
+			@include grid-span(6, 4);
+		}
+		@include breakpoint($smallDesktop) {
+			@include grid-span(6, 4);
+		}
+		@include breakpoint($mediumDesktop) {
+			@include grid-span(6, 4);
+		}
+		@include breakpoint($desktop) {
+			@include grid-span(6, 4);
+		}
+		@include breakpoint($wideDesktop) {
+			@include grid-span(6, 4);
 		}
 	}
-	@include breakpoint($tablet) {
-		@include grid-span(6, 4);
+
+
+	#{$elements} .sidebar-first {
+		//background-color: orange;
+		@include grid-span(12, 1);
+
+
+		@include breakpoint($smartPhone) {
+			@include grid-span(6, 1);
+			padding:5px 0 5px 5px;
+		}
+		@include breakpoint($largeSmartPhone) {
+			@include grid-span(3, 1);
+		}
+		@include breakpoint($tablet) {
+			@include grid-span(3, 1);
+		}
+		@include breakpoint($smallDesktop) {
+			@include grid-span(3, 1);
+		}
+		@include breakpoint($mediumDesktop) {
+			@include grid-span(3, 1);
+		}
+		@include breakpoint($desktop) {
+			@include grid-span(3, 1);
+		}
+		@include breakpoint($wideDesktop) {
+			@include grid-span(3, 1);
+		}
 	}
-	@include breakpoint($smallDesktop) {
-		@include grid-span(6, 4);
-	}
-	@include breakpoint($mediumDesktop) {
-		@include grid-span(6, 4);
-	}
-	@include breakpoint($desktop) {
-		@include grid-span(6, 4);
-	}
-	@include breakpoint($wideDesktop) {
-		@include grid-span(6, 4);
+
+	#{$elements} .sidebar-second {
+		//background-color: blue;
+		@include grid-span(12, 1);
+		@include breakpoint($smartPhone) {
+			@include grid-span(6, 7);
+			padding:5px 0 5px 5px;
+		}
+		@include breakpoint($largeSmartPhone) {
+			@include grid-span(3, 10);
+		}
+		@include breakpoint($tablet) {
+			@include grid-span(3, 10);
+		}
+		@include breakpoint($smallDesktop) {
+			@include grid-span(3, 10);
+		}
+		@include breakpoint($mediumDesktop) {
+			@include grid-span(3, 10);
+		}
+		@include breakpoint($desktop) {
+			@include grid-span(3, 10);
+		}
+		@include breakpoint($wideDesktop) {
+			@include grid-span(3, 10);
+		}
 	}
 }
-
-
-.sidebar-first {
-	//background-color: orange;
-	@include grid-span(12, 1);
-
-	
-	@include breakpoint($smartPhone) {
-		 @include grid-span(6, 1);
-		 padding:5px 0 5px 5px;
-	}
-	@include breakpoint($largeSmartPhone) {
-              @include grid-span(3, 1);
-	}
-	@include breakpoint($tablet) {
-		@include grid-span(3, 1);
-	}
-	@include breakpoint($smallDesktop) {
-		@include grid-span(3, 1);
-	}
-	@include breakpoint($mediumDesktop) {
-		@include grid-span(3, 1);
-	}
-	@include breakpoint($desktop) {
-		@include grid-span(3, 1);
-	}
-	@include breakpoint($wideDesktop) {
-		@include grid-span(3, 1);
-	}
-}
-
-.sidebar-second {
-	//background-color: blue;
-	@include grid-span(12, 1);
-	@include breakpoint($smartPhone) {
-		@include grid-span(6, 7);
-		padding:5px 0 5px 5px;
-	}
-	@include breakpoint($largeSmartPhone) {
-		@include grid-span(3, 10);
-	}
-	@include breakpoint($tablet) {
-		@include grid-span(3, 10);
-	}
-	@include breakpoint($smallDesktop) {
-		@include grid-span(3, 10);
-	}
-	@include breakpoint($mediumDesktop) {
-		@include grid-span(3, 10);
-	}
-	@include breakpoint($desktop) {
-		@include grid-span(3, 10);
-	}
-	@include breakpoint($wideDesktop) {
-		@include grid-span(3, 10);
-	}
-}
+//*
+@include contentThreeColumnDefault();
 //*/
 

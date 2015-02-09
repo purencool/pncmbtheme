@@ -1,6 +1,22 @@
-/*
-body div[role="main"] {
 
+@mixin contentSingleColumnDefault($elements:'') {
+
+	#{$elements} div[role="main"] {
+		@include grid-span(12, 1);
+		article {padding:5px 0px 5px 0;}
+	}
+
+
+	#{$elements} .sidebar-first {
+		display:none;	
+	}
+
+	#{$elements} .sidebar-second {
+		display:none;
+	}
 
 }
+
+//*
+@include contentSingleColumnDefault('.page-our-gallery');
 //*/

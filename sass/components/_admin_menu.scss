@@ -1,87 +1,88 @@
 .admin-menu {
-   div.siteinfo {
-     padding:20px 0 0 10px;
-   }
-   .tabs ul.primary li {
-     display:inherit;
-     width:100%;
-     padding-bottom:3px;
-     a {
-       display:block;
-       width:100%;
-       padding:10px 0 10px 0;
-       @include link-colors(
-       $tabsMPrimaryNormal,
-       $tabsMPrimaryHover,
-       $tabsMPrimaryActive,
-       $tabsMPrimaryVisited ,
-       $tabsMPrimaryFocus
-       );
-       background-color:$tabsMPrimaryBackGround;
-       font-size:$mobileSLinkHeight;
-       text-align:center;
-     }
-   }
-   .tabs ul.primary li a.active {
-     font-weight:normal;
-     color:$aMActive;
-   }
+	div.siteinfo {
+		padding:20px 0 0 10px;
+	}
+	.tabs ul.primary li {
+		display:inherit;
+		width:100%;
+		padding-bottom:3px;
+		a {
+			display:block;
+			width:100%;
+			padding:10px 0 10px 0;
+			@include link-colors(
+			$tabsMPrimaryNormal,
+			$tabsMPrimaryHover,
+			$tabsMPrimaryActive,
+			$tabsMPrimaryVisited ,
+			$tabsMPrimaryFocus
+			);
+			background-color:$tabsMPrimaryBackGround;
+			font-size:$mobileSLinkHeight;
+			text-align:center;
+		}
+	}
+	.tabs ul.primary li a.active {
+		font-weight:normal;
+		color:$aMActive;
+	}
 
-   @include breakpoint($largeSmartPhone) {
-      .tabs ul.primary {
-        width:100%;
-        height:30px;
-        margin:0;
-        clear:both;
-        @include border-radius(5px);
-        background-color:$tabsMPrimaryBackGround;
-      }
+	@include breakpoint($largeSmartPhone) {
+		.tabs ul.primary {
+			width:100%;
+			height:30px;
+			margin:0;
+			clear:both;
+			@include border-radius(5px);
+			background-color:$tabsMPrimaryBackGround;
+		}
 
-      .tabs ul.primary li {
-        float:left;
-        width:auto;
-        padding-left:10px;
-        padding-right: 18px;
-        padding-bottom:0px;
-        a {
-           padding:2px 0 0 0;
-           @include link-colors(
-            $tabsPrimaryNormal,
-            $tabsPrimaryHover,
-            $tabsPrimaryActive,
-            $tabsPrimaryVisited,
-            $tabsPrimaryFocus
-           );
-         }
-         a.active {
-           color:$tabsPrimaryActive;
-           font-weight:600;
-         }
-      }
-      .tabs ul.primary li:last-child {
-         padding-right: 0px;
-      }
+		.tabs ul.primary li {
+			float:left;
+			width:auto;
+			padding-left:10px;
+			padding-right: 18px;
+			padding-bottom:0px;
+			a {
+				padding:2px 0 0 0;
+				@include link-colors(
+				$tabsPrimaryNormal,
+				$tabsPrimaryHover,
+				$tabsPrimaryActive,
+				$tabsPrimaryVisited,
+				$tabsPrimaryFocus
+				);
+			}
+			a.active {
+				color:$tabsPrimaryActive;
+				font-weight:600;
+			}
+		}
+		.tabs ul.primary li:last-child {
+			padding-right: 0px;
+		}
 
-      div.page {
-        position:inherit;
-        height:inherit;
-      }
+		div.page {
+			position:inherit;
+			height:inherit;
+		}
 
-      .page > #main-content >  h1 {
-         margin:0;
-      }
+		.page > #main-content >  h1 {
+			margin:0;
+		}
 
-      .page #main-content {
-         width: 98%;
-         height: inherit;
-         margin:0;
-         border: 0px solid white;
-         @include border-radius(0px);
-         position: inherit;
-         top: inherit;
-         left: inherit;
-         bottom: inherit;
-         right: inherit;
-      }
-   }
+	}
+}
+
+.admin-menu.page-user .page #main-content {
+	width: 98%;
+	height: inherit;
+	margin:0;
+	border: 0px solid white;
+	@include border-radius(0px);
+	position: inherit;
+	top: inherit;
+	left: inherit;
+	bottom: inherit;
+	right: inherit;
 }

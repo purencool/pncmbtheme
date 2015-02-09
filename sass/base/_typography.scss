@@ -18,6 +18,7 @@ a {  @include link-colors($aNormal,$aHover,$aActive,$aVisited,$aFocus);}
 h1, h2, h3, h4, h5, h6 {
   color:$h1Normal;
   font-size:25px;
+  line-height:27px;
   a {  @include link-colors($h1Normal,$h1Hover,$h1Active,$h1Visited,$h1Focus);}
 }
 //*/
