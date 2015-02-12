@@ -43,42 +43,49 @@ $gutters: 1/4;
 .page-our-gallery .sidebar-second {
   display: none; }
 
-/* line 4, ../sass/layouts/_content_three_column.scss */
-div[role="main"] article {
-  padding: 5px 0px 5px 0; }
-
-/* line 30, ../sass/layouts/_content_three_column.scss */
-.sidebar-first {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-
-/* line 59, ../sass/layouts/_content_three_column.scss */
-.sidebar-second {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-
 /*
-body div[role="main"] {
-
-
-}
+@include contentThreeColumnDefault('.front');
 //*/
+/* line 3, ../sass/layouts/_content_two_left_column.scss */
+.one-sidebar div[role="main"] {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  /* line 5, ../sass/layouts/_content_two_left_column.scss */
+  .one-sidebar div[role="main"] article {
+    padding: 5px 0px 5px 0; }
+
+/* line 22, ../sass/layouts/_content_two_left_column.scss */
+.one-sidebar [class*='sidebar'] {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+/* line 3, ../sass/layouts/_content_two_right_column.scss */
+.one-sidebar div[role="main"] {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  /* line 4, ../sass/layouts/_content_two_right_column.scss */
+  .one-sidebar div[role="main"] article {
+    padding: 5px 0px 5px 0; }
+
+/* line 21, ../sass/layouts/_content_two_right_column.scss */
+.one-sidebar [class*='sidebar'] {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
 /* line 1, ../sass/layouts/_footer.scss */
 footer {
-  clear: both;
-  padding: 5px; }
-
-/* line 1, ../sass/layouts/_grid.scss */
-.page,
-.navigation,
-header[role="banner"] {
-  padding: 0 5px 0 5px;
   clear: both; }
 
 /* line 1, ../sass/layouts/_header.scss */
@@ -86,8 +93,19 @@ header[role="banner"] {
   clear: both; }
 
 /* line 1, ../sass/layouts/_page.scss */
-.page {
+.page,
+.navigation,
+header[role="banner"] {
+  padding: 0 5px 0 5px;
   clear: both; }
+
+/* line 1, ../sass/layouts/inner_sidebar_content.scss */
+.content {
+  clear: both; }
+
+/* line 4, ../sass/layouts/inner_sidebar_content.scss */
+div[class*='sidebar'] h2.title {
+  margin-top: 0; }
 
 /*
 @mixin borderOne($width, $type, $color, $rounded:"") {

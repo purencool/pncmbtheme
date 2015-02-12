@@ -83,8 +83,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 
   .navigation  ul.menu li a{
     display:block;
-    width:140px;
-    padding:10px 0px 10px 0;
+    min-width:100px;
+    padding:10px 10px 10px 10px;
     font-size:20px;
     background-color:$aMBackGround;
     color:$aMNormal;

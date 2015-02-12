@@ -1,0 +1,38 @@
+@mixin contentTwoLeftColumnDefault($elements:'') {
+
+	#{$elements} div[role="main"] {
+
+		article {padding:5px 0px 5px 0;}
+		@include grid-span(12, 1);
+		@include breakpoint($smartPhone) {}
+		@include breakpoint($largeSmartPhone) {
+			@include grid-span(8, 5);
+			article {
+				padding:5px;
+			}
+		}
+		@include breakpoint($tablet) {}
+		@include breakpoint($smallDesktop) {}
+		@include breakpoint($mediumDesktop) {}
+		@include breakpoint($desktop) {}
+		@include breakpoint($wideDesktop) {}
+	}
+
+
+	#{$elements} [class*='sidebar'] {
+		@include grid-span(12, 1);
+		@include breakpoint($smartPhone) {}
+		@include breakpoint($largeSmartPhone) {
+			@include grid-span(4, 1);
+		}
+		@include breakpoint($tablet) {}
+		@include breakpoint($smallDesktop) {}
+		@include breakpoint($mediumDesktop) {}
+		@include breakpoint($desktop) {}
+		@include breakpoint($wideDesktop) {}
+	}
+
+}
+//*
+@include contentTwoLeftColumnDefault('.one-sidebar');
+//*/
