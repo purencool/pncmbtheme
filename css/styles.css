@@ -48,69 +48,46 @@ $gutters: 1/4;
 .page-our-gallery .sidebar-second {
   display: none; }
 
-/* line 4, ../sass/layouts/_content_three_column.scss */
-.front div[role="main"] article {
-  padding: 5px 0px 5px 0; }
-@media (min-width: 768px) {
-  /* line 3, ../sass/layouts/_content_three_column.scss */
-  .front div[role="main"] {
-    width: 40.67797%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 25.42373%;
-    clear: none; }
-    /* line 8, ../sass/layouts/_content_three_column.scss */
-    .front div[role="main"] article {
-      padding: 5px; } }
-
-/* line 20, ../sass/layouts/_content_three_column.scss */
-.front .sidebar-first {
+/*
+@include contentThreeColumnDefault('.front');
+@include contentThreeColumnDefault('.not-front');
+//*/
+/* line 3, ../sass/layouts/_content_two_left_column.scss */
+.front div[role="main"] {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none; }
-  @media (min-width: 600px) {
-    /* line 20, ../sass/layouts/_content_three_column.scss */
-    .front .sidebar-first {
-      width: 49.15254%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
-      clear: none;
-      padding: 5px 0 5px 5px; } }
+  /* line 5, ../sass/layouts/_content_two_left_column.scss */
+  .front div[role="main"] article {
+    padding: 5px 0px 5px 0; }
   @media (min-width: 768px) {
-    /* line 20, ../sass/layouts/_content_three_column.scss */
-    .front .sidebar-first {
-      width: 23.72881%;
-      float: left;
-      margin-right: -100%;
+    /* line 3, ../sass/layouts/_content_two_left_column.scss */
+    .front div[role="main"] {
+      width: 66.10169%;
+      float: right;
       margin-left: 0;
-      clear: none; } }
+      margin-right: 0;
+      clear: none; }
+      /* line 10, ../sass/layouts/_content_two_left_column.scss */
+      .front div[role="main"] article {
+        padding: 5px; } }
 
-/* line 39, ../sass/layouts/_content_three_column.scss */
-.front .sidebar-second {
+/* line 22, ../sass/layouts/_content_two_left_column.scss */
+.front [class*='sidebar'] {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none; }
-  @media (min-width: 600px) {
-    /* line 39, ../sass/layouts/_content_three_column.scss */
-    .front .sidebar-second {
-      width: 49.15254%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none;
-      padding: 5px 0 5px 5px; } }
   @media (min-width: 768px) {
-    /* line 39, ../sass/layouts/_content_three_column.scss */
-    .front .sidebar-second {
-      width: 23.72881%;
-      float: right;
+    /* line 22, ../sass/layouts/_content_two_left_column.scss */
+    .front [class*='sidebar'] {
+      width: 32.20339%;
+      float: left;
+      margin-right: -100%;
       margin-left: 0;
-      margin-right: 0;
       clear: none; } }
 
 /* line 4, ../sass/layouts/_content_three_column.scss */
@@ -176,44 +153,6 @@ $gutters: 1/4;
       float: right;
       margin-left: 0;
       margin-right: 0;
-      clear: none; } }
-
-/* line 3, ../sass/layouts/_content_two_left_column.scss */
-.one-sidebar div[role="main"] {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-  /* line 5, ../sass/layouts/_content_two_left_column.scss */
-  .one-sidebar div[role="main"] article {
-    padding: 5px 0px 5px 0; }
-  @media (min-width: 768px) {
-    /* line 3, ../sass/layouts/_content_two_left_column.scss */
-    .one-sidebar div[role="main"] {
-      width: 66.10169%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-      /* line 10, ../sass/layouts/_content_two_left_column.scss */
-      .one-sidebar div[role="main"] article {
-        padding: 5px; } }
-
-/* line 22, ../sass/layouts/_content_two_left_column.scss */
-.one-sidebar [class*='sidebar'] {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-  @media (min-width: 768px) {
-    /* line 22, ../sass/layouts/_content_two_left_column.scss */
-    .one-sidebar [class*='sidebar'] {
-      width: 32.20339%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
       clear: none; } }
 
 /*
@@ -1097,7 +1036,7 @@ hgroup {
   /* line 102, ../sass/components/_login.scss */
   .page-user #main-content {
     width: 680px;
-    min-height: 500px;
+    min-height: 540px;
     border: 1px solid #c4c4c4;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;

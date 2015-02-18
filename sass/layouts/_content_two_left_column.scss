@@ -34,5 +34,6 @@
 
 }
 //*
-@include contentTwoLeftColumnDefault('.one-sidebar');
+@include contentTwoLeftColumnDefault('.front');
+@include contentThreeColumnDefault('.not-front')
 //*/

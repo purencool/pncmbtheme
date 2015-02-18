@@ -43,20 +43,23 @@ $gutters: 1/4;
 .page-our-gallery .sidebar-second {
   display: none; }
 
-/* line 4, ../sass/layouts/_content_three_column.scss */
-.front div[role="main"] article {
-  padding: 5px 0px 5px 0; }
-
-/* line 20, ../sass/layouts/_content_three_column.scss */
-.front .sidebar-first {
+/*
+@include contentThreeColumnDefault('.front');
+@include contentThreeColumnDefault('.not-front');
+//*/
+/* line 3, ../sass/layouts/_content_two_left_column.scss */
+.front div[role="main"] {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none; }
+  /* line 5, ../sass/layouts/_content_two_left_column.scss */
+  .front div[role="main"] article {
+    padding: 5px 0px 5px 0; }
 
-/* line 39, ../sass/layouts/_content_three_column.scss */
-.front .sidebar-second {
+/* line 22, ../sass/layouts/_content_two_left_column.scss */
+.front [class*='sidebar'] {
   width: 100%;
   float: right;
   margin-left: 0;
@@ -77,25 +80,6 @@ $gutters: 1/4;
 
 /* line 39, ../sass/layouts/_content_three_column.scss */
 .not-front .sidebar-second {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-
-/* line 3, ../sass/layouts/_content_two_left_column.scss */
-.one-sidebar div[role="main"] {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-  /* line 5, ../sass/layouts/_content_two_left_column.scss */
-  .one-sidebar div[role="main"] article {
-    padding: 5px 0px 5px 0; }
-
-/* line 22, ../sass/layouts/_content_two_left_column.scss */
-.one-sidebar [class*='sidebar'] {
   width: 100%;
   float: right;
   margin-left: 0;
