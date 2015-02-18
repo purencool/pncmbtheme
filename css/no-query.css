@@ -43,6 +43,25 @@ $gutters: 1/4;
 .page-our-gallery .sidebar-second {
   display: none; }
 
+/* line 4, ../sass/layouts/_content_single_column.scss */
+.page-admin-appearance div[role="main"] {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  /* line 6, ../sass/layouts/_content_single_column.scss */
+  .page-admin-appearance div[role="main"] article {
+    padding: 5px 0px 5px 0; }
+
+/* line 10, ../sass/layouts/_content_single_column.scss */
+.page-admin-appearance .sidebar-first {
+  display: none; }
+
+/* line 14, ../sass/layouts/_content_single_column.scss */
+.page-admin-appearance .sidebar-second {
+  display: none; }
+
 /*
 @include contentThreeColumnDefault('.front');
 @include contentThreeColumnDefault('.not-front');
