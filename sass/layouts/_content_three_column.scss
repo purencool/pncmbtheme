@@ -52,7 +52,8 @@
 		@include breakpoint($wideDesktop) {}
 	}
 }
-/*
+//*
 @include contentThreeColumnDefault('.front');
+@include contentThreeColumnDefault('.not-front');
 //*/
 

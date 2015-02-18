@@ -48,9 +48,136 @@ $gutters: 1/4;
 .page-our-gallery .sidebar-second {
   display: none; }
 
-/*
-@include contentThreeColumnDefault('.front');
-//*/
+/* line 4, ../sass/layouts/_content_three_column.scss */
+.front div[role="main"] article {
+  padding: 5px 0px 5px 0; }
+@media (min-width: 768px) {
+  /* line 3, ../sass/layouts/_content_three_column.scss */
+  .front div[role="main"] {
+    width: 40.67797%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.42373%;
+    clear: none; }
+    /* line 8, ../sass/layouts/_content_three_column.scss */
+    .front div[role="main"] article {
+      padding: 5px; } }
+
+/* line 20, ../sass/layouts/_content_three_column.scss */
+.front .sidebar-first {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  @media (min-width: 600px) {
+    /* line 20, ../sass/layouts/_content_three_column.scss */
+    .front .sidebar-first {
+      width: 49.15254%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none;
+      padding: 5px 0 5px 5px; } }
+  @media (min-width: 768px) {
+    /* line 20, ../sass/layouts/_content_three_column.scss */
+    .front .sidebar-first {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none; } }
+
+/* line 39, ../sass/layouts/_content_three_column.scss */
+.front .sidebar-second {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  @media (min-width: 600px) {
+    /* line 39, ../sass/layouts/_content_three_column.scss */
+    .front .sidebar-second {
+      width: 49.15254%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding: 5px 0 5px 5px; } }
+  @media (min-width: 768px) {
+    /* line 39, ../sass/layouts/_content_three_column.scss */
+    .front .sidebar-second {
+      width: 23.72881%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; } }
+
+/* line 4, ../sass/layouts/_content_three_column.scss */
+.not-front div[role="main"] article {
+  padding: 5px 0px 5px 0; }
+@media (min-width: 768px) {
+  /* line 3, ../sass/layouts/_content_three_column.scss */
+  .not-front div[role="main"] {
+    width: 40.67797%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.42373%;
+    clear: none; }
+    /* line 8, ../sass/layouts/_content_three_column.scss */
+    .not-front div[role="main"] article {
+      padding: 5px; } }
+
+/* line 20, ../sass/layouts/_content_three_column.scss */
+.not-front .sidebar-first {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  @media (min-width: 600px) {
+    /* line 20, ../sass/layouts/_content_three_column.scss */
+    .not-front .sidebar-first {
+      width: 49.15254%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none;
+      padding: 5px 0 5px 5px; } }
+  @media (min-width: 768px) {
+    /* line 20, ../sass/layouts/_content_three_column.scss */
+    .not-front .sidebar-first {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none; } }
+
+/* line 39, ../sass/layouts/_content_three_column.scss */
+.not-front .sidebar-second {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  @media (min-width: 600px) {
+    /* line 39, ../sass/layouts/_content_three_column.scss */
+    .not-front .sidebar-second {
+      width: 49.15254%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding: 5px 0 5px 5px; } }
+  @media (min-width: 768px) {
+    /* line 39, ../sass/layouts/_content_three_column.scss */
+    .not-front .sidebar-second {
+      width: 23.72881%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; } }
+
 /* line 3, ../sass/layouts/_content_two_left_column.scss */
 .one-sidebar div[role="main"] {
   width: 100%;
@@ -89,44 +216,9 @@ $gutters: 1/4;
       margin-left: 0;
       clear: none; } }
 
-/* line 3, ../sass/layouts/_content_two_right_column.scss */
-.one-sidebar div[role="main"] {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-  /* line 4, ../sass/layouts/_content_two_right_column.scss */
-  .one-sidebar div[role="main"] article {
-    padding: 5px 0px 5px 0; }
-  @media (min-width: 768px) {
-    /* line 3, ../sass/layouts/_content_two_right_column.scss */
-    .one-sidebar div[role="main"] {
-      width: 66.10169%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
-      clear: none; }
-      /* line 9, ../sass/layouts/_content_two_right_column.scss */
-      .one-sidebar div[role="main"] article {
-        padding: 5px; } }
-
-/* line 21, ../sass/layouts/_content_two_right_column.scss */
-.one-sidebar [class*='sidebar'] {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-  @media (min-width: 768px) {
-    /* line 21, ../sass/layouts/_content_two_right_column.scss */
-    .one-sidebar [class*='sidebar'] {
-      width: 32.20339%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; } }
-
+/*
+@include contentTwoRightColumnDefault('.one-sidebar');
+//*/
 /* line 1, ../sass/layouts/_footer.scss */
 footer {
   clear: both; }
@@ -296,6 +388,10 @@ input[type="password"] {
 /* line 23, ../sass/base/_forms.scss */
 input {
   float: left; }
+
+/* line 27, ../sass/base/_forms.scss */
+form {
+  clear: both; }
 
 /* line 1, ../sass/base/_media.scss */
 img, media {
@@ -1279,6 +1375,29 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     font-family: 'FontAwesome'; }
   @media (min-width: 600px) {
     /* line 1, ../sass/components/_search.scss */
+    #search-block-form {
+      clear: none;
+      float: right;
+      padding-top: 32px; } }
+
+/* line 1, ../sass/components/_search_1.scss */
+#search-block-form {
+  padding: 20px 0 20px 0;
+  width: 225px;
+  margin: 0 auto;
+  clear: left; }
+  /* line 5, ../sass/components/_search_1.scss */
+  #search-block-form input[type="text"] {
+    width: 180px; }
+  /* line 8, ../sass/components/_search_1.scss */
+  #search-block-form input[type="submit"] {
+    padding: 5px;
+    border: 0;
+    font-size: 1.5em;
+    vertical-align: top;
+    font-family: 'FontAwesome'; }
+  @media (min-width: 600px) {
+    /* line 1, ../sass/components/_search_1.scss */
     #search-block-form {
       clear: none;
       float: right;
