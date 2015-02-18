@@ -20,6 +20,15 @@ $gutters: 1/4;
 /** Small Desktop width **/
 /** Desktop width **/
 /** Desktop width **/
+/* line 7, ../sass/layouts/_admin_menu.scss */
+body:not(.node-type-page) div[role="main"] {
+  width: 100%; }
+
+/* line 11, ../sass/layouts/_admin_menu.scss */
+body:not(.node-type-page) .sidebar-second,
+body:not(.node-type-page) .sidebar-first {
+  display: none; }
+
 /* line 1, ../sass/layouts/_content.scss */
 .content {
   clear: both; }

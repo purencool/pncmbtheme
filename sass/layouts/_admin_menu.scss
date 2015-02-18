@@ -4,5 +4,13 @@
 	}
 	
 }
+body:not(.node-type-page) div[role="main"] {
+	width:100%;
+}
+
+body:not(.node-type-page) .sidebar-second,
+body:not(.node-type-page) .sidebar-first {
+	display:none;
+}
 
 
