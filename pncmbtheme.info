@@ -58,6 +58,7 @@ settings[mothership_css_reset] = 0
 settings[mothership_css_reset_html5] = 0
 settings[mothership_css_default] = 1
 settings[mothership_css_mothershipstyles] = 1
+settings[mothership_css_layout]= 0
 
 settings[mothership_classes_body_html] = 1
 settings[mothership_classes_body_front] = 0
