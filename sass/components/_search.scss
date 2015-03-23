@@ -3,10 +3,14 @@
 	width: 225px;
 	margin: 0 auto;
 	input[type="text"] {
+		float: left;
 		width:180px;
+		height:30px;
 	}
 	input[type="submit"] {
-		padding:5px;
+		float: left;
+		height:35px;
+		width:35px;
 		border: 0;
 		font-size: 1.5em;
 		vertical-align: top;

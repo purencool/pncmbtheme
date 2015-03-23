@@ -1,0 +1,73 @@
+.admin-menu,
+.page-admin-editorpanel{
+	h1 {
+	  background-color: #e0e0d8;
+	  padding:10px;
+	}
+	
+	.page {
+		.admin-list,
+		.admin {
+			h3 {
+				font-size:$mediumFontSize;
+				margin:0;
+			}
+			dl {
+				margin:15px 0 12px 0;
+			}
+			dt {
+			}
+			dd {
+				margin-left:0;
+				margin-bottom:12px;
+			}
+			.right,
+			.left {
+				@include grid-span(12, 1);
+				margin:0;
+				padding:0;
+			}
+			
+		}
+		
+	}
+	
+} 
+
+
+
+@include breakpoint($largeSmartPhone) {
+	#edit-social{
+		
+		@include grid-span(6, 1);
+	}
+	#edit-business-hours{
+		@include grid-span(6, 1);
+		margin-top: 20em;
+		
+	}
+	#edit-business-details{
+		@include grid-span(6, 7);
+
+	}
+	
+	.admin-menu,
+	.page-admin-editorpanel{
+	
+	.page {
+		.admin {
+			.right {
+			   @include grid-span(6, 7);
+			}
+			.left {
+			  @include grid-span(6, 1);
+			  
+			}
+			
+		}
+		
+	}
+	
+} 
+}	
+

@@ -250,37 +250,68 @@ div[class*='sidebar'] h2.title {
   }
 }
 //*/
-/* line 1, ../sass/base/_forms.scss */
+/* line 2, ../sass/base/_forms.scss */
 input[type="submit"],
 input[type="text"],
 input[type="password"] {
   display: block;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 18px; }
+  border-radius: 5px; }
 
-/* line 9, ../sass/base/_forms.scss */
+/* line 10, ../sass/base/_forms.scss */
+input[type="text"],
+input[type="password"] {
+  padding-left: 5px;
+  height: 30px;
+  border: 1px solid #c4c4c4; }
+
+/* line 17, ../sass/base/_forms.scss */
 input[type="submit"] {
   border: 0px;
-  padding: 4px;
+  padding: 7px;
   color: white;
   border: 0px;
   background-color: #18316a; }
 
-/* line 17, ../sass/base/_forms.scss */
-input[type="text"],
-input[type="password"] {
-  padding: 4px;
-  border: 1px solid #c4c4c4; }
-
-/* line 23, ../sass/base/_forms.scss */
-input {
-  float: left; }
-
 /* line 27, ../sass/base/_forms.scss */
-form {
+.page form {
   clear: both; }
+  /* line 29, ../sass/base/_forms.scss */
+  .page form > div > label {
+    font-size: 15px;
+    font-weight: 700;
+    color: black; }
+  /* line 34, ../sass/base/_forms.scss */
+  .page form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0px; }
+    /* line 38, ../sass/base/_forms.scss */
+    .page form fieldset legend {
+      color: orange;
+      font-size: 15px;
+      font-weight: 700; }
+  /* line 45, ../sass/base/_forms.scss */
+  .page form label {
+    display: block;
+    clear: both;
+    padding: 15px 0 7px 0; }
+  /* line 52, ../sass/base/_forms.scss */
+  .page form input[type="text"],
+  .page form input[type="password"] {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 61, ../sass/base/_forms.scss */
+  .page form input[type="submit"] {
+    clear: both; }
 
 /* line 1, ../sass/base/_media.scss */
 img, media {
@@ -336,10 +367,39 @@ ul.primary li.active a {
 .drupal-messages {
   clear: both; }
 
+/* line 1, ../sass/base/_tables.scss */
+table {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+  /* line 3, ../sass/base/_tables.scss */
+  table th {
+    color: black;
+    border: 0px; }
+  /* line 7, ../sass/base/_tables.scss */
+  table td,
+  table tr.odd,
+  table tr.even {
+    border-top: 0px;
+    background: white; }
+  /* line 14, ../sass/base/_tables.scss */
+  table td {
+    padding: 14px 0 13px 0; }
+
+/*
+$tableThColor:black;
+$tableThColorBk:black;
+$tableTrColor:black;
+$tableTrColorBk:black;
+$tableTdColor:black;
+$tableTdColorBk:black;
+*/
 /* line 2, ../sass/base/_typography.scss */
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   color: gray;
   background: white; }
@@ -421,54 +481,40 @@ h6 {
   a {  @include link-colors($h6Normal,$h6Hover,$h6Active,$h6Visited,$h6Focus);}
 }
 //*/
-/* line 2, ../sass/components/_admin_menu.scss */
-.admin-menu div.siteinfo {
-  padding: 20px 0 0 10px; }
-/* line 5, ../sass/components/_admin_menu.scss */
-.admin-menu .tabs ul.primary li {
+/* line 2, ../sass/components/_action_links.scss */
+.admin-menu .action-links {
+  margin: 0px;
+  padding: 14px 0; }
+/* line 6, ../sass/components/_action_links.scss */
+.admin-menu .action-links li {
   display: inherit;
   width: 100%;
+  padding-left: 0px;
   padding-bottom: 3px; }
-  /* line 9, ../sass/components/_admin_menu.scss */
-  .admin-menu .tabs ul.primary li a {
+  /* line 11, ../sass/components/_action_links.scss */
+  .admin-menu .action-links li a {
     display: block;
     width: 100%;
     padding: 10px 0 10px 0;
     color: #b0b0b0;
-    background-color: #c4c4c4;
-    font-size: 18px;
-    text-align: center; }
+    text-align: center;
+    background-color: #c4c4c4; }
     /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .tabs ul.primary li a:visited {
+    .admin-menu .action-links li a:visited {
       color: #b0b0b0; }
     /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .tabs ul.primary li a:focus {
+    .admin-menu .action-links li a:focus {
       color: white; }
     /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .tabs ul.primary li a:hover {
+    .admin-menu .action-links li a:hover {
       color: white; }
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .tabs ul.primary li a:active {
+    .admin-menu .action-links li a:active {
       color: #18316a; }
-/* line 25, ../sass/components/_admin_menu.scss */
-.admin-menu .tabs ul.primary li a.active {
+/* line 26, ../sass/components/_action_links.scss */
+.admin-menu .action-links li a.active {
   font-weight: normal;
   color: #18316a; }
-
-/* line 77, ../sass/components/_admin_menu.scss */
-.admin-menu.page-user .page #main-content {
-  width: 98%;
-  height: inherit;
-  margin: 0;
-  border: 0px solid white;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  bottom: inherit;
-  right: inherit; }
 
 /* line 2, ../sass/components/_basic_gallery.scss */
 .pnc-bg {
@@ -767,9 +813,55 @@ h6 {
 #cboxClose:hover {
   background-position: -25px -25px; }
 
-/* line 3, ../sass/components/_breadcrumb.scss */
+/* line 1, ../sass/components/_breadcrumb.scss */
+.breadcrumb {
+  padding: 10px 0 10px; }
+
+/* line 7, ../sass/components/_breadcrumb.scss */
 .page-user .breadcrumb {
   display: none; }
+
+/* line 3, ../sass/components/_editor_role.scss */
+.admin-menu h1,
+.page-admin-editorpanel h1 {
+  background-color: #e0e0d8;
+  padding: 10px; }
+/* line 11, ../sass/components/_editor_role.scss */
+.admin-menu .page .admin-list h3,
+.admin-menu .page .admin h3,
+.page-admin-editorpanel .page .admin-list h3,
+.page-admin-editorpanel .page .admin h3 {
+  font-size: 15px;
+  margin: 0; }
+/* line 15, ../sass/components/_editor_role.scss */
+.admin-menu .page .admin-list dl,
+.admin-menu .page .admin dl,
+.page-admin-editorpanel .page .admin-list dl,
+.page-admin-editorpanel .page .admin dl {
+  margin: 15px 0 12px 0; }
+/* line 20, ../sass/components/_editor_role.scss */
+.admin-menu .page .admin-list dd,
+.admin-menu .page .admin dd,
+.page-admin-editorpanel .page .admin-list dd,
+.page-admin-editorpanel .page .admin dd {
+  margin-left: 0;
+  margin-bottom: 12px; }
+/* line 24, ../sass/components/_editor_role.scss */
+.admin-menu .page .admin-list .right,
+.admin-menu .page .admin-list .left,
+.admin-menu .page .admin .right,
+.admin-menu .page .admin .left,
+.page-admin-editorpanel .page .admin-list .right,
+.page-admin-editorpanel .page .admin-list .left,
+.page-admin-editorpanel .page .admin .right,
+.page-admin-editorpanel .page .admin .left {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  margin: 0;
+  padding: 0; }
 
 /* line 1, ../sass/components/_header.scss */
 hgroup {
@@ -842,15 +934,18 @@ hgroup {
 /* line 54, ../sass/components/_login.scss */
 .page-user label, .page-user small {
   display: none; }
-/* line 55, ../sass/components/_login.scss */
+/* line 56, ../sass/components/_login.scss */
+.page-user .tabs li {
+  padding: 0; }
+/* line 60, ../sass/components/_login.scss */
 .page-user ul.primary {
   padding-top: 5px; }
-/* line 59, ../sass/components/_login.scss */
+/* line 64, ../sass/components/_login.scss */
 .page-user ul.primary li {
   display: inherit;
   width: 100%;
   padding-bottom: 3px; }
-  /* line 63, ../sass/components/_login.scss */
+  /* line 68, ../sass/components/_login.scss */
   .page-user ul.primary li a {
     display: block;
     width: 100%;
@@ -871,7 +966,7 @@ hgroup {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .page-user ul.primary li a:active {
       color: #18316a; }
-/* line 79, ../sass/components/_login.scss */
+/* line 84, ../sass/components/_login.scss */
 .page-user ul.primary li a.active {
   font-weight: normal;
   color: #18316a; }
@@ -879,46 +974,51 @@ hgroup {
 /* line 2, ../sass/components/_loginform.scss */
 .page-user .page {
   padding: 0px; }
-/* line 5, ../sass/components/_loginform.scss */
-.page-user #user-pass,
-.page-user #user-register-form,
-.page-user #user-login {
-  clear: both;
-  width: 235px;
-  min-height: 225px;
-  margin: 0 auto;
-  /* Break Point */ }
-  /* line 12, ../sass/components/_loginform.scss */
-  .page-user #user-pass .form-required,
-  .page-user #user-register-form .form-required,
-  .page-user #user-login .form-required {
+  /* line 4, ../sass/components/_loginform.scss */
+  .page-user .page form#user-pass,
+  .page-user .page form#user-register-form,
+  .page-user .page form#user-login {
     clear: both;
-    padding: 24px 0 0 0; }
-  /* line 17, ../sass/components/_loginform.scss */
-  .page-user #user-pass .form-actions,
-  .page-user #user-register-form .form-actions,
-  .page-user #user-login .form-actions {
-    padding-top: 24px; }
-  /* line 21, ../sass/components/_loginform.scss */
-  .page-user #user-pass input[type="submit"],
-  .page-user #user-register-form input[type="submit"],
-  .page-user #user-login input[type="submit"] {
-    margin: auto;
-    width: 130px;
-    padding: 8px 0 8px 0;
-    float: right;
-    margin: 10px -1px  6px 0; }
-  /* line 29, ../sass/components/_loginform.scss */
-  .page-user #user-pass input[type="text"],
-  .page-user #user-pass input[type="password"],
-  .page-user #user-register-form input[type="text"],
-  .page-user #user-register-form input[type="password"],
-  .page-user #user-login input[type="text"],
-  .page-user #user-login input[type="password"] {
+    width: 235px;
+    min-height: 225px;
     margin: 0 auto;
-    width: 200px;
-    padding: 19px 0 19px 35px;
-    border: 1px solid #c4c4c4; }
+    /* Break Point */ }
+    /* line 11, ../sass/components/_loginform.scss */
+    .page-user .page form#user-pass .form-required,
+    .page-user .page form#user-register-form .form-required,
+    .page-user .page form#user-login .form-required {
+      clear: both;
+      padding: 24px 0 0 0; }
+    /* line 16, ../sass/components/_loginform.scss */
+    .page-user .page form#user-pass .form-actions,
+    .page-user .page form#user-register-form .form-actions,
+    .page-user .page form#user-login .form-actions {
+      padding-top: 24px; }
+    /* line 20, ../sass/components/_loginform.scss */
+    .page-user .page form#user-pass input[type="submit"],
+    .page-user .page form#user-register-form input[type="submit"],
+    .page-user .page form#user-login input[type="submit"] {
+      margin: auto;
+      clear: both;
+      width: 235px;
+      height: inherit;
+      padding: 17px 14px 17px 14px;
+      margin: 30px -1px  6px 0; }
+    /* line 29, ../sass/components/_loginform.scss */
+    .page-user .page form#user-pass input[type="text"],
+    .page-user .page form#user-pass input[type="password"],
+    .page-user .page form#user-register-form input[type="text"],
+    .page-user .page form#user-register-form input[type="password"],
+    .page-user .page form#user-login input[type="text"],
+    .page-user .page form#user-login input[type="password"] {
+      width: 100%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      margin: 0 auto;
+      height: 40px;
+      border: 1px solid #c4c4c4; }
 
 /* line 2, ../sass/components/_navigation.scss */
 .navigation nav[role="navigation"] {
@@ -1001,10 +1101,14 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   clear: left; }
   /* line 5, ../sass/components/_search.scss */
   #search-block-form input[type="text"] {
-    width: 180px; }
-  /* line 8, ../sass/components/_search.scss */
+    float: left;
+    width: 180px;
+    height: 30px; }
+  /* line 10, ../sass/components/_search.scss */
   #search-block-form input[type="submit"] {
-    padding: 5px;
+    float: left;
+    height: 35px;
+    width: 35px;
     border: 0;
     font-size: 1.5em;
     vertical-align: top;
@@ -1024,9 +1128,54 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 .page-search #search-form input[type="submit"] {
   padding: 5px; }
 
-/* line 2, ../sass/components/_tab_primary.scss */
-.tabs li {
-  padding: 0; }
+/* line 2, ../sass/components/_tabs_primary.scss */
+.admin-menu .tabs ul.primary {
+  padding-top: 14px; }
+/* line 5, ../sass/components/_tabs_primary.scss */
+.admin-menu .tabs ul.primary li {
+  display: inherit;
+  width: 100%;
+  padding-left: 0px;
+  padding-bottom: 3px; }
+  /* line 10, ../sass/components/_tabs_primary.scss */
+  .admin-menu .tabs ul.primary li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #b0b0b0;
+    text-align: center;
+    background-color: #c4c4c4; }
+    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:visited {
+      color: #b0b0b0; }
+    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:focus {
+      color: white; }
+    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:hover {
+      color: white; }
+    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:active {
+      color: #18316a; }
+/* line 25, ../sass/components/_tabs_primary.scss */
+.admin-menu .tabs ul.primary li a.active {
+  font-weight: normal;
+  color: #18316a; }
+
+/* line 76, ../sass/components/_tabs_primary.scss */
+.admin-menu.page-user .page #main-content {
+  width: 98%;
+  height: inherit;
+  margin: 0;
+  border: 0px solid white;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  bottom: inherit;
+  right: inherit; }
 
 /*
 body {

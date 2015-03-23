@@ -1,0 +1,26 @@
+table {
+  @include grid-span(12, 1);
+  th {
+    color:$tableThColor;
+    border:0px;
+  }
+  td,
+  tr.odd,
+  tr.even
+  {
+    border-top:0px;
+    background:$tableTrColorBk;  
+  }
+  td {
+	  padding:14px 0 13px 0;
+  }
+}
+
+/*
+$tableThColor:black;
+$tableThColorBk:black;
+$tableTrColor:black;
+$tableTrColorBk:black;
+$tableTdColor:black;
+$tableTdColorBk:black;
+*/
