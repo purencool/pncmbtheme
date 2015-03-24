@@ -15,6 +15,7 @@ header[role="banner"]{
 	header[role="banner"] {
 		width:1024px;
 		margin:0 auto;
+		clear:both;
 	}
 }
 @include breakpoint($mediumDesktop) {}

@@ -1,10 +1,18 @@
 .admin-menu,
 .page-admin-editorpanel{
 	h1 {
-	  background-color: #e0e0d8;
-	  padding:10px;
+		background-color: #e0e0d8;
+		padding:10px;
 	}
-	
+	.fieldset-legend {
+		display:block;
+		clear:both;
+		width:99%;
+		border-bottom:1px solid #cccccc;
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+
 	.page {
 		.admin-list,
 		.admin {
@@ -27,47 +35,82 @@
 				margin:0;
 				padding:0;
 			}
-			
-		}
-		
-	}
-	
-} 
 
+		}
+
+	}
+	#form-pncsitedetails {
+		input[type="submit"] {
+			display:block;
+			clear:both;
+			margin-top: 40px;
+		}
+	}
+
+} 
+.page-admin-config {
+	h3 {
+		font-size:$smallFontSize;
+		margin:0;
+		padding-top:10px;
+		border-bottom:1px solid #cccccc;
+		margin-bottom: 10px;
+	}
+}
+
+@include breakpoint($largeSmartPhone) {
+	.page-admin-config .page form{
+		input[type="text"],
+		input[type="password"] {
+			@include grid-span(12, 1);
+		}
+	}
+
+}
 
 
 @include breakpoint($largeSmartPhone) {
 	#edit-social{
-		
-		@include grid-span(6, 1);
+		@include float-span(6, 1)
 	}
 	#edit-business-hours{
-		@include grid-span(6, 1);
-		margin-top: 20em;
-		
+		@include float-span(6, 7)
+
 	}
 	#edit-business-details{
-		@include grid-span(6, 7);
+		@include float-span(6, 1);
+		margin-top: -25em;
 
 	}
 	
-	.admin-menu,
-	.page-admin-editorpanel{
-	
-	.page {
-		.admin {
-			.right {
-			   @include grid-span(6, 7);
-			}
-			.left {
-			  @include grid-span(6, 1);
-			  
-			}
-			
-		}
-		
+	.page-admin-editorpanel	.fieldset-legend {
+		display:block;
+		width:92%;
 	}
 	
-} 
+	.page-admin-editorpanel #form-pncsitedetails {
+		input[type="submit"] {
+			display:block;
+			clear:both;
+			margin-top: 57em;
+		}
+	}
+
+	.admin-menu,
+	.page-admin-editorpanel{
+		.page {
+			.admin {
+				.right {
+					@include grid-span(6, 7);
+				}
+				.left {
+					@include grid-span(6, 1);
+				}
+
+			}
+
+		}
+
+	} 
 }	
 
