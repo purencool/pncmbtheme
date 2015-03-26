@@ -92,14 +92,14 @@
 		.page {
 			position:relative;
 		}
-		
+
 		.page  > div >  h1 {
 			width: 314px;
 			height: 89px;
 			background: url("../images/mobile/mobile-logo.jpg") no-repeat;
 			background-size: cover;
 		}
-		
+
 		//-- overrides to main content
 		div[role="main"] {
 			float:none;
@@ -166,4 +166,8 @@
 			padding-right: 0px;
 		}
 	}
+}
+
+.admin-menu.page-user ul.primary li a {
+	font-size:$baseFontSize;
 }

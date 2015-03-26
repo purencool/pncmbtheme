@@ -125,20 +125,20 @@ footer[role="contentinfo"] {
 header[role="banner"] {
   clear: both; }
 
+/* line 1, ../sass/layouts/_inner_sidebar_content.scss */
+.content {
+  clear: both; }
+
+/* line 4, ../sass/layouts/_inner_sidebar_content.scss */
+div[class*='sidebar'] h2.title {
+  margin-top: 0; }
+
 /* line 1, ../sass/layouts/_page.scss */
 .page,
 .navigation,
 header[role="banner"] {
   padding: 0 5px 0 5px;
   clear: both; }
-
-/* line 1, ../sass/layouts/inner_sidebar_content.scss */
-.content {
-  clear: both; }
-
-/* line 4, ../sass/layouts/inner_sidebar_content.scss */
-div[class*='sidebar'] h2.title {
-  margin-top: 0; }
 
 /*
 @mixin borderOne($width, $type, $color, $rounded:"") {
@@ -340,6 +340,14 @@ input[type="submit"] {
       clear: none;
       float: left;
       margin-right: 10px; }
+  /* line 89, ../sass/base/_forms.scss */
+  .page form .form-actions {
+    clear: both; }
+    /* line 91, ../sass/base/_forms.scss */
+    .page form .form-actions input[type="submit"] {
+      float: left;
+      margin-right: 20px;
+      clear: none; }
 
 /* line 1, ../sass/base/_media.scss */
 img, media {
@@ -543,6 +551,57 @@ h6 {
 .admin-menu .action-links li a.active {
   font-weight: normal;
   color: #18316a; }
+
+/* line 2, ../sass/components/_admin_menu.scss */
+.admin-menu div.siteinfo {
+  padding: 20px 0 0 10px; }
+/* line 5, ../sass/components/_admin_menu.scss */
+.admin-menu .tabs ul.primary {
+  background-color: #c4c4c4; }
+/* line 9, ../sass/components/_admin_menu.scss */
+.admin-menu .tabs ul.primary li {
+  display: inherit;
+  width: 100%;
+  padding-bottom: 3px; }
+  /* line 13, ../sass/components/_admin_menu.scss */
+  .admin-menu .tabs ul.primary li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #b0b0b0;
+    background-color: #c4c4c4;
+    text-align: center; }
+    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:visited {
+      color: #b0b0b0; }
+    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:focus {
+      color: white; }
+    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:hover {
+      color: white; }
+    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .tabs ul.primary li a:active {
+      color: #18316a; }
+/* line 29, ../sass/components/_admin_menu.scss */
+.admin-menu .tabs ul.primary li a.active {
+  font-weight: normal;
+  color: #18316a; }
+
+/* line 82, ../sass/components/_admin_menu.scss */
+.admin-menu.page-user .page #main-content {
+  width: 98%;
+  height: inherit;
+  margin: 0;
+  border: 0px solid white;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  bottom: inherit;
+  right: inherit; }
 
 /* line 2, ../sass/components/_basic_gallery.scss */
 .pnc-bg {
@@ -952,142 +1011,6 @@ hgroup {
 .header-region {
   height: 150px; }
 
-/* line 2, ../sass/components/_login.scss */
-.page-user footer[role="contentinfo"],
-.page-user .header-region,
-.page-user .sidebar-first,
-.page-user .sidebar-second,
-.page-user .navigation {
-  display: none; }
-/* line 9, ../sass/components/_login.scss */
-.page-user .siteinfo {
-  padding-left: 28px; }
-  /* line 13, ../sass/components/_login.scss */
-  .page-user .siteinfo figure a {
-    display: block;
-    width: 100px;
-    height: 20px; }
-    /* line 17, ../sass/components/_login.scss */
-    .page-user .siteinfo figure a img {
-      display: none; }
-  /* line 19, ../sass/components/_login.scss */
-  .page-user .siteinfo figure a:before {
-    content: "Home";
-    font-size: 14px; }
-/* line 26, ../sass/components/_login.scss */
-.page-user .page > div > h1 {
-  width: 230px;
-  height: 65px;
-  padding: 0;
-  margin: 0 auto;
-  text-indent: -9999px;
-  background: url("../images/mobile/mobile-logo.jpg") repeat-x; }
-/* line 37, ../sass/components/_login.scss */
-.page-user #main-content {
-  width: 100%;
-  height: 75%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding-bottom: 20px; }
-/* line 45, ../sass/components/_login.scss */
-.page-user .page-user #main-content:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }
-/* line 54, ../sass/components/_login.scss */
-.page-user label, .page-user small {
-  display: none; }
-/* line 56, ../sass/components/_login.scss */
-.page-user .tabs li {
-  padding: 0; }
-/* line 60, ../sass/components/_login.scss */
-.page-user ul.primary {
-  padding-top: 5px; }
-/* line 64, ../sass/components/_login.scss */
-.page-user ul.primary li {
-  display: inherit;
-  width: 100%;
-  padding-bottom: 3px; }
-  /* line 68, ../sass/components/_login.scss */
-  .page-user ul.primary li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0 10px 0;
-    color: #b0b0b0;
-    background-color: #c4c4c4;
-    font-size: 18px;
-    text-align: center; }
-    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .page-user ul.primary li a:visited {
-      color: #b0b0b0; }
-    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .page-user ul.primary li a:focus {
-      color: white; }
-    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .page-user ul.primary li a:hover {
-      color: white; }
-    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .page-user ul.primary li a:active {
-      color: #18316a; }
-/* line 84, ../sass/components/_login.scss */
-.page-user ul.primary li a.active {
-  font-weight: normal;
-  color: #18316a; }
-
-/* line 2, ../sass/components/_loginform.scss */
-.page-user .page {
-  padding: 0px; }
-  /* line 4, ../sass/components/_loginform.scss */
-  .page-user .page form#user-pass,
-  .page-user .page form#user-register-form,
-  .page-user .page form#user-login {
-    clear: both;
-    width: 235px;
-    min-height: 225px;
-    margin: 0 auto;
-    /* Break Point */ }
-    /* line 11, ../sass/components/_loginform.scss */
-    .page-user .page form#user-pass .form-required,
-    .page-user .page form#user-register-form .form-required,
-    .page-user .page form#user-login .form-required {
-      clear: both;
-      padding: 24px 0 0 0; }
-    /* line 16, ../sass/components/_loginform.scss */
-    .page-user .page form#user-pass .form-actions,
-    .page-user .page form#user-register-form .form-actions,
-    .page-user .page form#user-login .form-actions {
-      padding-top: 24px; }
-    /* line 20, ../sass/components/_loginform.scss */
-    .page-user .page form#user-pass input[type="submit"],
-    .page-user .page form#user-register-form input[type="submit"],
-    .page-user .page form#user-login input[type="submit"] {
-      margin: auto;
-      clear: both;
-      width: 235px;
-      height: inherit;
-      padding: 17px 14px 17px 14px;
-      margin: 30px -1px  6px 0; }
-    /* line 29, ../sass/components/_loginform.scss */
-    .page-user .page form#user-pass input[type="text"],
-    .page-user .page form#user-pass input[type="password"],
-    .page-user .page form#user-register-form input[type="text"],
-    .page-user .page form#user-register-form input[type="password"],
-    .page-user .page form#user-login input[type="text"],
-    .page-user .page form#user-login input[type="password"] {
-      width: 100%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none;
-      margin: 0 auto;
-      height: 40px;
-      border: 1px solid #c4c4c4; }
-
 /* line 2, ../sass/components/_navigation.scss */
 .navigation nav[role="navigation"] {
   position: absolute;
@@ -1117,7 +1040,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   width: 24px;
   overflow: hidden;
   color: #b0b0b0; }
-  /* line 1904, ../sass/abstractions/_font-awesome.scss */
+  /* line 1904, ../sass/abstractions/_font_awesome.scss */
   .mobile-menu-button:before {
     content: "\f0c9";
     font-family: FontAwesome;
@@ -1244,6 +1167,170 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   left: inherit;
   bottom: inherit;
   right: inherit; }
+
+/* line 2, ../sass/components/_user_login.scss */
+.page-user footer[role="contentinfo"],
+.page-user .header-region,
+.page-user .sidebar-first,
+.page-user .sidebar-second,
+.page-user .navigation {
+  display: none; }
+/* line 9, ../sass/components/_user_login.scss */
+.page-user .siteinfo {
+  padding-left: 28px; }
+  /* line 13, ../sass/components/_user_login.scss */
+  .page-user .siteinfo figure a {
+    display: block;
+    width: 100px;
+    height: 20px; }
+    /* line 17, ../sass/components/_user_login.scss */
+    .page-user .siteinfo figure a img {
+      display: none; }
+  /* line 19, ../sass/components/_user_login.scss */
+  .page-user .siteinfo figure a:before {
+    content: "Home";
+    font-size: 14px; }
+/* line 26, ../sass/components/_user_login.scss */
+.page-user .page > div > h1 {
+  width: 230px;
+  height: 65px;
+  padding: 0;
+  margin: 0 auto;
+  text-indent: -9999px;
+  background: url("../images/mobile/mobile-logo.jpg") repeat-x; }
+/* line 37, ../sass/components/_user_login.scss */
+.page-user #main-content {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 20px; }
+/* line 45, ../sass/components/_user_login.scss */
+.page-user .page-user #main-content:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+/* line 54, ../sass/components/_user_login.scss */
+.page-user label, .page-user small {
+  display: none; }
+/* line 56, ../sass/components/_user_login.scss */
+.page-user .tabs li {
+  padding: 0; }
+/* line 60, ../sass/components/_user_login.scss */
+.page-user ul.primary {
+  padding-top: 5px; }
+/* line 64, ../sass/components/_user_login.scss */
+.page-user ul.primary li {
+  display: inherit;
+  width: 100%;
+  padding-bottom: 3px; }
+  /* line 68, ../sass/components/_user_login.scss */
+  .page-user ul.primary li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #b0b0b0;
+    background-color: #c4c4c4;
+    font-size: 18px;
+    text-align: center; }
+    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:visited {
+      color: #b0b0b0; }
+    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:focus {
+      color: white; }
+    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:hover {
+      color: white; }
+    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .page-user ul.primary li a:active {
+      color: #18316a; }
+/* line 84, ../sass/components/_user_login.scss */
+.page-user ul.primary li a.active {
+  font-weight: normal;
+  color: #18316a; }
+
+/* line 171, ../sass/components/_user_login.scss */
+.admin-menu.page-user ul.primary li a {
+  font-size: 13px; }
+
+/* line 2, ../sass/components/_user_login_form.scss */
+.page-user .page {
+  padding: 0px; }
+  /* line 4, ../sass/components/_user_login_form.scss */
+  .page-user .page form#user-pass,
+  .page-user .page form#user-register-form,
+  .page-user .page form#user-login {
+    clear: both;
+    width: 235px;
+    min-height: 225px;
+    margin: 0 auto;
+    /* Break Point */ }
+    /* line 11, ../sass/components/_user_login_form.scss */
+    .page-user .page form#user-pass .form-required,
+    .page-user .page form#user-register-form .form-required,
+    .page-user .page form#user-login .form-required {
+      clear: both;
+      padding: 24px 0 0 0; }
+    /* line 16, ../sass/components/_user_login_form.scss */
+    .page-user .page form#user-pass .form-actions,
+    .page-user .page form#user-register-form .form-actions,
+    .page-user .page form#user-login .form-actions {
+      padding-top: 24px; }
+    /* line 20, ../sass/components/_user_login_form.scss */
+    .page-user .page form#user-pass input[type="submit"],
+    .page-user .page form#user-register-form input[type="submit"],
+    .page-user .page form#user-login input[type="submit"] {
+      margin: auto;
+      clear: both;
+      width: 235px;
+      height: inherit;
+      padding: 17px 14px 17px 14px;
+      margin: 30px -1px  6px 0; }
+    /* line 29, ../sass/components/_user_login_form.scss */
+    .page-user .page form#user-pass input[type="text"],
+    .page-user .page form#user-pass input[type="password"],
+    .page-user .page form#user-register-form input[type="text"],
+    .page-user .page form#user-register-form input[type="password"],
+    .page-user .page form#user-login input[type="text"],
+    .page-user .page form#user-login input[type="password"] {
+      width: 100%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      margin: 0 auto;
+      height: 40px;
+      border: 1px solid #c4c4c4; }
+  /* line 59, ../sass/components/_user_login_form.scss */
+  .page-user .page form div.password-confirm {
+    margin-top: 0;
+    height: 0px; }
+  /* line 64, ../sass/components/_user_login_form.scss */
+  .page-user .page form #edit-picture {
+    margin-top: 40px; }
+  /* line 67, ../sass/components/_user_login_form.scss */
+  .page-user .page form .password-suggestions {
+    clear: both; }
+  /* line 70, ../sass/components/_user_login_form.scss */
+  .page-user .page form .password-strength {
+    float: left; }
+  /* line 73, ../sass/components/_user_login_form.scss */
+  .page-user .page form div.password-confirm {
+    float: left;
+    padding: 20px 0 10px 0; }
+  /* line 78, ../sass/components/_user_login_form.scss */
+  .page-user .page form #edit-picture-delete {
+    margin-top: 15px; }
+  /* line 82, ../sass/components/_user_login_form.scss */
+  .page-user .page form label[for=edit-picture-delete] {
+    float: left;
+    padding: 10px 10px 7px 0; }
 
 /*
 body {

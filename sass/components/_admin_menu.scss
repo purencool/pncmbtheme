@@ -2,6 +2,10 @@
 	div.siteinfo {
 		padding:20px 0 0 10px;
 	}
+	.tabs ul.primary {
+		background-color:$tabsMPrimaryBackGround;
+	}
+
 	.tabs ul.primary li {
 		display:inherit;
 		width:100%;
@@ -18,7 +22,7 @@
 			$tabsMPrimaryFocus
 			);
 			background-color:$tabsMPrimaryBackGround;
-			font-size:$mobileSLinkHeight;
+			
 			text-align:center;
 		}
 	}
@@ -26,7 +30,7 @@
 		font-weight:normal;
 		color:$aMActive;
 	}
-
+	
 	@include breakpoint($largeSmartPhone) {
 		.tabs ul.primary {
 			width:100%;
@@ -34,13 +38,14 @@
 			margin:0;
 			clear:both;
 			@include border-radius(5px);
-			background-color:$tabsMPrimaryBackGround;
+			background-color:white;
 		}
 
 		.tabs ul.primary li {
 			float:left;
 			width:auto;
 			padding-left:10px;
+			
 			padding-right: 18px;
 			padding-bottom:0px;
 			a {

@@ -16,7 +16,7 @@
 			.form-actions {
 				padding-top:24px;
 			}
-
+			
 			input[type="submit"] {
 				margin: auto;
 				clear:both;
@@ -55,6 +55,33 @@
 					margin:10px 0  6px 0;
 				}
 			}
+		}
+		form div.password-confirm {
+			margin-top:0;
+			height: 0px;
+		}
+		
+		form #edit-picture {
+			margin-top: 40px;
+		}
+		form .password-suggestions {
+			clear:both;
+		}
+		form  .password-strength{
+			float:left;
+		}
+		form  div.password-confirm {
+			float: left;
+			padding: 20px 0 10px 0;
+		}
+		
+		form #edit-picture-delete{
+			  margin-top: 15px
+		}
+		
+		form label[for=edit-picture-delete] {
+			float: left;
+			padding: 10px 10px 7px 0;	
 		}
 	}
 }
