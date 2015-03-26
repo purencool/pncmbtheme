@@ -973,19 +973,19 @@ h6 {
   border-bottom: 1px solid #cccccc;
   margin-bottom: 10px; }
 
-/* line 2, ../sass/components/_footer.scss */
-footer[role="contentinfo"] > div {
-  border-top: 1px solid #cccccc; }
 /* line 5, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .copy-right {
-  width: 60%;
-  margin: 0 auto; }
-  /* line 8, ../sass/components/_footer.scss */
+  border-top: 1px solid #cccccc; }
+  /* line 7, ../sass/components/_footer.scss */
+  footer[role="contentinfo"] .copy-right div {
+    width: 45%;
+    margin: 0 auto; }
+  /* line 12, ../sass/components/_footer.scss */
   footer[role="contentinfo"] .copy-right .design-by,
   footer[role="contentinfo"] .copy-right .copy-by {
     padding-right: 10px;
     float: left; }
-    /* line 12, ../sass/components/_footer.scss */
+    /* line 16, ../sass/components/_footer.scss */
     footer[role="contentinfo"] .copy-right .design-by a,
     footer[role="contentinfo"] .copy-right .copy-by a {
       color: gray; }
@@ -1169,28 +1169,28 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   right: inherit; }
 
 /* line 2, ../sass/components/_user_login.scss */
-.page-user footer[role="contentinfo"],
+.page-user footer[role="contentinfo"] > div:first-child,
 .page-user .header-region,
 .page-user .sidebar-first,
 .page-user .sidebar-second,
 .page-user .navigation {
   display: none; }
-/* line 9, ../sass/components/_user_login.scss */
+/* line 10, ../sass/components/_user_login.scss */
 .page-user .siteinfo {
   padding-left: 28px; }
-  /* line 13, ../sass/components/_user_login.scss */
+  /* line 14, ../sass/components/_user_login.scss */
   .page-user .siteinfo figure a {
     display: block;
     width: 100px;
     height: 20px; }
-    /* line 17, ../sass/components/_user_login.scss */
+    /* line 18, ../sass/components/_user_login.scss */
     .page-user .siteinfo figure a img {
       display: none; }
-  /* line 19, ../sass/components/_user_login.scss */
+  /* line 20, ../sass/components/_user_login.scss */
   .page-user .siteinfo figure a:before {
     content: "Home";
     font-size: 14px; }
-/* line 26, ../sass/components/_user_login.scss */
+/* line 27, ../sass/components/_user_login.scss */
 .page-user .page > div > h1 {
   width: 230px;
   height: 65px;
@@ -1198,7 +1198,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   margin: 0 auto;
   text-indent: -9999px;
   background: url("../images/mobile/mobile-logo.jpg") repeat-x; }
-/* line 37, ../sass/components/_user_login.scss */
+/* line 38, ../sass/components/_user_login.scss */
 .page-user #main-content {
   width: 100%;
   height: 75%;
@@ -1208,28 +1208,28 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   bottom: 0;
   right: 0;
   padding-bottom: 20px; }
-/* line 45, ../sass/components/_user_login.scss */
+/* line 49, ../sass/components/_user_login.scss */
 .page-user .page-user #main-content:after {
   content: ".";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both; }
-/* line 54, ../sass/components/_user_login.scss */
+/* line 58, ../sass/components/_user_login.scss */
 .page-user label, .page-user small {
   display: none; }
-/* line 56, ../sass/components/_user_login.scss */
+/* line 60, ../sass/components/_user_login.scss */
 .page-user .tabs li {
   padding: 0; }
-/* line 60, ../sass/components/_user_login.scss */
+/* line 64, ../sass/components/_user_login.scss */
 .page-user ul.primary {
   padding-top: 5px; }
-/* line 64, ../sass/components/_user_login.scss */
+/* line 68, ../sass/components/_user_login.scss */
 .page-user ul.primary li {
   display: inherit;
   width: 100%;
   padding-bottom: 3px; }
-  /* line 68, ../sass/components/_user_login.scss */
+  /* line 72, ../sass/components/_user_login.scss */
   .page-user ul.primary li a {
     display: block;
     width: 100%;
@@ -1250,14 +1250,22 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .page-user ul.primary li a:active {
       color: #18316a; }
-/* line 84, ../sass/components/_user_login.scss */
+/* line 88, ../sass/components/_user_login.scss */
 .page-user ul.primary li a.active {
   font-weight: normal;
   color: #18316a; }
 
-/* line 171, ../sass/components/_user_login.scss */
+/* line 175, ../sass/components/_user_login.scss */
 .admin-menu.page-user ul.primary li a {
   font-size: 13px; }
+
+/* line 179, ../sass/components/_user_login.scss */
+.admin-menu.page-user footer[role="contentinfo"] > div:first-child {
+  display: block; }
+
+/* line 183, ../sass/components/_user_login.scss */
+.admin-menu.page-user footer[role="contentinfo"] h2.title {
+  display: none; }
 
 /* line 2, ../sass/components/_user_login_form.scss */
 .page-user .page {
@@ -1331,6 +1339,17 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   .page-user .page form label[for=edit-picture-delete] {
     float: left;
     padding: 10px 10px 7px 0; }
+
+/* line 1, ../sass/site/_user_help.scss */
+#pnc-help {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  height: 200px; }
+
+/* line 7, ../sass/site/_user_help.scss */
+.help-slide {
+  margin-left: -100px; }
 
 /*
 body {

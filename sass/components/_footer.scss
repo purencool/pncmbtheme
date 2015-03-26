@@ -1,10 +1,14 @@
 footer[role="contentinfo"] {
 	> div { 
-		border-top:1px solid #cccccc;
+		
 	}
-	.copy-right{
-		width:60%;
-		margin:0 auto;
+	.copy-right {
+		border-top:1px solid #cccccc;
+		div {
+			 width: 45%;
+			 margin: 0 auto;
+			
+		}
 		.design-by,
 		.copy-by{
 			padding-right:10px;
