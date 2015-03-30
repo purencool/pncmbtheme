@@ -4,8 +4,9 @@ hgroup {
 
 
 .siteinfo {
-	float: left;
-	padding:22px 0 0 40px;
+	position:absolute;
+	top:55px;
+
 	figure {
 		padding:0px;
 		margin:0px;
@@ -16,6 +17,8 @@ hgroup {
 	}
 
 	@include breakpoint($largeSmartPhone) {
+		position:inherit;
+		float: left;
 		padding:10px 0;
 
 	}

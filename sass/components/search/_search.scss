@@ -1,7 +1,7 @@
 #search-block-form {
-	padding:20px 0 20px 0;
+	position:absolute;
+	top:130px;
 	width: 225px;
-	margin: 0 auto;
 	input[type="text"] {
 		float: left;
 		width:180px;
@@ -16,11 +16,11 @@
 		vertical-align: top;
 		font-family: 'FontAwesome';
 	}
-	clear:left;
+
 	@include breakpoint($smartPhone) {
-		clear:none;
+		position:inherit;
+		top:inherit;
 		float:right;
 		padding-top:32px;
 	}
-
 }

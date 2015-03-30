@@ -1,11 +1,13 @@
 footer[role="contentinfo"] {
-	> div { 
-		
+	> div {
 	}
 	.copy-right {
+		padding-left:5px;
 		border-top:1px solid #cccccc;
 		div {
+			@include breakpoint($largeSmartPhone) { 
 			 width: 45%;
+			}
 			 margin: 0 auto;
 			
 		}

@@ -42,6 +42,8 @@ function pncmbtheme_preprocess_html(&$vars,$hook) {
   //drupal_add_css('http://cloud.webtype.com/css/CXXXX.css','external');
 
   //googlefont
+  drupal_add_css('http://fonts.googleapis.com/css?family=Roboto:400,500,300','external');
+  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:400,700','external');
   drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:400,700','external');
 }
 
