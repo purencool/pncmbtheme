@@ -22,13 +22,47 @@
  */
 
 div.siteinfo hgroup {
-		display:block;
+	display:block;
 }
 /**
  * Titles
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  padding:0px;
-  margin:0;
+	font-weight: 500;
+	padding:0px;
+	margin:0;
+}
+
+/**
+ * Menu
+ */
+@include breakpoint($largeSmartPhone) {
+	.siteinfo {
+
+		figure {
+			background-color: white;
+		}
+	}
+	
+	
+	.navigation {
+		display: block;
+		position: absolute;
+		top: 68px;
+		right: 0;
+		left: 0px;
+		
+		ul.menu {
+			padding-left: 60px;
+		}
+	}
+}
+
+/**
+ * Page
+ */
+@include breakpoint($largeSmartPhone) {
+	.page {
+		padding-top: 23px;
+	}
 }

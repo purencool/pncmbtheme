@@ -4,16 +4,8 @@
 	top: 10px;
 	left: 10px;
 	width: 50px;
-	height:50px;
-
-	//@include breakpoint($smallPhone) {
-	// }
-
-	// @include breakpoint($mediumSmartPhone) {
-	// }
+	height:50px;	
 }
-
-
 
 #collapsed-menu-button {
 	background-color:$aMBackGround;
@@ -69,29 +61,22 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 
 	.navigation  ul.menu{
 		float:left;
-		padding: 30px 0 30px 0;
 		margin:0;
+		padding-left: 0px;
 	}
 
 	.navigation  ul.menu li {
 		float: left;
-		padding-right: 30px;
+		padding-right: 10px;
 		margin: 0;
 	}
 
 	.navigation  ul.menu li a{
 		display:block;
-		min-width:100px;
-		padding:10px 10px 10px 10px;
-		font-size:20px;
-		background-color:$aMBackGround;
-		color:$aMNormal;
+		color:#b0b0b0;;
 		text-align:center;
-		@include border-radius(5px);
 	}
-
-	.navigation  ul.menu li a.active-trail,
-	.navigation  ul.menu li a:hover {
-		color:$a2MHover;
+        .navigation  ul.menu li a:active {
+		color:#163d5f;
 	}
 }

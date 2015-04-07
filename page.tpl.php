@@ -11,6 +11,7 @@
 <?php print $mothership_poorthemers_helper; ?>
 
 <header role="banner">
+  <div class="header-border"></div>
   <div class="siteinfo">
     <?php if ($logo): ?>
       <figure>
@@ -31,13 +32,12 @@
     </hgroup>
     <?php endif; ?>
   </div>
-
+  
   <?php if($page['header']): ?>
     <div class="header-region">
       <?php print render($page['header']); ?>
     </div>
   <?php endif; ?>
-
 </header>
 <?php if ($page['navigation']): ?>
   <div class="navigation">

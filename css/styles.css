@@ -36,12 +36,7 @@ body:not(.node-type-page) .sidebar-first {
 
 /* line 1, ../sass/layouts/_footer.scss */
 footer[role="contentinfo"] {
-  clear: both;
   padding-top: 20px; }
-
-/* line 1, ../sass/layouts/_header.scss */
-header[role="banner"] {
-  clear: both; }
 
 /* line 1, ../sass/layouts/_inner_sidebar_content.scss */
 .content {
@@ -51,22 +46,22 @@ header[role="banner"] {
 div[class*='sidebar'] h2.title {
   margin-top: 0; }
 
-/* line 1, ../sass/layouts/_page.scss */
+/* line 1, ../sass/layouts/_scaffolding.scss */
 .page,
 .navigation,
-header[role="banner"] {
+header[role="banner"],
+footer[role="contentinfo"] {
   padding: 0 5px 0 5px;
   clear: both; }
 
 @media (min-width: 1020px) {
-  /* line 12, ../sass/layouts/_page.scss */
+  /* line 13, ../sass/layouts/_scaffolding.scss */
   footer[role="contentinfo"],
   .page,
   .navigation,
   header[role="banner"] {
     width: 1024px;
-    margin: 0 auto;
-    clear: both; } }
+    margin: 0 auto; } }
 /* line 1, ../sass/layouts/content/_content.scss */
 .content {
   clear: both; }
@@ -1020,18 +1015,31 @@ footer[role="contentinfo"] .copy-right {
       float: left;
       padding: 10px 0; } }
 
-/* line 30, ../sass/components/_header.scss */
-.header-region {
-  height: 150px; }
-  @media (min-width: 768px) {
-    /* line 30, ../sass/components/_header.scss */
-    .header-region {
-      height: inherit; } }
-  @media (min-width: 960px) {
-    /* line 30, ../sass/components/_header.scss */
-    .header-region {
-      float: right; } }
+@media (min-width: 768px) {
+  /* line 30, ../sass/components/_header.scss */
+  header[role="banner"] {
+    padding-top: 6px; }
 
+  /* line 34, ../sass/components/_header.scss */
+  .siteinfo hgroup {
+    padding-top: 7px; } }
+@media (min-width: 768px) {
+  /* line 43, ../sass/components/_header.scss */
+  .header-border {
+    position: absolute;
+    height: 1px;
+    top: 60px;
+    width: 768px;
+    background-color: gray;
+    z-index: -100; } }
+@media (min-width: 960px) {
+  /* line 54, ../sass/components/_header.scss */
+  .header-border {
+    width: 960px; } }
+@media (min-width: 1020px) {
+  /* line 59, ../sass/components/_header.scss */
+  .header-border {
+    width: 1020px; } }
 /* line 1, ../sass/components/business_details/_phone_number.scss */
 .ph-container {
   position: absolute;
@@ -1044,9 +1052,8 @@ footer[role="contentinfo"] .copy-right {
   .ph-container > div {
     float: right;
     padding-right: 10px;
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
+    height: 35px;
+    line-height: 35px;
     font-family: 'Roboto';
     font-size: 23px;
     color: white; }
@@ -1074,7 +1081,7 @@ footer[role="contentinfo"] .copy-right {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
-  /* line 22, ../sass/components/business_details/_phone_number.scss */
+  /* line 21, ../sass/components/business_details/_phone_number.scss */
   .ph-container .p-text {
     display: block;
     float: left;
@@ -1085,13 +1092,15 @@ footer[role="contentinfo"] .copy-right {
       position: inherit;
       height: inherit;
       background-color: #163d5f; }
-      /* line 30, ../sass/components/business_details/_phone_number.scss */
+      /* line 29, ../sass/components/business_details/_phone_number.scss */
       .ph-container > div {
+        padding-right: 0px;
         color: #163d5f; } }
 
 /* line 1, ../sass/components/business_details/_social_media.scss */
 .pnc-social {
-  float: right; }
+  float: right;
+  padding-top: 5px; }
   /* line 977, ../sass/abstractions/_font_awesome.scss */
   .pnc-social .twitter:before {
     content: "\f081";
@@ -1164,14 +1173,19 @@ footer[role="contentinfo"] .copy-right {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
-  /* line 13, ../sass/components/business_details/_social_media.scss */
+  /* line 14, ../sass/components/business_details/_social_media.scss */
   .pnc-social .twitter,
   .pnc-social .facebook,
   .pnc-social .linkedin {
     float: left;
     color: #163d5f;
     font-size: 30px; }
-  /* line 20, ../sass/components/business_details/_social_media.scss */
+  /* line 22, ../sass/components/business_details/_social_media.scss */
+  .pnc-social .twitter:before,
+  .pnc-social .facebook:before,
+  .pnc-social .linkedin:before {
+    padding: 0 0 0 5px; }
+  /* line 27, ../sass/components/business_details/_social_media.scss */
   .pnc-social .twitter a,
   .pnc-social .facebook a,
   .pnc-social .linkedin a {
@@ -1186,7 +1200,7 @@ footer[role="contentinfo"] .copy-right {
   width: 50px;
   height: 50px; }
 
-/* line 18, ../sass/components/menus/_navigation.scss */
+/* line 10, ../sass/components/menus/_navigation.scss */
 #collapsed-menu-button {
   background-color: #163d5f;
   border: 0px solid white;
@@ -1196,11 +1210,11 @@ footer[role="contentinfo"] .copy-right {
   padding: 0;
   color: white; }
 
-/* line 28, ../sass/components/menus/_navigation.scss */
+/* line 20, ../sass/components/menus/_navigation.scss */
 body #mobile-menu-wrapper #mobile-menu-inner {
   top: 85px !important; }
 
-/* line 31, ../sass/components/menus/_navigation.scss */
+/* line 23, ../sass/components/menus/_navigation.scss */
 .mobile-menu-button {
   display: block;
   font-size: 28px;
@@ -1233,11 +1247,11 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     background-position: 0% 0%;
     background-repeat: repeat; }
 
-/* line 41, ../sass/components/menus/_navigation.scss */
+/* line 33, ../sass/components/menus/_navigation.scss */
 #mobile-menu li, .mobile-menu li {
   border: 0px solid #163d5f; }
 
-/* line 45, ../sass/components/menus/_navigation.scss */
+/* line 37, ../sass/components/menus/_navigation.scss */
 .mobile-menu-slide li a,
 .mobile-menu-slide li a:focus,
 .mobile-menu-slide li a:visited {
@@ -1247,13 +1261,13 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   background-color: #163d5f;
   font-size: 20px; }
 
-/* line 55, ../sass/components/menus/_navigation.scss */
+/* line 47, ../sass/components/menus/_navigation.scss */
 .mobile-menu-slide li a.active-trail,
 .mobile-menu-slide li a:hover {
-  color: white; }
+  color: #b0b0b0; }
 
 @media (min-width: 768px) {
-  /* line 62, ../sass/components/menus/_navigation.scss */
+  /* line 54, ../sass/components/menus/_navigation.scss */
   .navigation nav[role="navigation"] {
     position: relative;
     top: auto;
@@ -1261,35 +1275,27 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     width: 100%;
     height: inherit; }
 
-  /* line 70, ../sass/components/menus/_navigation.scss */
+  /* line 62, ../sass/components/menus/_navigation.scss */
   .navigation ul.menu {
     float: left;
-    padding: 30px 0 30px 0;
-    margin: 0; }
+    margin: 0;
+    padding-left: 0px; }
 
-  /* line 76, ../sass/components/menus/_navigation.scss */
+  /* line 68, ../sass/components/menus/_navigation.scss */
   .navigation ul.menu li {
     float: left;
-    padding-right: 30px;
+    padding-right: 10px;
     margin: 0; }
 
-  /* line 82, ../sass/components/menus/_navigation.scss */
+  /* line 74, ../sass/components/menus/_navigation.scss */
   .navigation ul.menu li a {
     display: block;
-    min-width: 100px;
-    padding: 10px 10px 10px 10px;
-    font-size: 20px;
-    background-color: #163d5f;
-    color: white;
-    text-align: center;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
+    color: #b0b0b0;
+    text-align: center; }
 
-  /* line 93, ../sass/components/menus/_navigation.scss */
-  .navigation ul.menu li a.active-trail,
-  .navigation ul.menu li a:hover {
-    color: white; } }
+  /* line 79, ../sass/components/menus/_navigation.scss */
+  .navigation ul.menu li a:active {
+    color: #163d5f; } }
 /* line 2, ../sass/components/menus/_tabs_primary.scss */
 .admin-menu .tabs ul.primary {
   padding-top: 14px; }
@@ -2233,12 +2239,9 @@ body #mobile-menu-wrapper #mobile-menu-inner {
       float: left;
       margin-right: -100%;
       margin-left: 0;
-      clear: none; }
-      /* line 9, ../sass/layouts/content/_content_two_right_column.scss */
-      .front div[role="main"] article {
-        padding: 5px; } }
+      clear: none; } }
 
-/* line 21, ../sass/layouts/content/_content_two_right_column.scss */
+/* line 18, ../sass/layouts/content/_content_two_right_column.scss */
 .front [class*='sidebar'] {
   width: 100%;
   float: right;
@@ -2246,7 +2249,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   margin-right: 0;
   clear: none; }
   @media (min-width: 768px) {
-    /* line 21, ../sass/layouts/content/_content_two_right_column.scss */
+    /* line 18, ../sass/layouts/content/_content_two_right_column.scss */
     .front [class*='sidebar'] {
       width: 32.20339%;
       float: right;
@@ -2271,12 +2274,9 @@ body #mobile-menu-wrapper #mobile-menu-inner {
       float: left;
       margin-right: -100%;
       margin-left: 0;
-      clear: none; }
-      /* line 9, ../sass/layouts/content/_content_two_right_column.scss */
-      .not-front div[role="main"] article {
-        padding: 5px; } }
+      clear: none; } }
 
-/* line 21, ../sass/layouts/content/_content_two_right_column.scss */
+/* line 18, ../sass/layouts/content/_content_two_right_column.scss */
 .not-front [class*='sidebar'] {
   width: 100%;
   float: right;
@@ -2284,7 +2284,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   margin-right: 0;
   clear: none; }
   @media (min-width: 768px) {
-    /* line 21, ../sass/layouts/content/_content_two_right_column.scss */
+    /* line 18, ../sass/layouts/content/_content_two_right_column.scss */
     .not-front [class*='sidebar'] {
       width: 32.20339%;
       float: right;
@@ -2308,6 +2308,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   margin: 0; }
 
+/**
+ * Menu
+ */
+@media (min-width: 768px) {
+  /* line 42, ../sass/site/_display_and_layout.scss */
+  .siteinfo figure {
+    background-color: white; }
+
+  /* line 48, ../sass/site/_display_and_layout.scss */
+  .navigation {
+    display: block;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    left: 0px; }
+    /* line 55, ../sass/site/_display_and_layout.scss */
+    .navigation ul.menu {
+      padding-left: 60px; } }
+/**
+ * Page
+ */
+@media (min-width: 768px) {
+  /* line 65, ../sass/site/_display_and_layout.scss */
+  .page {
+    padding-top: 23px; } }
 /* line 1, ../sass/site/_user_help.scss */
 #pnc-help {
   position: fixed;

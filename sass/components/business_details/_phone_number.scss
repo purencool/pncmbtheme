@@ -1,34 +1,36 @@
 .ph-container{
-   position: absolute;
-   top: 0px;
-   right: 0px;
-   width:100%;
-   height:50px;
-   background-color: $aMBackGround;
-   > div {
-	   float:right;
-	   padding-right:10px;
-	   font-size: 20px;
-	   height:50px;
-	   line-height: 50px;
-	   font-family: 'Roboto';
-	   font-size: 23px;
-	   color:$aMNormal;
-   }
-   
-   .phone{
-	@include icon-phone;
-   }
-   .p-text{
-	display:block;
-	float:left;
-	text-indent: -9999px;  
-   }
-   @include breakpoint($largeSmartPhone) { 
-     position : inherit;
-     height:inherit;
-      > div { color:$aHover; }
-     background-color: $aMBackGround;
-     
-   }
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width:100%;
+	height:50px;
+	background-color: $aMBackGround;
+	> div {
+		float:right;
+		padding-right:10px;
+		height: 35px;
+		line-height: 35px;
+		font-family: 'Roboto';
+		font-size: 23px;
+		color:$aMNormal;
+	}
+
+	.phone{
+		@include icon-phone;
+	}
+	.p-text{
+		display:block;
+		float:left;
+		text-indent: -9999px;  
+	}
+	@include breakpoint($largeSmartPhone) { 
+		position : inherit;
+		height:inherit;
+		> div { 
+			padding-right:0px;
+			color:$aHover; 
+		}
+		background-color: $aMBackGround;
+
+	}
 }

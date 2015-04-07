@@ -1,26 +1,33 @@
 .pnc-social{
-   float:right;
-   .twitter{
-	@include icon-twitter-sign;
-   }
-   .facebook{
-	@include icon-facebook-sign;
- ;
-   }
-   .linkedin{
-	@include icon-linkedin-sign;
-   }
-   .twitter,
-   .facebook,
-   .linkedin{
-	   float:left;
-	   color:$aHover;
-	   font-size: 30px;
-   }
-   .twitter a,
-   .facebook a,
-   .linkedin a{
-	display:block;
-	text-indent: -9999px;
-   }
+	float:right;
+	padding-top:5px;
+	.twitter{
+		@include icon-twitter-sign;
+	}
+	.facebook{
+		@include icon-facebook-sign;
+		;
+	}
+	.linkedin{
+		@include icon-linkedin-sign;
+	}
+	.twitter,
+	.facebook,
+	.linkedin{
+		float:left;
+		color:$aHover;
+		font-size: 30px;
+	}
+
+	.twitter:before,
+		.facebook:before,
+		.linkedin:before {
+		padding: 0 0 0 5px;
+	}
+	.twitter a,
+	.facebook a,
+	.linkedin a{
+		display:block;
+		text-indent: -9999px;
+	}
 }

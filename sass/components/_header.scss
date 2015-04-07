@@ -1,13 +1,13 @@
 .siteinfo {
 	position:absolute;
 	top:55px;
-         
+
 	hgroup {
 		float:left;
 		display:none;
 	}
-	
-	
+
+
 	figure {
 		float:left;
 		padding:0px;
@@ -22,18 +22,41 @@
 		position:inherit;
 		float: left;
 		padding:10px 0;
-
 	}
 }
 
 
-.header-region {
-	height: 150px;
-	@include breakpoint($largeSmartPhone) {
-		height:inherit;
+@include breakpoint($largeSmartPhone) {
+	header[role="banner"] {
+		padding-top:6px;
 	}
-	
-	@include breakpoint($tablet) {
-		float: right;
+	.siteinfo {
+		hgroup {
+			padding-top:7px;
+		}
+	}
+
+}
+
+
+@include breakpoint($largeSmartPhone) {
+	.header-border {
+		position:absolute;
+		height: 1px;
+		top:60px;
+		width:768px;
+		background-color: $textColor;
+		z-index: -100;
+	}
+}
+
+@include breakpoint($tablet) {
+	.header-border {
+		width:960px;
+	}
+}
+@include breakpoint($smallDesktop) {
+	.header-border {
+		width:1020px;
 	}
 }

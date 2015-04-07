@@ -7,9 +7,6 @@
 		@include breakpoint($smartPhone) {}
 		@include breakpoint($largeSmartPhone) {
 			@include grid-span(8, 5);
-			article {
-				padding:5px;
-			}
 		}
 		@include breakpoint($tablet) {}
 		@include breakpoint($smallDesktop) {}

@@ -31,12 +31,7 @@ body:not(.node-type-page) .sidebar-first {
 
 /* line 1, ../sass/layouts/_footer.scss */
 footer[role="contentinfo"] {
-  clear: both;
   padding-top: 20px; }
-
-/* line 1, ../sass/layouts/_header.scss */
-header[role="banner"] {
-  clear: both; }
 
 /* line 1, ../sass/layouts/_inner_sidebar_content.scss */
 .content {
@@ -46,10 +41,11 @@ header[role="banner"] {
 div[class*='sidebar'] h2.title {
   margin-top: 0; }
 
-/* line 1, ../sass/layouts/_page.scss */
+/* line 1, ../sass/layouts/_scaffolding.scss */
 .page,
 .navigation,
-header[role="banner"] {
+header[role="banner"],
+footer[role="contentinfo"] {
   padding: 0 5px 0 5px;
   clear: both; }
 
@@ -913,10 +909,6 @@ footer[role="contentinfo"] .copy-right {
       display: block;
       width: 90%; }
 
-/* line 30, ../sass/components/_header.scss */
-.header-region {
-  height: 150px; }
-
 /* line 1, ../sass/components/business_details/_phone_number.scss */
 .ph-container {
   position: absolute;
@@ -929,9 +921,8 @@ footer[role="contentinfo"] .copy-right {
   .ph-container > div {
     float: right;
     padding-right: 10px;
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
+    height: 35px;
+    line-height: 35px;
     font-family: 'Roboto';
     font-size: 23px;
     color: white; }
@@ -959,7 +950,7 @@ footer[role="contentinfo"] .copy-right {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
-  /* line 22, ../sass/components/business_details/_phone_number.scss */
+  /* line 21, ../sass/components/business_details/_phone_number.scss */
   .ph-container .p-text {
     display: block;
     float: left;
@@ -967,7 +958,8 @@ footer[role="contentinfo"] .copy-right {
 
 /* line 1, ../sass/components/business_details/_social_media.scss */
 .pnc-social {
-  float: right; }
+  float: right;
+  padding-top: 5px; }
   /* line 977, ../sass/abstractions/_font_awesome.scss */
   .pnc-social .twitter:before {
     content: "\f081";
@@ -1040,14 +1032,19 @@ footer[role="contentinfo"] .copy-right {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
-  /* line 13, ../sass/components/business_details/_social_media.scss */
+  /* line 14, ../sass/components/business_details/_social_media.scss */
   .pnc-social .twitter,
   .pnc-social .facebook,
   .pnc-social .linkedin {
     float: left;
     color: #163d5f;
     font-size: 30px; }
-  /* line 20, ../sass/components/business_details/_social_media.scss */
+  /* line 22, ../sass/components/business_details/_social_media.scss */
+  .pnc-social .twitter:before,
+  .pnc-social .facebook:before,
+  .pnc-social .linkedin:before {
+    padding: 0 0 0 5px; }
+  /* line 27, ../sass/components/business_details/_social_media.scss */
   .pnc-social .twitter a,
   .pnc-social .facebook a,
   .pnc-social .linkedin a {
@@ -1062,7 +1059,7 @@ footer[role="contentinfo"] .copy-right {
   width: 50px;
   height: 50px; }
 
-/* line 18, ../sass/components/menus/_navigation.scss */
+/* line 10, ../sass/components/menus/_navigation.scss */
 #collapsed-menu-button {
   background-color: #163d5f;
   border: 0px solid white;
@@ -1072,11 +1069,11 @@ footer[role="contentinfo"] .copy-right {
   padding: 0;
   color: white; }
 
-/* line 28, ../sass/components/menus/_navigation.scss */
+/* line 20, ../sass/components/menus/_navigation.scss */
 body #mobile-menu-wrapper #mobile-menu-inner {
   top: 85px !important; }
 
-/* line 31, ../sass/components/menus/_navigation.scss */
+/* line 23, ../sass/components/menus/_navigation.scss */
 .mobile-menu-button {
   display: block;
   font-size: 28px;
@@ -1109,11 +1106,11 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     background-position: 0% 0%;
     background-repeat: repeat; }
 
-/* line 41, ../sass/components/menus/_navigation.scss */
+/* line 33, ../sass/components/menus/_navigation.scss */
 #mobile-menu li, .mobile-menu li {
   border: 0px solid #163d5f; }
 
-/* line 45, ../sass/components/menus/_navigation.scss */
+/* line 37, ../sass/components/menus/_navigation.scss */
 .mobile-menu-slide li a,
 .mobile-menu-slide li a:focus,
 .mobile-menu-slide li a:visited {
@@ -1123,10 +1120,10 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   background-color: #163d5f;
   font-size: 20px; }
 
-/* line 55, ../sass/components/menus/_navigation.scss */
+/* line 47, ../sass/components/menus/_navigation.scss */
 .mobile-menu-slide li a.active-trail,
 .mobile-menu-slide li a:hover {
-  color: white; }
+  color: #b0b0b0; }
 
 /* line 2, ../sass/components/menus/_tabs_primary.scss */
 .admin-menu .tabs ul.primary {
@@ -1823,7 +1820,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   .front div[role="main"] article {
     padding: 5px 0px 5px 0; }
 
-/* line 21, ../sass/layouts/content/_content_two_right_column.scss */
+/* line 18, ../sass/layouts/content/_content_two_right_column.scss */
 .front [class*='sidebar'] {
   width: 100%;
   float: right;
@@ -1842,7 +1839,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   .not-front div[role="main"] article {
     padding: 5px 0px 5px 0; }
 
-/* line 21, ../sass/layouts/content/_content_two_right_column.scss */
+/* line 18, ../sass/layouts/content/_content_two_right_column.scss */
 .not-front [class*='sidebar'] {
   width: 100%;
   float: right;
@@ -1866,6 +1863,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   margin: 0; }
 
+/**
+ * Menu
+ */
+/**
+ * Page
+ */
 /* line 1, ../sass/site/_user_help.scss */
 #pnc-help {
   position: fixed;

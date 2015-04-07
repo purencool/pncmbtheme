@@ -1,32 +1,24 @@
-
-// Body reset
-body {
+.page,
+.navigation,
+header[role="banner"],
+footer[role="contentinfo"] {
+	padding:0 5px 0 5px;
+	clear:both;
 }
 
+@include breakpoint($smartPhone) {}
+@include breakpoint($largeSmartPhone) {}
+@include breakpoint($tablet) {}
+@include breakpoint($smallDesktop) {
+	footer[role="contentinfo"],
+	.page,
+	.navigation,
+	header[role="banner"] {
+		width:1024px;
+		margin:0 auto;
+	}
+}
+@include breakpoint($mediumDesktop) {}
+@include breakpoint($desktop) {}
+@include breakpoint($wideDesktop) {}
 
-h1 {
- a{}
-}
-h2 {
-  a{}
-}
-h3 {
-  a{}
-}
-h4 {
-  a{}
-}
-h5 {
-  a{}
-}
-h6 {
-  a{}
-}
-ul {
-  li {a{}}
-}
-
-lo {
-  li {a{}}
-}
-p{}
