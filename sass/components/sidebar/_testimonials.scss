@@ -1,0 +1,42 @@
+#block-views-testimonial-testimonial {
+	background-color: $backgroundColorOne;
+	
+	h2.title {
+	   width: 160px;
+	   margin: 0 auto;
+	   padding-top: 16px;
+	   padding-bottom:25px;
+	}
+	> div {
+		
+		.testmon {
+			width: 170px;
+			margin: 0 auto;
+			@include icon-quote-left;
+			font-size: 30px;
+			color:$aNormal;
+		}
+		.testmon:before {
+		   float:left
+		}
+			
+		.testmon {
+			background-color: $backgroundColorOne;
+			.title {
+				display:none;
+			}
+			.body {
+				width:130px;
+				float:right;
+				font-size:$baseFontSize;
+				color:$textColor;
+			}
+
+			.by {	
+				clear:both;
+				padding: 0px 10px 25px 40px;
+				font-size:$baseFontSize;
+			}
+		}
+	}
+}

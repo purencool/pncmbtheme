@@ -1,13 +1,15 @@
-hgroup {
-	display:none;
-}
-
-
 .siteinfo {
 	position:absolute;
 	top:55px;
-
+         
+	hgroup {
+		float:left;
+		display:none;
+	}
+	
+	
 	figure {
+		float:left;
 		padding:0px;
 		margin:0px;
 		a {

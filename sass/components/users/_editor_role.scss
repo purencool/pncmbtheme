@@ -1,5 +1,5 @@
-.admin-menu,
-.page-admin-editorpanel{
+.admin-menu:not(.node-type-page),
+.page-admin-editorpanel:not(.node-type-page){
 	h1 {
 		background-color: #e0e0d8;
 		padding:10px;

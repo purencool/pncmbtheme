@@ -31,3 +31,8 @@ body {
 //*/
 
 @include sgs-change('debug', true);
+
+/**
+ *	User overrides
+ */
+@include userLoginSingleColumnDefault();

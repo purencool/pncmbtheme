@@ -1,0 +1,34 @@
+/**
+ * Site Layout
+ */
+
+@include contentSingleColumnDefault('.page-our-gallery');
+/*
+@include contentThreeColumnDefault('.front');
+@include contentThreeColumnDefault('.not-front');
+//*/
+/*
+@include contentTwoLeftColumnDefault('.front');
+@include contentTwoLeftColumnDefault('.not-front');
+//*/
+//*
+@include contentTwoRightColumnDefault('.front');
+@include contentTwoRightColumnDefault('.not-front');
+//*/
+
+
+/**
+ * Site Display
+ */
+
+div.siteinfo hgroup {
+		display:block;
+}
+/**
+ * Titles
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  padding:0px;
+  margin:0;
+}

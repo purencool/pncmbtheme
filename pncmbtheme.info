@@ -73,7 +73,7 @@ settings[mothership_classes_region] = 1
 settings[mothership_region_wrapper] = 1
 
 settings[mothership_classes_block] = 1
-settings[mothership_classes_block_id] = 1
+settings[mothership_classes_block_id] = 0
 settings[mothership_classes_block_id_as_class] = 0
 settings[mothership_classes_block_contentdiv] = 1
 

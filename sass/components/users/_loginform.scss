@@ -1,4 +1,4 @@
-.page-user {
+/*.page-user {
 	.page {
 		padding:0px;
 		form#user-pass,
@@ -35,7 +35,7 @@
 			}
 
 
-			/* Break Point */
+			//-- Break Point
 			@include breakpoint($smartPhone) {
 				input[type="submit"] {
 				
@@ -58,3 +58,4 @@
 		}
 	}
 }
+*/
