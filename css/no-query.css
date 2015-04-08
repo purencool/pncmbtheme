@@ -46,8 +46,16 @@ div[class*='sidebar'] h2.title {
 .navigation,
 header[role="banner"],
 footer[role="contentinfo"] {
-  padding: 0 5px 0 5px;
   clear: both; }
+
+/* line 9, ../sass/layouts/_scaffolding.scss */
+.navigation {
+  padding: 0 5px 0 5px; }
+
+/* line 13, ../sass/layouts/_scaffolding.scss */
+.page,
+header[role="banner"] {
+  padding: 35px 5px 0 5px; }
 
 /* line 1, ../sass/layouts/content/_content.scss */
 .content {
@@ -124,65 +132,6 @@ footer[role="contentinfo"] {
   }
 }
 //*/
-/*!
- *  Font Awesome 3.0.2
- *  the iconic font designed for use with Twitter Bootstrap
- *  -------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation
- *  can be found at: http://fortawesome.github.com/Font-Awesome/
- *
- *  License
- *  -------------------------------------------------------
- *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
- *    http://opensource.org/licenses/mit-license.html
- *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
- *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
- *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
- *
- *  Contact
- *  -------------------------------------------------------
- *  Email: dave@davegandy.com
- *  Twitter: http://twitter.com/fortaweso_me
- *  Work: Lead Product Designer @ http://kyruus.com
- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=3.0.1");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/*  Font Awesome styles
-    ------------------------------------------------------- */
-/* makes the font 33% larger relative to the icon container */
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg); }
-  100% {
-    -moz-transform: rotate(359deg); } }
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg); } }
-@-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg); }
-  100% {
-    -o-transform: rotate(359deg); } }
-@-ms-keyframes spin {
-  0% {
-    -ms-transform: rotate(0deg); }
-  100% {
-    -ms-transform: rotate(359deg); } }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(359deg); } }
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
-/* \f020 doesn't work in Safari. all shifted one down */
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
@@ -534,382 +483,45 @@ h6 {
   a {  @include link-colors($h6Normal,$h6Hover,$h6Active,$h6Visited,$h6Focus);}
 }
 //*/
-/* line 2, ../sass/components/_action_links.scss */
-.admin-menu .action-links {
-  margin: 0px;
-  padding: 14px 0; }
-/* line 6, ../sass/components/_action_links.scss */
-.admin-menu .action-links li {
-  display: inherit;
-  width: 100%;
-  padding-left: 0px;
-  padding-bottom: 3px; }
-  /* line 11, ../sass/components/_action_links.scss */
-  .admin-menu .action-links li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0 10px 0;
-    color: #b0b0b0;
-    text-align: center;
-    background-color: #c4c4c4; }
-    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .action-links li a:visited {
-      color: #b0b0b0; }
-    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .action-links li a:focus {
-      color: white; }
-    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .action-links li a:hover {
-      color: white; }
-    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-    .admin-menu .action-links li a:active {
-      color: #18316a; }
-/* line 26, ../sass/components/_action_links.scss */
-.admin-menu .action-links li a.active {
-  font-weight: normal;
-  color: White; }
-
-/* line 2, ../sass/components/_basic_gallery.scss */
-.pnc-bg {
-  margin: 0px;
-  padding: 0px; }
-  /* line 5, ../sass/components/_basic_gallery.scss */
-  .pnc-bg div:first-child {
-    float: left; }
-    /* line 7, ../sass/components/_basic_gallery.scss */
-    .pnc-bg div:first-child a:last-child {
-      display: block;
-      position: relative;
-      color: white;
-      text-align: center;
-      font-weight: 700;
-      font-size: 3em;
-      -webkit-touch-callout: none !important; }
-      /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-      .pnc-bg div:first-child a:last-child:visited {
-        color: white; }
-      /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-      .pnc-bg div:first-child a:last-child:focus {
-        color: white; }
-      /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-      .pnc-bg div:first-child a:last-child:hover {
-        color: white; }
-      /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
-      .pnc-bg div:first-child a:last-child:active {
-        color: white; }
-      /* line 27, ../sass/components/_basic_gallery.scss */
-      .pnc-bg div:first-child a:last-child span {
-        display: none;
-        position: absolute; }
-      /* line 31, ../sass/components/_basic_gallery.scss */
-      .pnc-bg div:first-child a:last-child .overlay {
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0.7;
-        filter: alpha(opacity=70);
-        background-color: #163d5f; }
-      /* line 40, ../sass/components/_basic_gallery.scss */
-      .pnc-bg div:first-child a:last-child .title {
-        top: 24%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 2%;
-        font-size: .8em;
-        line-height: 98%; }
-  /* line 86, ../sass/components/_basic_gallery.scss */
-  .pnc-bg div:last-child .bg-group {
-    display: none; }
-
-/**
-* Colorbox Core Style:
-* The following CSS is consistent between example themes and should not be altered.
-*/
-/**
-* Colorbox Core Style:
-* The following CSS is consistent between example themes and should not be altered.
-*/
-/* line 104, ../sass/components/_basic_gallery.scss */
-#colorbox, #cboxOverlay, #cboxWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  overflow: hidden; }
-
-/* line 111, ../sass/components/_basic_gallery.scss */
-#cboxOverlay {
-  position: fixed;
-  width: 100%;
-  height: 100%; }
-
-/* line 116, ../sass/components/_basic_gallery.scss */
-#cboxMiddleLeft, #cboxBottomLeft {
-  clear: left; }
-
-/* line 119, ../sass/components/_basic_gallery.scss */
-#cboxContent {
-  position: relative; }
-
-/* line 122, ../sass/components/_basic_gallery.scss */
-#cboxLoadedContent {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
-
-/* line 126, ../sass/components/_basic_gallery.scss */
-#cboxTitle {
-  margin: 0; }
-
-/* line 129, ../sass/components/_basic_gallery.scss */
-#cboxLoadingOverlay, #cboxLoadingGraphic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-/**
-* These elements are buttons, and may need to have additional
-* styles reset to avoid unwanted base styles.
-*/
-/* line 140, ../sass/components/_basic_gallery.scss */
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  overflow: visible;
-  width: auto;
-  background: none;
-  cursor: pointer; }
-
-/**
-* Avoid outlines on :active (mouseclick),
-* but preserve outlines on :focus (tabbed navigating)
-*/
-/* line 153, ../sass/components/_basic_gallery.scss */
-#cboxPrevious:active, #cboxNext:active, #cboxClose:active, #cboxSlideshow:active {
-  outline: 0; }
-
-/* line 156, ../sass/components/_basic_gallery.scss */
-.cboxPhoto {
-  float: left;
-  margin: auto;
-  border: 0;
-  display: block;
-  max-width: none; }
-
-/* line 163, ../sass/components/_basic_gallery.scss */
-.cboxIframe {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 0; }
-
-/* Reset box sizing to content-box if theme is using border-box. */
-/* line 170, ../sass/components/_basic_gallery.scss */
-#colorbox, #cboxContent, #cboxLoadedContent {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-/**
-* Colorbox module default style:
-* The styles are ordered & tabbed in a way that represents
-* the nesting of the generated HTML.
-*/
-/* line 181, ../sass/components/_basic_gallery.scss */
-#cboxOverlay {
-  background: #000; }
-
-/* line 184, ../sass/components/_basic_gallery.scss */
-#colorbox {
-  outline: 0; }
-
-/* line 187, ../sass/components/_basic_gallery.scss */
-#cboxWrapper {
-  background: #fff; }
-
-/* line 201, ../sass/components/_basic_gallery.scss */
-#cboxBottomLeft {
-  width: 15px;
-  height: 10px; }
-
-/* line 208, ../sass/components/_basic_gallery.scss */
-#cboxBottomRight {
-  width: 15px;
-  height: 10px; }
-
-/* line 212, ../sass/components/_basic_gallery.scss */
-#cboxMiddleLeft {
-  width: 15px; }
-
-/* line 215, ../sass/components/_basic_gallery.scss */
-#cboxMiddleRight {
-  width: 15px; }
-
-/* line 218, ../sass/components/_basic_gallery.scss */
-#cboxContent {
-  background: #fff;
-  overflow: hidden; }
-
-/* line 222, ../sass/components/_basic_gallery.scss */
-#cboxError {
-  padding: 50px;
-  border: 1px solid #ccc; }
-
-/* line 226, ../sass/components/_basic_gallery.scss */
-#cboxLoadedContent {
-  margin-bottom: 28px;
-  margin-top: 28px; }
-
-/* line 230, ../sass/components/_basic_gallery.scss */
-#cboxTitle {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.7);
-  bottom: 28px;
-  left: 0;
-  color: #535353;
-  width: 100%;
-  padding: 4px 6px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 242, ../sass/components/_basic_gallery.scss */
-#cboxCurrent {
-  position: absolute;
-  bottom: 4px;
-  left: 60px;
-  color: #949494; }
-
-/* line 248, ../sass/components/_basic_gallery.scss */
-.cboxSlideshow_on #cboxSlideshow {
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-  background: url(../images/gallery/controls.png) no-repeat -75px -50px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px; }
-
-/* line 257, ../sass/components/_basic_gallery.scss */
-.cboxSlideshow_on #cboxSlideshow:hover {
-  background-position: -101px -50px; }
-
-/* line 260, ../sass/components/_basic_gallery.scss */
-.cboxSlideshow_off #cboxSlideshow {
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-  background: url(../images/gallery/controls.png) no-repeat -25px -50px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px; }
-
-/* line 269, ../sass/components/_basic_gallery.scss */
-.cboxSlideshow_off #cboxSlideshow:hover {
-  background-position: -49px -50px; }
-
-/* line 272, ../sass/components/_basic_gallery.scss */
-#cboxPrevious {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url(../images/gallery/controls.png) no-repeat -75px 0px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px; }
-
-/* line 281, ../sass/components/_basic_gallery.scss */
-#cboxPrevious:hover {
-  background-position: -75px -25px; }
-
-/* line 284, ../sass/components/_basic_gallery.scss */
-#cboxNext {
-  position: absolute;
-  bottom: 0;
-  left: 27px;
-  background: url(../images/gallery/controls.png) no-repeat -50px 0px;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px; }
-
-/* line 293, ../sass/components/_basic_gallery.scss */
-#cboxNext:hover {
-  background-position: -50px -25px; }
-
-/* line 296, ../sass/components/_basic_gallery.scss */
-#cboxLoadingOverlay {
-  background: #fff; }
-
-/* line 299, ../sass/components/_basic_gallery.scss */
-#cboxLoadingGraphic {
-  background: url(../images/gallery/loading_animation.gif) no-repeat center center; }
-
-/* line 302, ../sass/components/_basic_gallery.scss */
-#cboxClose {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(../images/gallery/controls.png) no-repeat -24px 2px;
-  width: 30px;
-  height: 30px;
-  -ms-transform: scale(1.09, 1.09);
-  -webkit-transform: scale(1.09, 1.09);
-  transform: scale(1.09, 1.09);
-  margin-top: 30px;
-  text-indent: -9999px; }
-
-/* line 315, ../sass/components/_basic_gallery.scss */
-#cboxClose:hover {
-  background-position: -25px -25px; }
-
-/* line 1, ../sass/components/_breadcrumb.scss */
-.breadcrumb {
-  padding: 10px 0 10px; }
-
-/* line 7, ../sass/components/_breadcrumb.scss */
-.page-user .breadcrumb {
-  display: none; }
-
-/* line 4, ../sass/components/_footer.scss */
+/* line 4, ../sass/components/footers/_footer.scss */
 footer[role="contentinfo"] .copy-right {
   padding-left: 5px;
   border-top: 1px solid #cccccc; }
-  /* line 7, ../sass/components/_footer.scss */
+  /* line 5, ../sass/components/footers/_footer.scss */
+  footer[role="contentinfo"] .copy-right p {
+    margin: 0; }
+  /* line 10, ../sass/components/footers/_footer.scss */
   footer[role="contentinfo"] .copy-right div {
     margin: 0 auto; }
-  /* line 14, ../sass/components/_footer.scss */
+  /* line 17, ../sass/components/footers/_footer.scss */
   footer[role="contentinfo"] .copy-right .design-by,
   footer[role="contentinfo"] .copy-right .copy-by {
     padding-right: 10px;
     float: left; }
-    /* line 18, ../sass/components/_footer.scss */
+    /* line 21, ../sass/components/footers/_footer.scss */
     footer[role="contentinfo"] .copy-right .design-by a,
     footer[role="contentinfo"] .copy-right .copy-by a {
       color: gray; }
 
-/* line 1, ../sass/components/_header.scss */
+/* line 1, ../sass/components/header/_header.scss */
 .siteinfo {
   position: absolute;
   top: 55px; }
-  /* line 5, ../sass/components/_header.scss */
+  /* line 5, ../sass/components/header/_header.scss */
   .siteinfo hgroup {
     float: left;
     display: none; }
-  /* line 11, ../sass/components/_header.scss */
+  /* line 11, ../sass/components/header/_header.scss */
   .siteinfo figure {
     float: left;
     padding: 0px;
     margin: 0px; }
-    /* line 15, ../sass/components/_header.scss */
+    /* line 15, ../sass/components/header/_header.scss */
     .siteinfo figure a {
       display: block;
       width: 90%; }
 
-/* line 1, ../sass/components/business_details/_phone_number.scss */
+/* line 1, ../sass/components/header/_phone_number.scss */
 .ph-container {
   position: absolute;
   top: 0px;
@@ -917,9 +529,10 @@ footer[role="contentinfo"] .copy-right {
   width: 100%;
   height: 50px;
   background-color: #163d5f; }
-  /* line 8, ../sass/components/business_details/_phone_number.scss */
+  /* line 8, ../sass/components/header/_phone_number.scss */
   .ph-container > div {
     float: right;
+    padding-top: 8px;
     padding-right: 10px;
     height: 35px;
     line-height: 35px;
@@ -950,13 +563,13 @@ footer[role="contentinfo"] .copy-right {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
-  /* line 21, ../sass/components/business_details/_phone_number.scss */
+  /* line 22, ../sass/components/header/_phone_number.scss */
   .ph-container .p-text {
     display: block;
     float: left;
     text-indent: -9999px; }
 
-/* line 1, ../sass/components/business_details/_social_media.scss */
+/* line 1, ../sass/components/header/_social_media.scss */
 .pnc-social {
   float: right;
   padding-top: 5px; }
@@ -1032,26 +645,103 @@ footer[role="contentinfo"] .copy-right {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
-  /* line 14, ../sass/components/business_details/_social_media.scss */
+  /* line 1522, ../sass/abstractions/_font_awesome.scss */
+  .pnc-social .email:before {
+    content: "\f0e0";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    padding-right: 5px;
+    text-decoration: none;
+    /* sprites.less reset */
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat; }
+  /* line 18, ../sass/components/header/_social_media.scss */
   .pnc-social .twitter,
   .pnc-social .facebook,
-  .pnc-social .linkedin {
+  .pnc-social .linkedin,
+  .pnc-social .email {
     float: left;
     color: #163d5f;
     font-size: 30px; }
-  /* line 22, ../sass/components/business_details/_social_media.scss */
+  /* line 28, ../sass/components/header/_social_media.scss */
   .pnc-social .twitter:before,
   .pnc-social .facebook:before,
-  .pnc-social .linkedin:before {
-    padding: 0 0 0 5px; }
-  /* line 27, ../sass/components/business_details/_social_media.scss */
+  .pnc-social .linkedin:before,
+  .pnc-social .email:before {
+    float: left;
+    padding: 0 0 0 5px;
+    z-index: -100; }
+  /* line 37, ../sass/components/header/_social_media.scss */
   .pnc-social .twitter a,
   .pnc-social .facebook a,
-  .pnc-social .linkedin a {
+  .pnc-social .linkedin a,
+  .pnc-social .email a {
     display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    z-index: 100;
     text-indent: -9999px; }
 
-/* line 2, ../sass/components/menus/_navigation.scss */
+/* line 2, ../sass/components/navigations/_action_links.scss */
+.admin-menu .action-links {
+  margin: 0px;
+  padding: 14px 0; }
+/* line 6, ../sass/components/navigations/_action_links.scss */
+.admin-menu .action-links li {
+  display: inherit;
+  width: 100%;
+  padding-left: 0px;
+  padding-bottom: 3px; }
+  /* line 11, ../sass/components/navigations/_action_links.scss */
+  .admin-menu .action-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #b0b0b0;
+    text-align: center;
+    background-color: #c4c4c4; }
+    /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .action-links li a:visited {
+      color: #b0b0b0; }
+    /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .action-links li a:focus {
+      color: white; }
+    /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .action-links li a:hover {
+      color: white; }
+    /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+    .admin-menu .action-links li a:active {
+      color: #18316a; }
+/* line 26, ../sass/components/navigations/_action_links.scss */
+.admin-menu .action-links li a.active {
+  font-weight: normal;
+  color: White; }
+
+/* line 1, ../sass/components/navigations/_breadcrumb.scss */
+.breadcrumb {
+  padding: 10px 0 10px; }
+
+/* line 7, ../sass/components/navigations/_breadcrumb.scss */
+.page-user .breadcrumb {
+  display: none; }
+
+/* line 2, ../sass/components/navigations/_navigation.scss */
 .navigation nav[role="navigation"] {
   position: absolute;
   top: 10px;
@@ -1059,7 +749,7 @@ footer[role="contentinfo"] .copy-right {
   width: 50px;
   height: 50px; }
 
-/* line 10, ../sass/components/menus/_navigation.scss */
+/* line 10, ../sass/components/navigations/_navigation.scss */
 #collapsed-menu-button {
   background-color: #163d5f;
   border: 0px solid white;
@@ -1069,11 +759,11 @@ footer[role="contentinfo"] .copy-right {
   padding: 0;
   color: white; }
 
-/* line 20, ../sass/components/menus/_navigation.scss */
+/* line 20, ../sass/components/navigations/_navigation.scss */
 body #mobile-menu-wrapper #mobile-menu-inner {
   top: 85px !important; }
 
-/* line 23, ../sass/components/menus/_navigation.scss */
+/* line 23, ../sass/components/navigations/_navigation.scss */
 .mobile-menu-button {
   display: block;
   font-size: 28px;
@@ -1106,11 +796,11 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     background-position: 0% 0%;
     background-repeat: repeat; }
 
-/* line 33, ../sass/components/menus/_navigation.scss */
+/* line 33, ../sass/components/navigations/_navigation.scss */
 #mobile-menu li, .mobile-menu li {
   border: 0px solid #163d5f; }
 
-/* line 37, ../sass/components/menus/_navigation.scss */
+/* line 37, ../sass/components/navigations/_navigation.scss */
 .mobile-menu-slide li a,
 .mobile-menu-slide li a:focus,
 .mobile-menu-slide li a:visited {
@@ -1120,21 +810,21 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   background-color: #163d5f;
   font-size: 20px; }
 
-/* line 47, ../sass/components/menus/_navigation.scss */
+/* line 47, ../sass/components/navigations/_navigation.scss */
 .mobile-menu-slide li a.active-trail,
 .mobile-menu-slide li a:hover {
   color: #b0b0b0; }
 
-/* line 2, ../sass/components/menus/_tabs_primary.scss */
+/* line 2, ../sass/components/navigations/_tabs_primary.scss */
 .admin-menu .tabs ul.primary {
   padding-top: 14px; }
-/* line 5, ../sass/components/menus/_tabs_primary.scss */
+/* line 5, ../sass/components/navigations/_tabs_primary.scss */
 .admin-menu .tabs ul.primary li {
   display: inherit;
   width: 100%;
   padding-left: 0px;
   padding-bottom: 3px; }
-  /* line 10, ../sass/components/menus/_tabs_primary.scss */
+  /* line 10, ../sass/components/navigations/_tabs_primary.scss */
   .admin-menu .tabs ul.primary li a {
     display: block;
     width: 100%;
@@ -1154,12 +844,12 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .admin-menu .tabs ul.primary li a:active {
       color: #18316a; }
-/* line 25, ../sass/components/menus/_tabs_primary.scss */
+/* line 25, ../sass/components/navigations/_tabs_primary.scss */
 .admin-menu .tabs ul.primary li a.active {
   font-weight: normal;
   color: White; }
 
-/* line 76, ../sass/components/menus/_tabs_primary.scss */
+/* line 76, ../sass/components/navigations/_tabs_primary.scss */
 .admin-menu.page-user .page #main-content {
   width: 98%;
   height: inherit;
@@ -1173,6 +863,303 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   left: inherit;
   bottom: inherit;
   right: inherit; }
+
+/* line 2, ../sass/components/pages/_basic_gallery.scss */
+.pnc-bg {
+  margin: 0px;
+  padding: 0px; }
+  /* line 5, ../sass/components/pages/_basic_gallery.scss */
+  .pnc-bg div:first-child {
+    float: left; }
+    /* line 7, ../sass/components/pages/_basic_gallery.scss */
+    .pnc-bg div:first-child a:last-child {
+      display: block;
+      position: relative;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      font-size: 3em;
+      -webkit-touch-callout: none !important; }
+      /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      .pnc-bg div:first-child a:last-child:visited {
+        color: white; }
+      /* line 21, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      .pnc-bg div:first-child a:last-child:focus {
+        color: white; }
+      /* line 24, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      .pnc-bg div:first-child a:last-child:hover {
+        color: white; }
+      /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      .pnc-bg div:first-child a:last-child:active {
+        color: white; }
+      /* line 27, ../sass/components/pages/_basic_gallery.scss */
+      .pnc-bg div:first-child a:last-child span {
+        display: none;
+        position: absolute; }
+      /* line 31, ../sass/components/pages/_basic_gallery.scss */
+      .pnc-bg div:first-child a:last-child .overlay {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        background-color: #163d5f; }
+      /* line 40, ../sass/components/pages/_basic_gallery.scss */
+      .pnc-bg div:first-child a:last-child .title {
+        top: 24%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2%;
+        font-size: .8em;
+        line-height: 98%; }
+  /* line 86, ../sass/components/pages/_basic_gallery.scss */
+  .pnc-bg div:last-child .bg-group {
+    display: none; }
+
+/**
+* Colorbox Core Style:
+* The following CSS is consistent between example themes and should not be altered.
+*/
+/**
+* Colorbox Core Style:
+* The following CSS is consistent between example themes and should not be altered.
+*/
+/* line 104, ../sass/components/pages/_basic_gallery.scss */
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden; }
+
+/* line 111, ../sass/components/pages/_basic_gallery.scss */
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+/* line 116, ../sass/components/pages/_basic_gallery.scss */
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+/* line 119, ../sass/components/pages/_basic_gallery.scss */
+#cboxContent {
+  position: relative; }
+
+/* line 122, ../sass/components/pages/_basic_gallery.scss */
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+/* line 126, ../sass/components/pages/_basic_gallery.scss */
+#cboxTitle {
+  margin: 0; }
+
+/* line 129, ../sass/components/pages/_basic_gallery.scss */
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/**
+* These elements are buttons, and may need to have additional
+* styles reset to avoid unwanted base styles.
+*/
+/* line 140, ../sass/components/pages/_basic_gallery.scss */
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  width: auto;
+  background: none;
+  cursor: pointer; }
+
+/**
+* Avoid outlines on :active (mouseclick),
+* but preserve outlines on :focus (tabbed navigating)
+*/
+/* line 153, ../sass/components/pages/_basic_gallery.scss */
+#cboxPrevious:active, #cboxNext:active, #cboxClose:active, #cboxSlideshow:active {
+  outline: 0; }
+
+/* line 156, ../sass/components/pages/_basic_gallery.scss */
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none; }
+
+/* line 163, ../sass/components/pages/_basic_gallery.scss */
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0; }
+
+/* Reset box sizing to content-box if theme is using border-box. */
+/* line 170, ../sass/components/pages/_basic_gallery.scss */
+#colorbox, #cboxContent, #cboxLoadedContent {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/**
+* Colorbox module default style:
+* The styles are ordered & tabbed in a way that represents
+* the nesting of the generated HTML.
+*/
+/* line 181, ../sass/components/pages/_basic_gallery.scss */
+#cboxOverlay {
+  background: #000; }
+
+/* line 184, ../sass/components/pages/_basic_gallery.scss */
+#colorbox {
+  outline: 0; }
+
+/* line 187, ../sass/components/pages/_basic_gallery.scss */
+#cboxWrapper {
+  background: #fff; }
+
+/* line 201, ../sass/components/pages/_basic_gallery.scss */
+#cboxBottomLeft {
+  width: 15px;
+  height: 10px; }
+
+/* line 208, ../sass/components/pages/_basic_gallery.scss */
+#cboxBottomRight {
+  width: 15px;
+  height: 10px; }
+
+/* line 212, ../sass/components/pages/_basic_gallery.scss */
+#cboxMiddleLeft {
+  width: 15px; }
+
+/* line 215, ../sass/components/pages/_basic_gallery.scss */
+#cboxMiddleRight {
+  width: 15px; }
+
+/* line 218, ../sass/components/pages/_basic_gallery.scss */
+#cboxContent {
+  background: #fff;
+  overflow: hidden; }
+
+/* line 222, ../sass/components/pages/_basic_gallery.scss */
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc; }
+
+/* line 226, ../sass/components/pages/_basic_gallery.scss */
+#cboxLoadedContent {
+  margin-bottom: 28px;
+  margin-top: 28px; }
+
+/* line 230, ../sass/components/pages/_basic_gallery.scss */
+#cboxTitle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 28px;
+  left: 0;
+  color: #535353;
+  width: 100%;
+  padding: 4px 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 242, ../sass/components/pages/_basic_gallery.scss */
+#cboxCurrent {
+  position: absolute;
+  bottom: 4px;
+  left: 60px;
+  color: #949494; }
+
+/* line 248, ../sass/components/pages/_basic_gallery.scss */
+.cboxSlideshow_on #cboxSlideshow {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  background: url(../images/gallery/controls.png) no-repeat -75px -50px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 257, ../sass/components/pages/_basic_gallery.scss */
+.cboxSlideshow_on #cboxSlideshow:hover {
+  background-position: -101px -50px; }
+
+/* line 260, ../sass/components/pages/_basic_gallery.scss */
+.cboxSlideshow_off #cboxSlideshow {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  background: url(../images/gallery/controls.png) no-repeat -25px -50px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 269, ../sass/components/pages/_basic_gallery.scss */
+.cboxSlideshow_off #cboxSlideshow:hover {
+  background-position: -49px -50px; }
+
+/* line 272, ../sass/components/pages/_basic_gallery.scss */
+#cboxPrevious {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../images/gallery/controls.png) no-repeat -75px 0px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 281, ../sass/components/pages/_basic_gallery.scss */
+#cboxPrevious:hover {
+  background-position: -75px -25px; }
+
+/* line 284, ../sass/components/pages/_basic_gallery.scss */
+#cboxNext {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  background: url(../images/gallery/controls.png) no-repeat -50px 0px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+/* line 293, ../sass/components/pages/_basic_gallery.scss */
+#cboxNext:hover {
+  background-position: -50px -25px; }
+
+/* line 296, ../sass/components/pages/_basic_gallery.scss */
+#cboxLoadingOverlay {
+  background: #fff; }
+
+/* line 299, ../sass/components/pages/_basic_gallery.scss */
+#cboxLoadingGraphic {
+  background: url(../images/gallery/loading_animation.gif) no-repeat center center; }
+
+/* line 302, ../sass/components/pages/_basic_gallery.scss */
+#cboxClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/gallery/controls.png) no-repeat -24px 2px;
+  width: 30px;
+  height: 30px;
+  -ms-transform: scale(1.09, 1.09);
+  -webkit-transform: scale(1.09, 1.09);
+  transform: scale(1.09, 1.09);
+  margin-top: 30px;
+  text-indent: -9999px; }
+
+/* line 315, ../sass/components/pages/_basic_gallery.scss */
+#cboxClose:hover {
+  background-position: -25px -25px; }
 
 /* line 1, ../sass/components/search/_search.scss */
 #search-block-form {
@@ -1208,16 +1195,66 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 .page-search #search-form input[type="submit"] {
   padding: 5px; }
 
-/* line 1, ../sass/components/sidebar/_testimonials.scss */
+/* line 1, ../sass/components/sidebars/_contact_details.scss */
+#block-pncsitedetails-pncsitecontact-block {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px; }
+
+/* line 3, ../sass/components/sidebars/_sidebar_globals.scss */
+.sidebar-first h2.title,
+.sidebar-second h2.title {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background-color: #e7e7e7; }
+/* line 8, ../sass/components/sidebars/_sidebar_globals.scss */
+.sidebar-first > div,
+.sidebar-second > div {
+  clear: both; }
+  /* line 10, ../sass/components/sidebars/_sidebar_globals.scss */
+  .sidebar-first > div > ul,
+  .sidebar-second > div > ul {
+    padding: 0px;
+    min-height: 10px; }
+    /* line 13, ../sass/components/sidebars/_sidebar_globals.scss */
+    .sidebar-first > div > ul li,
+    .sidebar-second > div > ul li {
+      clear: both;
+      float: left;
+      width: 100%; }
+    /* line 19, ../sass/components/sidebars/_sidebar_globals.scss */
+    .sidebar-first > div > ul li span,
+    .sidebar-second > div > ul li span {
+      display: block;
+      float: left;
+      width: 48%; }
+    /* line 24, ../sass/components/sidebars/_sidebar_globals.scss */
+    .sidebar-first > div > ul li span:first-child,
+    .sidebar-second > div > ul li span:first-child {
+      font-weight: 700; }
+  /* line 29, ../sass/components/sidebars/_sidebar_globals.scss */
+  .sidebar-first > div p,
+  .sidebar-second > div p {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: 5px 0 5px 0; }
+    /* line 34, ../sass/components/sidebars/_sidebar_globals.scss */
+    .sidebar-first > div p span:first-child,
+    .sidebar-second > div p span:first-child {
+      font-weight: 700;
+      padding-right: 20px; }
+
+/* line 1, ../sass/components/sidebars/_testimonials.scss */
 #block-views-testimonial-testimonial {
   background-color: #e7e7e7; }
-  /* line 4, ../sass/components/sidebar/_testimonials.scss */
+  /* line 4, ../sass/components/sidebars/_testimonials.scss */
   #block-views-testimonial-testimonial h2.title {
     width: 160px;
     margin: 0 auto;
     padding-top: 16px;
     padding-bottom: 25px; }
-  /* line 12, ../sass/components/sidebar/_testimonials.scss */
+  /* line 12, ../sass/components/sidebars/_testimonials.scss */
   #block-views-testimonial-testimonial > div .testmon {
     width: 170px;
     margin: 0 auto;
@@ -1247,30 +1284,35 @@ body #mobile-menu-wrapper #mobile-menu-inner {
       background-image: none;
       background-position: 0% 0%;
       background-repeat: repeat; }
-  /* line 19, ../sass/components/sidebar/_testimonials.scss */
+  /* line 19, ../sass/components/sidebars/_testimonials.scss */
   #block-views-testimonial-testimonial > div .testmon:before {
     float: left; }
-  /* line 23, ../sass/components/sidebar/_testimonials.scss */
+  /* line 23, ../sass/components/sidebars/_testimonials.scss */
   #block-views-testimonial-testimonial > div .testmon {
     background-color: #e7e7e7; }
-    /* line 25, ../sass/components/sidebar/_testimonials.scss */
+    /* line 25, ../sass/components/sidebars/_testimonials.scss */
     #block-views-testimonial-testimonial > div .testmon .title {
       display: none; }
-    /* line 28, ../sass/components/sidebar/_testimonials.scss */
+    /* line 28, ../sass/components/sidebars/_testimonials.scss */
     #block-views-testimonial-testimonial > div .testmon .body {
       width: 130px;
       float: right;
       font-size: 13px;
       color: gray; }
-    /* line 35, ../sass/components/sidebar/_testimonials.scss */
+    /* line 35, ../sass/components/sidebars/_testimonials.scss */
     #block-views-testimonial-testimonial > div .testmon .by {
       clear: both;
       padding: 0px 10px 25px 40px;
       font-size: 13px; }
 
+/* line 1, ../sass/components/sidebars/_trading_hours.scss */
+#block-pncsitedetails-pncsitehours-block {
+  float: left;
+  margin-bottom: 40px; }
+
 /* line 2, ../sass/components/users/_admin_menu.scss */
-.admin-menu div.siteinfo {
-  padding: 20px 0 0 10px; }
+.admin-menu .siteinfo {
+  top: 10px; }
 /* line 5, ../sass/components/users/_admin_menu.scss */
 .admin-menu .tabs ul.primary {
   background-color: #c4c4c4; }
@@ -1285,7 +1327,6 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     width: 100%;
     padding: 10px 0 10px 0;
     color: #b0b0b0;
-    background-color: #c4c4c4;
     text-align: center; }
     /* line 18, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .admin-menu .tabs ul.primary li a:visited {
@@ -1299,12 +1340,12 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .admin-menu .tabs ul.primary li a:active {
       color: #18316a; }
-/* line 29, ../sass/components/users/_admin_menu.scss */
+/* line 27, ../sass/components/users/_admin_menu.scss */
 .admin-menu .tabs ul.primary li a.active {
   font-weight: normal;
   color: White; }
 
-/* line 82, ../sass/components/users/_admin_menu.scss */
+/* line 78, ../sass/components/users/_admin_menu.scss */
 .admin-menu.page-user .page #main-content {
   width: 98%;
   height: inherit;
@@ -1373,10 +1414,27 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 .admin-menu:not(.node-type-page) #form-pncsitedetails input[type="submit"],
 .page-admin-editorpanel:not(.node-type-page) #form-pncsitedetails input[type="submit"] {
   display: block;
-  clear: both;
-  margin-top: 40px; }
+  clear: both; }
 
-/* line 52, ../sass/components/users/_editor_role.scss */
+/* line 56, ../sass/components/users/_editor_role.scss */
+.page-admin-content #main-content,
+.page-admin-config #main-content,
+.page-admin-structure #main-content,
+.page-admin-editorpanel #main-content,
+.page-admin-help #main-content,
+.logged-in #main-content {
+  width: 100%; }
+/* line 60, ../sass/components/users/_editor_role.scss */
+.page-admin-content div [class*='sidebar'],
+.page-admin-config div [class*='sidebar'],
+.page-admin-structure div [class*='sidebar'],
+.page-admin-editorpanel div [class*='sidebar'],
+.page-admin-help div [class*='sidebar'],
+.logged-in div [class*='sidebar'] {
+  float: left;
+  width: 90%; }
+
+/* line 67, ../sass/components/users/_editor_role.scss */
 .page-admin-config h3 {
   font-size: 12px;
   margin: 0;
@@ -1384,262 +1442,33 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   border-bottom: 1px solid #cccccc;
   margin-bottom: 10px; }
 
-/* .page-user {
-	footer[role="contentinfo"],
-	.header-region,
-	.sidebar-first,
-	.sidebar-second,
-	.navigation {
-		display:none;
-	}
-	.siteinfo {
-		padding-left:28px;
-
-		figure {
-			a {
-				display:block;
-				width:100px;
-				height:20px;
-				img {display:none;}
-			}
-			a:before {
-				content:  "Home";
-				font-size:14px;
-			}
-		}
-	}
-	.page {
-		> div >  h1 {
-			width:230px;
-			height:65px;
-			padding:0;
-			margin:0 auto;
-			text-indent:-9999px;
-			background: url('../images/mobile/mobile-logo.jpg') repeat-x;
-		}
-	}
-
-
-	#main-content {
-		width: 100%;
-		height: 75%;
-		position: absolute;
-		top: 0; left: 0; bottom: 0; right: 0;
-		padding-bottom:20px;
-	}
-
-	.page-user #main-content:after {
-		content: ".";
-		visibility: hidden;
-		display: block;
-		height: 0;
-		clear: both;
-	}
-
-
-	label, small {display:none;}
-	//-- override
-	.tabs li {
-	  padding:0;
-	}
-	
-	ul.primary {
-		padding-top:5px;
-	}
-
-	ul.primary li {
-		display:inherit;
-		width:100%;
-		padding-bottom:3px;
-		a {
-			display:block;
-			width:100%;
-			padding:10px 0 10px 0;
-			@include link-colors(
-			$tabsMPrimaryNormal,
-			$tabsMPrimaryHover,
-			$tabsMPrimaryActive,
-			$tabsMPrimaryVisited ,
-			$tabsMPrimaryFocus
-			);
-			background-color:$tabsMPrimaryBackGround;
-			font-size:$mobileSLinkHeight;
-			text-align:center;
-		}
-	}
-	ul.primary li a.active {
-		font-weight:normal;
-		color:$aMActive;
-	}
-
-
-	@include breakpoint($largeSmartPhone) {
-
-
-		.page {
-			position:relative;
-		}
-		.page  > div >  h1 {
-			width: 314px;
-			height: 89px;
-			background: url("../images/mobile/mobile-logo.jpg") no-repeat;
-			background-size: cover;
-		}
-		//-- overrides to main content
-		div[role="main"] {
-			float:none;
-			margin: 0 auto;
-		}  
-
-		#main-content {
-			width: 680px;
-			min-height: 540px;
-			@include largestBorder;
-			padding-top:65px;
-
-
-			form div:first-child:before {
-				float:left;
-				padding-bottom:25px;
-				width:460px;
-				font-size: 29px;
-				color: $aNormal;
-			}
-
-
-			#user-login div:first-child:before {
-				content: "Sign in";
-			}
-
-			#user-register-form #edit-account div:first-child:before {
-				content: "Create account";
-			}
-
-			#user-pass div:first-child:before {
-				content: "New password";
-			}
-
-		}
-
-		ul.primary {
-			width:460px;
-			margin:0 auto;
-		}
-
-		ul.primary li {
-			float:left;
-			width:auto;
-			padding-bottom:45px;
-			padding-right: 18px;
-			a {
-				background-color:$bodyBackground;
-				@include link-colors(
-				$tabsPrimaryNormal,
-				$tabsPrimaryHover,
-				$tabsPrimaryActive,
-				$tabsPrimaryVisited,
-				$tabsPrimaryFocus
-				);
-
-			}
-			a.active {
-				color:$tabsPrimaryActive;
-				font-weight:600;
-			}
-		}
-		ul.primary li:last-child {
-			padding-right: 0px;
-		}
-	}
-}
-*/
-/*.page-user {
-	.page {
-		padding:0px;
-		form#user-pass,
-		form#user-register-form,
-		form#user-login {
-			clear: both;
-			width: 235px;
-			min-height: 225px;
-			margin: 0 auto;
-			.form-required {
-				clear:both;
-				padding:24px 0 0 0;
-			}
-
-			.form-actions {
-				padding-top:24px;
-			}
-
-			input[type="submit"] {
-				margin: auto;
-				clear:both;
-				width:235px;
-				height:inherit;
-				padding:17px 14px 17px 14px;
-				margin:30px -1px  6px 0;
-			}
-
-			input[type="text"],
-			input[type="password"] {
-				@include grid-span(12, 1);
-				margin:0 auto;
-				height:40px;
-				border:1px solid $borderOne;
-			}
-
-
-			//-- Break Point
-			@include breakpoint($smartPhone) {
-				input[type="submit"] {
-				
-				}
-			}
-
-			@include breakpoint($largeSmartPhone) {
-				width: 450px;
-				margin: 0 auto;
-				min-height: 245px;
-
-				input[type="submit"] {
-					width:auto;
-					color:$colorButtons;
-					background-color:$backgroundButtons;
-					float: right;
-					margin:10px 0  6px 0;
-				}
-			}
-		}
-	}
-}
-*/
 /* line 2, ../sass/components/users/_user_login.scss */
 .page-user footer[role="contentinfo"] > div:first-child,
 .page-user .header-region,
 .page-user .sidebar-first,
+.page-user .header-border,
 .page-user .sidebar-second,
 .page-user .navigation {
   display: none; }
-/* line 10, ../sass/components/users/_user_login.scss */
+/* line 11, ../sass/components/users/_user_login.scss */
 .page-user .siteinfo {
   padding-left: 28px; }
-  /* line 13, ../sass/components/users/_user_login.scss */
+  /* line 14, ../sass/components/users/_user_login.scss */
   .page-user .siteinfo hgroup {
     display: none; }
-  /* line 18, ../sass/components/users/_user_login.scss */
+  /* line 19, ../sass/components/users/_user_login.scss */
   .page-user .siteinfo figure a {
     display: block;
     width: 100px;
     height: 20px; }
-    /* line 22, ../sass/components/users/_user_login.scss */
+    /* line 23, ../sass/components/users/_user_login.scss */
     .page-user .siteinfo figure a img {
       display: none; }
-  /* line 24, ../sass/components/users/_user_login.scss */
+  /* line 25, ../sass/components/users/_user_login.scss */
   .page-user .siteinfo figure a:before {
     content: "Home";
     font-size: 14px; }
-/* line 31, ../sass/components/users/_user_login.scss */
+/* line 32, ../sass/components/users/_user_login.scss */
 .page-user .page > div > h1 {
   width: 230px;
   height: 65px;
@@ -1647,28 +1476,28 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   margin: 0 auto;
   text-indent: -9999px;
   background: url("../images/mobile/mobile-logo.jpg") repeat-x; }
-/* line 42, ../sass/components/users/_user_login.scss */
+/* line 43, ../sass/components/users/_user_login.scss */
 .page-user .page-user #main-content:after {
   content: ".";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both; }
-/* line 51, ../sass/components/users/_user_login.scss */
+/* line 52, ../sass/components/users/_user_login.scss */
 .page-user label, .page-user small {
   display: none; }
-/* line 53, ../sass/components/users/_user_login.scss */
+/* line 54, ../sass/components/users/_user_login.scss */
 .page-user .tabs li {
   padding: 0; }
-/* line 57, ../sass/components/users/_user_login.scss */
+/* line 58, ../sass/components/users/_user_login.scss */
 .page-user ul.primary {
   padding-top: 5px; }
-/* line 61, ../sass/components/users/_user_login.scss */
+/* line 62, ../sass/components/users/_user_login.scss */
 .page-user ul.primary li {
   display: inherit;
   width: 100%;
   padding-bottom: 3px; }
-  /* line 65, ../sass/components/users/_user_login.scss */
+  /* line 66, ../sass/components/users/_user_login.scss */
   .page-user ul.primary li a {
     display: block;
     width: 100%;
@@ -1689,20 +1518,20 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     /* line 27, ../../../../../../../../../../../../home/work/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
     .page-user ul.primary li a:active {
       color: #18316a; }
-/* line 81, ../sass/components/users/_user_login.scss */
+/* line 82, ../sass/components/users/_user_login.scss */
 .page-user ul.primary li a.active {
   font-weight: normal;
   color: White; }
 
-/* line 158, ../sass/components/users/_user_login.scss */
+/* line 159, ../sass/components/users/_user_login.scss */
 .admin-menu.page-user ul.primary li a {
   font-size: 13px; }
 
-/* line 162, ../sass/components/users/_user_login.scss */
+/* line 163, ../sass/components/users/_user_login.scss */
 .admin-menu.page-user footer[role="contentinfo"] > div:first-child {
   display: block; }
 
-/* line 166, ../sass/components/users/_user_login.scss */
+/* line 167, ../sass/components/users/_user_login.scss */
 .admin-menu.page-user footer[role="contentinfo"] h2.title {
   display: none; }
 
@@ -1848,26 +1677,26 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   clear: none; }
 
 /**
- * Site Display
- */
-/* line 24, ../sass/site/_display_and_layout.scss */
-div.siteinfo hgroup {
-  display: block; }
-
-/**
  * Titles
  */
-/* line 30, ../sass/site/_display_and_layout.scss */
+/* line 23, ../sass/site/_display_and_layout.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   padding: 0px;
   margin: 0; }
+
+/* line 28, ../sass/site/_display_and_layout.scss */
+.admin-menu .ph-container {
+  display: none; }
 
 /**
  * Menu
  */
 /**
  * Page
+ */
+/**
+ * Footer 
  */
 /* line 1, ../sass/site/_user_help.scss */
 #pnc-help {

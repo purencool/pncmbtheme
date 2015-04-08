@@ -38,16 +38,31 @@
 
 		}
 
-	}
+	}	
 	#form-pncsitedetails {
 		input[type="submit"] {
 			display:block;
 			clear:both;
-			margin-top: 40px;
 		}
 	}
 
-} 
+}
+.page-admin-content,
+.page-admin-config,
+.page-admin-structure,
+.page-admin-editorpanel,
+.page-admin-help,
+.logged-in {
+	#main-content{
+		width:100%;
+	}
+	div {
+	[class*='sidebar'] {
+		float:left;
+		width:90%;
+	}
+}
+}
 .page-admin-config {
 	h3 {
 		font-size:$smallFontSize;
@@ -82,12 +97,12 @@
 		margin-top: -25em;
 
 	}
-	
+
 	.page-admin-editorpanel	.fieldset-legend {
 		display:block;
 		width:92%;
 	}
-	
+
 	.page-admin-editorpanel #form-pncsitedetails {
 		input[type="submit"] {
 			display:block;

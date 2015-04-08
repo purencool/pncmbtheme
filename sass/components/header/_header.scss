@@ -37,26 +37,3 @@
 	}
 
 }
-
-
-@include breakpoint($largeSmartPhone) {
-	.header-border {
-		position:absolute;
-		height: 1px;
-		top:60px;
-		width:768px;
-		background-color: $textColor;
-		z-index: -100;
-	}
-}
-
-@include breakpoint($tablet) {
-	.header-border {
-		width:960px;
-	}
-}
-@include breakpoint($smallDesktop) {
-	.header-border {
-		width:1020px;
-	}
-}

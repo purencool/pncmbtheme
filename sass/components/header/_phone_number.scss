@@ -7,6 +7,7 @@
 	background-color: $aMBackGround;
 	> div {
 		float:right;
+		padding-top: 8px;
 		padding-right:10px;
 		height: 35px;
 		line-height: 35px;
@@ -27,6 +28,7 @@
 		position : inherit;
 		height:inherit;
 		> div { 
+			padding-top: 0px;
 			padding-right:0px;
 			color:$aHover; 
 		}

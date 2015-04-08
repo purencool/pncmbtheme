@@ -1,9 +1,18 @@
 .page,
 .navigation,
 header[role="banner"],
-footer[role="contentinfo"] {
-	padding:0 5px 0 5px;
+footer[role="contentinfo"] {	
 	clear:both;
+}
+
+
+.navigation {
+	padding:0 5px 0 5px;
+}
+
+.page,
+header[role="banner"] {
+	padding:35px 5px 0 5px;
 }
 
 @include breakpoint($smartPhone) {}
@@ -16,6 +25,11 @@ footer[role="contentinfo"] {
 	header[role="banner"] {
 		width:1024px;
 		margin:0 auto;
+	}
+	.page,
+	.navigation,
+	header[role="banner"] {
+		padding:0 5px 0 5px;
 	}
 }
 @include breakpoint($mediumDesktop) {}

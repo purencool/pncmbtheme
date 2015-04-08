@@ -18,13 +18,6 @@
 
 
 /**
- * Site Display
- */
-
-div.siteinfo hgroup {
-	display:block;
-}
-/**
  * Titles
  */
 h1, h2, h3, h4, h5, h6 {
@@ -32,31 +25,69 @@ h1, h2, h3, h4, h5, h6 {
 	padding:0px;
 	margin:0;
 }
+.admin-menu .ph-container {
+	display:none;
+}
 
 /**
  * Menu
  */
 @include breakpoint($largeSmartPhone) {
-	.siteinfo {
+	.header-border {
+		position:absolute;
+		height: 1px;
+		top:60px;
+		width:768px;
+		background-color: $textColor;
+		z-index: -100;
+	}
 
+	.admin-menu .header-border {
+		top:90px;
+	}
+
+	.siteinfo {
 		figure {
 			background-color: white;
 		}
 	}
-	
-	
+	div.siteinfo hgroup {
+		display:block;
+	}
+	.admin-menu .ph-container {
+		display:block;
+	}
+
+
 	.navigation {
 		display: block;
 		position: absolute;
 		top: 68px;
 		right: 0;
 		left: 0px;
-		
+
 		ul.menu {
 			padding-left: 60px;
 		}
 	}
+
+	.admin-menu .navigation {
+		top: 90px;
+		right: 0;
+		left: 0px;
+	}
 }
+
+@include breakpoint($tablet) {
+	.header-border {
+		width:960px;
+	}
+}
+@include breakpoint($smallDesktop) {
+	.header-border {
+		width:1020px;
+	}
+} 
 
 /**
  * Page
@@ -66,3 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 		padding-top: 23px;
 	}
 }
+
+/**
+ * Footer 
+ */
+@include breakpoint($largeSmartPhone) {
+	footer[role="contentinfo"] .copy-right div {
+		width: 55%;
+	}
+} 

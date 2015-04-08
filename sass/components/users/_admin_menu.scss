@@ -1,6 +1,6 @@
 .admin-menu {
-	div.siteinfo {
-		padding:20px 0 0 10px;
+	.siteinfo {
+		top: 10px;
 	}
 	.tabs ul.primary {
 		background-color:$tabsMPrimaryBackGround;
@@ -20,9 +20,7 @@
 			$tabsMPrimaryActive,
 			$tabsMPrimaryVisited ,
 			$tabsMPrimaryFocus
-			);
-			background-color:$tabsMPrimaryBackGround;
-			
+			);	
 			text-align:center;
 		}
 	}
@@ -44,8 +42,6 @@
 		.tabs ul.primary li {
 			float:left;
 			width:auto;
-			padding-left:10px;
-			
 			padding-right: 18px;
 			padding-bottom:0px;
 			a {

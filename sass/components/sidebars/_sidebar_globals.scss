@@ -1,0 +1,41 @@
+.sidebar-first,
+.sidebar-second {
+	h2.title {
+		text-align: center;
+		padding:10px 0 10px 0;
+		background-color: $backgroundColorOne;
+	}
+	> div {
+		clear:both;
+		> ul {
+			padding:0px;
+		        min-height:10px;
+			li {
+				clear:both;
+				float:left;
+				width:100%;
+			}
+
+			li span {
+				display: block;
+				float:left;
+				width:48%;
+			}
+			li span:first-child {
+				font-weight:700;
+			}
+
+		}
+		p {
+			clear:both;
+			width:100%;
+			float:left;
+			margin:5px 0 5px 0;
+			span:first-child {
+				font-weight:700;
+				padding-right: 20px;
+			}
+
+		}
+	}
+}
