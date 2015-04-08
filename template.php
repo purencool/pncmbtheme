@@ -10,7 +10,9 @@ function NEWTHEME_preprocess_html(&$vars) {
 */
 //*
 
-
+/**
+ * Implements hook_preprocess_html().
+ */
 function pncmbtheme_preprocess_html(&$vars,$hook) {
   //-- Add js to a certain page
   /*
@@ -22,10 +24,14 @@ function pncmbtheme_preprocess_html(&$vars,$hook) {
     drupal_add_js(drupal_get_path('theme', 'pncmbtheme_com')'js/the-js-file.js', 'file');
   }
   //*/
-
+	
+   $url = request_uri();
+   if(strpos($url, "node/add") ) {
+	   $vars['classes_array'][] = 'page-admin-content-add';
+   }
+ 
   //*
   $path = drupal_get_path_alias();
-  $site_path = base_path();
   $pattern = "our-gallery";
   if (drupal_match_path($path, $pattern)) {
    drupal_add_js('sites/all/libraries/colorbox/jquery.colorbox-min.js', 'file');
@@ -48,10 +54,9 @@ function pncmbtheme_preprocess_html(&$vars,$hook) {
 }
 
 
-
-
-
-
+/**
+ * Implements hook_form_alter().
+ */
 function pncmbtheme_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form'  || $form_id == 'search_form') {
     //$form['search_block_form']['#title'] = t('Search'); // Change the text on the label element

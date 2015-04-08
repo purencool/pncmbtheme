@@ -1,7 +1,7 @@
 .admin-menu:not(.node-type-page),
 .page-admin-editorpanel:not(.node-type-page){
-	h1 {
-		background-color: #e0e0d8;
+	.page h1 {
+		background-color: #e0e0e0;
 		padding:10px;
 	}
 	.fieldset-legend {
@@ -47,6 +47,7 @@
 	}
 
 }
+.page-admin-content-add,
 .page-admin-content,
 .page-admin-config,
 .page-admin-structure,

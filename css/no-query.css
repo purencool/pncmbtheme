@@ -1361,9 +1361,9 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   right: inherit; }
 
 /* line 3, ../sass/components/users/_editor_role.scss */
-.admin-menu:not(.node-type-page) h1,
-.page-admin-editorpanel:not(.node-type-page) h1 {
-  background-color: #e0e0d8;
+.admin-menu:not(.node-type-page) .page h1,
+.page-admin-editorpanel:not(.node-type-page) .page h1 {
+  background-color: #e0e0e0;
   padding: 10px; }
 /* line 7, ../sass/components/users/_editor_role.scss */
 .admin-menu:not(.node-type-page) .fieldset-legend,
@@ -1416,7 +1416,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   display: block;
   clear: both; }
 
-/* line 56, ../sass/components/users/_editor_role.scss */
+/* line 57, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add #main-content,
 .page-admin-content #main-content,
 .page-admin-config #main-content,
 .page-admin-structure #main-content,
@@ -1424,7 +1425,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 .page-admin-help #main-content,
 .logged-in #main-content {
   width: 100%; }
-/* line 60, ../sass/components/users/_editor_role.scss */
+/* line 61, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add div [class*='sidebar'],
 .page-admin-content div [class*='sidebar'],
 .page-admin-config div [class*='sidebar'],
 .page-admin-structure div [class*='sidebar'],
@@ -1434,7 +1436,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   float: left;
   width: 90%; }
 
-/* line 67, ../sass/components/users/_editor_role.scss */
+/* line 68, ../sass/components/users/_editor_role.scss */
 .page-admin-config h3 {
   font-size: 12px;
   margin: 0;
