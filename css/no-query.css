@@ -1416,7 +1416,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   display: block;
   clear: both; }
 
-/* line 57, ../sass/components/users/_editor_role.scss */
+/* line 58, ../sass/components/users/_editor_role.scss */
+.page-filter-tips #main-content,
 .page-admin-content-add #main-content,
 .page-admin-content #main-content,
 .page-admin-config #main-content,
@@ -1425,7 +1426,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 .page-admin-help #main-content,
 .logged-in #main-content {
   width: 100%; }
-/* line 61, ../sass/components/users/_editor_role.scss */
+/* line 62, ../sass/components/users/_editor_role.scss */
+.page-filter-tips div [class*='sidebar'],
 .page-admin-content-add div [class*='sidebar'],
 .page-admin-content div [class*='sidebar'],
 .page-admin-config div [class*='sidebar'],
@@ -1436,7 +1438,20 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   float: left;
   width: 90%; }
 
-/* line 68, ../sass/components/users/_editor_role.scss */
+/* line 70, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add .page form input[type="text"] {
+  width: 100%; }
+/* line 74, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add .filter-wrapper label,
+.page-admin-content-add .filter-wrapper div {
+  padding: 0;
+  margin: 0; }
+/* line 82, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add .filter-guidelines-item ul {
+  margin-left: 0px;
+  padding-left: 0px; }
+
+/* line 90, ../sass/components/users/_editor_role.scss */
 .page-admin-config h3 {
   font-size: 12px;
   margin: 0;

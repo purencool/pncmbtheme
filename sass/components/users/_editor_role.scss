@@ -47,6 +47,7 @@
 	}
 
 }
+.page-filter-tips,
 .page-admin-content-add,
 .page-admin-content,
 .page-admin-config,
@@ -58,11 +59,32 @@
 		width:100%;
 	}
 	div {
-	[class*='sidebar'] {
-		float:left;
-		width:90%;
+		[class*='sidebar'] {
+			float:left;
+			width:90%;
+		}
 	}
 }
+
+.page-admin-content-add {
+	.page form input[type="text"]{
+			width:100%;
+	}
+	.filter-wrapper {
+		label,
+		div {
+			padding:0;
+			margin:0;
+		}
+		
+	}
+	.filter-guidelines-item {
+		ul {
+			margin-left:0px;
+			padding-left:0px;
+		}
+	}
+	
 }
 .page-admin-config {
 	h3 {

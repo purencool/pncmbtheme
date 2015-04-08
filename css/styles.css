@@ -1677,7 +1677,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   display: block;
   clear: both; }
 
-/* line 57, ../sass/components/users/_editor_role.scss */
+/* line 58, ../sass/components/users/_editor_role.scss */
+.page-filter-tips #main-content,
 .page-admin-content-add #main-content,
 .page-admin-content #main-content,
 .page-admin-config #main-content,
@@ -1686,7 +1687,8 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 .page-admin-help #main-content,
 .logged-in #main-content {
   width: 100%; }
-/* line 61, ../sass/components/users/_editor_role.scss */
+/* line 62, ../sass/components/users/_editor_role.scss */
+.page-filter-tips div [class*='sidebar'],
 .page-admin-content-add div [class*='sidebar'],
 .page-admin-content div [class*='sidebar'],
 .page-admin-config div [class*='sidebar'],
@@ -1697,7 +1699,20 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   float: left;
   width: 90%; }
 
-/* line 68, ../sass/components/users/_editor_role.scss */
+/* line 70, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add .page form input[type="text"] {
+  width: 100%; }
+/* line 74, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add .filter-wrapper label,
+.page-admin-content-add .filter-wrapper div {
+  padding: 0;
+  margin: 0; }
+/* line 82, ../sass/components/users/_editor_role.scss */
+.page-admin-content-add .filter-guidelines-item ul {
+  margin-left: 0px;
+  padding-left: 0px; }
+
+/* line 90, ../sass/components/users/_editor_role.scss */
 .page-admin-config h3 {
   font-size: 12px;
   margin: 0;
@@ -1706,7 +1721,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
   margin-bottom: 10px; }
 
 @media (min-width: 768px) {
-  /* line 79, ../sass/components/users/_editor_role.scss */
+  /* line 101, ../sass/components/users/_editor_role.scss */
   .page-admin-config .page form input[type="text"],
   .page-admin-config .page form input[type="password"] {
     width: 100%;
@@ -1715,7 +1730,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     margin-right: 0;
     clear: none; } }
 @media (min-width: 768px) {
-  /* line 89, ../sass/components/users/_editor_role.scss */
+  /* line 111, ../sass/components/users/_editor_role.scss */
   #edit-social {
     width: 49.15254%;
     clear: right;
@@ -1723,14 +1738,14 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     margin-left: 0;
     margin-right: 1.69492%; }
 
-  /* line 92, ../sass/components/users/_editor_role.scss */
+  /* line 114, ../sass/components/users/_editor_role.scss */
   #edit-business-hours {
     width: 49.15254%;
     clear: right;
     float: right;
     margin-right: 0; }
 
-  /* line 96, ../sass/components/users/_editor_role.scss */
+  /* line 118, ../sass/components/users/_editor_role.scss */
   #edit-business-details {
     width: 49.15254%;
     clear: right;
@@ -1739,18 +1754,18 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     margin-right: 1.69492%;
     margin-top: -25em; }
 
-  /* line 102, ../sass/components/users/_editor_role.scss */
+  /* line 124, ../sass/components/users/_editor_role.scss */
   .page-admin-editorpanel .fieldset-legend {
     display: block;
     width: 92%; }
 
-  /* line 108, ../sass/components/users/_editor_role.scss */
+  /* line 130, ../sass/components/users/_editor_role.scss */
   .page-admin-editorpanel #form-pncsitedetails input[type="submit"] {
     display: block;
     clear: both;
     margin-top: 57em; }
 
-  /* line 119, ../sass/components/users/_editor_role.scss */
+  /* line 141, ../sass/components/users/_editor_role.scss */
   .admin-menu .page .admin .right,
   .page-admin-editorpanel .page .admin .right {
     width: 49.15254%;
@@ -1758,7 +1773,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-  /* line 122, ../sass/components/users/_editor_role.scss */
+  /* line 144, ../sass/components/users/_editor_role.scss */
   .admin-menu .page .admin .left,
   .page-admin-editorpanel .page .admin .left {
     width: 49.15254%;
