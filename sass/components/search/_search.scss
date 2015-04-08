@@ -1,14 +1,24 @@
+#block-search-form{
+	float: left;
+	width: 100%;
+	margin-bottom:20px;
+}
+
 #search-block-form {
-	position:absolute;
-	top:130px;
-	width: 225px;
+	div:first-child {
+		float:left;
+		width:90%;
+	}
+	div:last-child {
+		float:left;
+		width:10%;
+	}
 	input[type="text"] {
 		float: left;
-		width:180px;
-		height:30px;
+		height:35px;
 	}
 	input[type="submit"] {
-		float: left;
+		float: right;
 		height:35px;
 		width:35px;
 		border: 0;
@@ -16,11 +26,7 @@
 		vertical-align: top;
 		font-family: 'FontAwesome';
 	}
-
-	@include breakpoint($smartPhone) {
-		position:inherit;
-		top:inherit;
-		float:right;
-		padding-top:32px;
+        .form-actions {
+		clear:none;
 	}
 }

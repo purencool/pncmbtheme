@@ -331,11 +331,10 @@ input[type="submit"] {
     /* line 91, ../sass/base/_forms.scss */
     .page form .form-actions input[type="submit"] {
       float: left;
-      margin-right: 20px;
       clear: none; }
 
 @media (min-width: 768px) {
-  /* line 102, ../sass/base/_forms.scss */
+  /* line 101, ../sass/base/_forms.scss */
   .page form input[type="text"],
   .page form input[type="password"] {
     width: 91.52542%;
@@ -1369,31 +1368,35 @@ body #mobile-menu-wrapper #mobile-menu-inner {
     width: 700px;
     margin: 0 auto; } }
 /* line 1, ../sass/components/search/_search.scss */
-#search-block-form {
-  position: absolute;
-  top: 130px;
-  width: 225px; }
-  /* line 5, ../sass/components/search/_search.scss */
-  #search-block-form input[type="text"] {
-    float: left;
-    width: 180px;
-    height: 30px; }
-  /* line 10, ../sass/components/search/_search.scss */
-  #search-block-form input[type="submit"] {
-    float: left;
-    height: 35px;
-    width: 35px;
-    border: 0;
-    font-size: 1.5em;
-    vertical-align: top;
-    font-family: 'FontAwesome'; }
-  @media (min-width: 600px) {
-    /* line 1, ../sass/components/search/_search.scss */
-    #search-block-form {
-      position: inherit;
-      top: inherit;
-      float: right;
-      padding-top: 32px; } }
+#block-search-form {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px; }
+
+/* line 8, ../sass/components/search/_search.scss */
+#search-block-form div:first-child {
+  float: left;
+  width: 90%; }
+/* line 12, ../sass/components/search/_search.scss */
+#search-block-form div:last-child {
+  float: left;
+  width: 10%; }
+/* line 16, ../sass/components/search/_search.scss */
+#search-block-form input[type="text"] {
+  float: left;
+  height: 35px; }
+/* line 20, ../sass/components/search/_search.scss */
+#search-block-form input[type="submit"] {
+  float: right;
+  height: 35px;
+  width: 35px;
+  border: 0;
+  font-size: 1.5em;
+  vertical-align: top;
+  font-family: 'FontAwesome'; }
+/* line 29, ../sass/components/search/_search.scss */
+#search-block-form .form-actions {
+  clear: none; }
 
 /* line 2, ../sass/components/search/_search_page.scss */
 .page-search .breadcrumb {
@@ -1522,6 +1525,7 @@ body #mobile-menu-wrapper #mobile-menu-inner {
 /* line 1, ../sass/components/sidebars/_trading_hours.scss */
 #block-pncsitedetails-pncsitehours-block {
   float: left;
+  width: 100%;
   margin-bottom: 40px; }
 
 /* line 2, ../sass/components/users/_admin_menu.scss */
