@@ -6,17 +6,17 @@
 	}
 	@include breakpoint($largeSmartPhone) {
 
-		.page {
+	.page-user .page {
 			position:relative;
 		}
 
 		//-- overrides to main content
-		div[role="main"] {
+	.page-user div[role="main"] {
 			float:none;
 			margin: 0 auto;
 		}  
 
-		#main-content {
+	.page-user #main-content {
 			width: 680px;
 			min-height: 540px;
 		}

@@ -7,7 +7,10 @@ body {
   background: $bodyBackground;
 }
 
-a {  @include link-colors($aNormal,$aHover,$aActive,$aVisited,$aFocus);}
+a a:active, a:focus{     
+	outline: 0;
+	@include link-colors($aNormal,$aHover,$aActive,$aVisited,$aFocus);
+}
 .active, .active-trail {
   font-weight: normal;
 }
