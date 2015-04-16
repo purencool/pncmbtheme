@@ -57,21 +57,22 @@ function hoverTouchUnstick() {
                                 $( ".copy-right .right-name" ).text( site );
 				
 
-				var slider_width = $('.help-slide').width();//get width automaticly
+				var slider_width = $('.help-slide').width();
 				$('.help-slide-c').click(function () {
-					if ($(this).css("margin-left") === slider_width + "px" && !$(this).is(':animated'))
-					{
+					if ($(this).css("margin-left") === slider_width + "px" && !$(this).is(':animated')) {
 						$('.help-slide-c,.help-slide').animate({"margin-left": '-=' + slider_width});
-					}
-					else
-					{
-						if (!$(this).is(':animated'))//perevent double click to double margin
-						{
+						
+					} else {
+						if (!$(this).is(':animated')){
 							$('.help-slide-c,.help-slide').animate({"margin-left": '+=' + slider_width});
 						}
 					}
-
-
+				});
+				
+				$('.h-slide-mobile').click(function () {
+					if (!$(this).is(':animated')) {
+						$('.help-slide-c,.help-slide').animate({"margin-left": '-=' + slider_width});
+					}
 				});
 
 			});

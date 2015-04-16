@@ -66,7 +66,16 @@
 	}
 }
 
+body.page-admin-content .action-links li a {
+	font-weight:700;
+	color:white !important;
+	background-color: orange;
+	padding:20px 10px 20px 10px;
+	font-size:16px;
+}
+
 .page-admin-content-add {
+
 	.page form input[type="text"]{
 			width:100%;
 	}
