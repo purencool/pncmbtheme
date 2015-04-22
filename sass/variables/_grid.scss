@@ -16,9 +16,9 @@ $gutters: 1/4;
 
 
 /**
- *  Break Points Varibles
+ *  Break points variables width
  */
- /** Small Smart phone width **/
+/** Small Smart phone width **/
 $smallPhone :300px;
 
 /** Medium smart phone width **/
@@ -42,5 +42,32 @@ $mediumDesktop:1190px;
 /** Desktop width **/
 $desktop:1360px;
 
-/** Desktop width **/
-$wideDesktop:1800px;
+/** Mid range desktop width **/
+$midRangeDesktop:1450px;
+
+/**Large Desktop width **/
+$wideDesktop:1600px;
+
+
+
+/**
+* Breakpoint variable heights
+*/
+
+/** Medium smart phone height **/
+$smartPhoneHeight:(min-height 480px);
+
+/** Tablet height **/
+$tabletHeight :(min-height 760px);
+
+/** Small destop screen height **/
+$smallDesktopHeight:(min-height 800px);
+
+/** Small Desktop height **/
+$mediumDesktopHeight:(min-height 960px);
+
+/** Desktop height **/
+$desktopHeight:(min-height 1100px);
+
+/** Large desktop height **/
+$wideDesktopHeight:(min-height 1250px);

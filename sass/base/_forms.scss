@@ -2,7 +2,8 @@
 select,
 input[type="submit"],
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+textarea {
 	display:block;
 	@include border-radius(5px);
 }
@@ -34,10 +35,8 @@ input[type="submit"] {
 //-- Form page defaults
 .page form {
 	clear:both;
-	> div > label {
-		font-size:$mediumFontSize;
-		font-weight: 700;
-		color:black;
+	div {
+		clear:both;
 	}
 	fieldset {
 		margin: 0;
@@ -58,7 +57,8 @@ input[type="submit"] {
 
 
 	input[type="text"],
-	input[type="password"] {
+	input[type="password"],
+	textarea {
 		@include grid-span(12, 1);
 		font-size:$smallFontSize;
 		-webkit-box-sizing: border-box; 
@@ -74,7 +74,7 @@ input[type="submit"] {
 		font-size:$verySmallFontSize;
 	}
 	.collapsible {margin:20px 0 30px 0;}
-	
+
 	.container-inline {
 		clear:both;
 		padding:10px 0 10px 0;
@@ -84,24 +84,29 @@ input[type="submit"] {
 			float:left;
 			margin-right:10px;
 		}
-		
+
 	}
 	.form-actions {
-		 clear: both; 
+		clear: both; 
+		padding:10px 0 10px 0;
 		input[type="submit"] {
-		     float: left;
-		     clear: none;   
+			float: left;
+			clear: none;   
 		}
-			
+
+	}
+	.grippie {
+		display:none;
 	}
 }
 
 @include breakpoint($largeSmartPhone) {
 	.page form{
 		input[type="text"],
-		input[type="password"] {
+		input[type="password"],
+		textarea{
 			@include grid-span(11, 1);
 		}
 	}
-	
+
 }

@@ -76,8 +76,12 @@ function pncmbtheme_form_alter(&$form, &$form_state, $form_id) {
     //$form['search_block_form']['#attributes']['placeholder'] = t('Search');
   }
 }
+//*/
 
-
+/*
+function pncmbtheme_preprocess_block(&$variables) {
+    print_r($variables['theme_hook_suggestions']);     
+}
 //*/
 /*
 function NEWTHEME_preprocess_region(&$vars,$hook) {

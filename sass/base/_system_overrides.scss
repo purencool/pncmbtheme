@@ -1,42 +1,48 @@
 //-- system tabs overrides
 ul.primary {
-  border-bottom: 0px solid $bodyBackground;
-  margin: 0;
-  padding: 0;
+	border-bottom: 0px solid $bodyBackground;
+	margin: 0;
+	padding: 0;
 }
 
 
 ul.primary li a {
-  background-color: $bodyBackground;
-  border:0px solid $bodyBackground;
-  height: auto;
-  margin-right:0;
-  padding:0;
+	background-color: $bodyBackground;
+	border:0px solid $bodyBackground;
+	height: auto;
+	margin-right:0;
+	padding:0;
 }
 
 ul.primary li a:hover {
-  background-color:$bodyBackground;
-  border-color:$bodyBackground;
-  border-bottom-color:$bodyBackground;
+	background-color:$bodyBackground;
+	border-color:$bodyBackground;
+	border-bottom-color:$bodyBackground;
 }
 
 
 ul.primary li.active a {
-  background-color: $bodyBackground;
-  border: 0px solid $bodyBackground;
+	background-color: $bodyBackground;
+	border: 0px solid $bodyBackground;
 }
 
 
 //-- system form overrides
 .marker, .form-required {
-  color: $textColor;
+	color: $textColor;
 }
+
 .form-item,
 .form-actions {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .drupal-messages {
-  clear:both;
+	clear:both;
+}
+
+body {
+	margin: 0;
+	padding:0;
 }

@@ -8,6 +8,21 @@
 		display:none;
 	}
 	
+	header {
+		position: inherit; 
+		top:  inherit;
+		left:  inherit; 
+		right:inherit; 
+		padding-top:inherit; 
+		height: inherit; 
+		z-index: inherit; 
+		background-color: inherit; 
+		opacity: inherit; 
+		filter: inherit; 
+		zoom: 1;
+	}
+
+	
 	.siteinfo {
 		padding-left:28px;
          
@@ -40,14 +55,11 @@
 	}
 
 
-	.page-user #main-content:after {
-		content: ".";
-		visibility: hidden;
-		display: block;
-		height: 0;
-		clear: both;
+	
+        #main-content > div {
+		width:inherit;
+		
 	}
-
 
 	label, small {display:none;}
 	//-- override
