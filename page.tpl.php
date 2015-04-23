@@ -44,8 +44,14 @@
     <?php print render($page['navigation']); ?>
   </div>
 <?php endif; ?>
-<div class="page">
 
+<?php if ($page['header_highlighted']): ?>
+  <div class="header-hilighted">
+    <?php print render($page['header_highlighted']); ?>
+  </div>
+<?php endif; ?>
+
+<div class="page">
   <div role="main" id="main-content">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>

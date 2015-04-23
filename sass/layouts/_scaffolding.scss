@@ -1,5 +1,6 @@
 .page,
 .navigation,
+.header-hilighted,
 header[role="banner"],
 footer[role="contentinfo"] {	
 	clear:both;
@@ -22,12 +23,14 @@ header[role="banner"] {
 	footer[role="contentinfo"],
 	.page,
 	.navigation,
+	.header-hilighted,
 	header[role="banner"] {
 		width:1024px;
 		margin:0 auto;
 	}
 	.page,
 	.navigation,
+	.header-hilighted,
 	header[role="banner"] {
 		padding:0 5px 0 5px;
 	}

@@ -1,7 +1,6 @@
 .siteinfo {
-	position:absolute;
-	top:55px;
-
+	float:left;
+	width: 60px;
 	hgroup {
 		float:left;
 		display:none;
@@ -9,9 +8,7 @@
 
 
 	figure {
-		float:left;
-		padding:0px;
-		margin:0px;
+
 		a {
 			display: block;
 			width: 90%;
@@ -19,7 +16,6 @@
 	}
 
 	@include breakpoint($largeSmartPhone) {
-		position:inherit;
 		float: left;
 		padding:10px 0;
 	}
