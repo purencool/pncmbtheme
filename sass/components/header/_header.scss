@@ -6,7 +6,6 @@
 		display:none;
 	}
 
-
 	figure {
 
 		a {
@@ -18,6 +17,10 @@
 	@include breakpoint($largeSmartPhone) {
 		float: left;
 		padding:10px 0;
+		.siteinfo {
+			float:left;
+			width: 60px;
+		}
 	}
 }
 

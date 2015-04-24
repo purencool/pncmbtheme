@@ -46,6 +46,7 @@ relative_assets = true
 
 # Output source maps in development mode.
 sass_options = (environment == :production) ? {} : {:sourcemap => true}
+sass_options = {:cache_location => "../../../../../sass-cache"}
 
 # Remove comments
 line_comments=0
