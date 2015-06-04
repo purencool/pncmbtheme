@@ -1,0 +1,19 @@
+@media print {
+  /* line 3, ../sass/print.scss */
+  header[role="banner"],
+  footer[role="contentinfo"],
+  .navigation {
+    display: none; }
+
+  /* line 6, ../sass/print.scss */
+  body {
+    font: 12pt arial,serif; }
+
+  /* line 7, ../sass/print.scss */
+  h1 {
+    font-size: 18pt; }
+
+  /* line 8, ../sass/print.scss */
+  h2 {
+    font-size: 16pt;
+    color: #000; } }

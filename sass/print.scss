@@ -1,0 +1,9 @@
+@media print { 
+
+	header[role="banner"], 
+	footer[role="contentinfo"],
+	.navigation{ display: none; } 
+	body { font: 12pt arial,serif; } 
+	h1 { font-size: 18pt; } 
+	h2 { font-size: 16pt; color: #000; }
+}

@@ -4,12 +4,12 @@
 	}
 	
 }
-body:not(.node-type-page) div[role="main"] {
+.page-admin div[role="main"] {
 	width:100%;
 }
 
-body:not(.node-type-page) .sidebar-second,
-body:not(.node-type-page) .sidebar-first {
+.page-admin  .sidebar-second,
+.page-admin .sidebar-first {
 	display:none;
 }
 

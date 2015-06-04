@@ -35,7 +35,16 @@ header[role="banner"] {
 		padding:0 5px 0 5px;
 	}
 }
-@include breakpoint($mediumDesktop) {}
+@include breakpoint($mediumDesktop) {
+    	footer[role="contentinfo"],
+	.page,
+	.navigation,
+	.header-hilighted,
+	header[role="banner"] {
+		width:1170px;
+		margin:0 auto;
+	}
+}
 @include breakpoint($desktop) {}
 @include breakpoint($wideDesktop) {}
 
